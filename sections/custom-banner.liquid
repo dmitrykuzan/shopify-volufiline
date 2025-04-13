@@ -1,0 +1,26 @@
+<section class="custom-banner page-width">
+  <div class="container">
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.text }}</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Заголовок",
+      "default": "Добро пожаловать в наш магазин!"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Текст баннера",
+      "default": "Это кастомный баннер, который можно менять."
+    }
+  ]
+}
+{% endschema %}

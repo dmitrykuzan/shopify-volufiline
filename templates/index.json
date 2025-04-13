@@ -48,6 +48,13 @@
         "show_text_below": false
       }
     },
+    "custom_banner": {
+      "type": "custom-banner",
+      "settings": {
+        "heading": "Добро пожаловать!",
+        "text": "Это кастомный баннер, который можно менять."
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -79,6 +86,7 @@
   },
   "order": [
     "image_banner",
+    "custom_banner",
     "featured_collection"
   ]
 }

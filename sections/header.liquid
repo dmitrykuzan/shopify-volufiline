@@ -302,6 +302,15 @@
         {%- endif -%}
       </a>
     </div>
+
+    {% comment %} print link product {% endcomment %}
+    {% assign product = all_products.volufiline %}
+    {% if product %}
+      <a class="header__link-cta" href="{{ product.url }}">Buy Now</a>
+    {% else %}
+      <p>Product not found</p>
+    {% endif %}
+    {% comment %} print link product {% endcomment %}
   </header>
 </{{ header_tag }}>
 
@@ -470,7 +479,7 @@
 {
   "name": "t:sections.header.name",
   "class": "section-header",
-  "max_blocks": 3,
+  "max_blocks": 4,
   "settings": [
     {
       "type": "select",

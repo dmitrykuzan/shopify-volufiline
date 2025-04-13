@@ -100,6 +100,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   padding-right: 3rem;
 }
 
+.header__search {
+  display: none !important;
+}
+
 @media screen and (min-width: 750px) {
   .page-width {
     padding: 0 5rem;
@@ -2351,10 +2355,14 @@ input[type='checkbox'] {
 }
 
 .header {
-  display: grid;
+  /* display: grid;
   grid-template-areas: 'left-icons heading icons';
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: auto auto auto;
+  align-items: center; */
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 @media screen and (max-width: 749px) {
@@ -2384,9 +2392,12 @@ input[type='checkbox'] {
   }
 
   .header--middle-left {
-    grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto auto 1fr;
-    column-gap: 2rem;
+    /* grid-template-areas: 'heading navigation icons';
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .header--middle-center:not(.drawer-menu) {
@@ -2503,11 +2514,34 @@ input[type='checkbox'] {
 }
 
 /* Header icons */
-.header__icons {
+
+.header__link-cta {
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  text-decoration: initial;
+  min-width: 13rem;
+  text-align: center;
   display: flex;
-  grid-area: icons;
-  justify-self: end;
-  padding-right: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 4.3rem;
+  color: #000;
+  font-size: 1.8rem;
+}
+
+.header__icons {
+ margin-left: auto;
+}
+
+@media screen and (min-width: 990px) {
+  .header__icons {
+    display: flex;
+    margin-left: initial;
+    /* grid-area: icons; */
+    justify-self: end;
+    padding-right: 0.8rem;
+  }
+  
 }
 
 .header__icons .shopify-app-block {
@@ -2771,7 +2805,9 @@ details[open] > .header__submenu {
 
 @media screen and (min-width: 990px) {
   .header__inline-menu {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .header--top-center .header__inline-menu {
@@ -2783,7 +2819,8 @@ details[open] > .header__submenu {
   }
 
   .header--middle-left .header__inline-menu {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
