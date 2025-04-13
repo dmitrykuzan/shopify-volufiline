@@ -139,10 +139,6 @@
         "settings": {
           "color_scheme": "scheme-1"
         }
-      },
-      "static-banner": {
-        "type": "static-banner",
-        "settings": {}
       }
     },
     "content_for_index": [],
