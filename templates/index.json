@@ -9,13 +9,13 @@
  */
 {
   "sections": {
-    "custom_banner": {
-      "type": "custom-banner",
-      "settings": {
-        "heading": "Добро пожаловать!",
-        "text": "Это кастомный баннер, который можно менять."
-      }
-    },
+    // "custom_banner": {
+    //   "type": "custom-banner",
+    //   "settings": {
+    //     "heading": "Добро пожаловать!",
+    //     "text": "Это кастомный баннер, который можно менять."
+    //   }
+    // },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -46,7 +46,7 @@
     }
   },
   "order": [
-    "custom_banner",
+    // "custom_banner",
     "featured_collection"
   ]
 }

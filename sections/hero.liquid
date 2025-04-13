@@ -1,10 +1,12 @@
-<section class="custom-banner page-width">
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+
+<section class="hero page-width">
   <div class="container">
-    <div class="custom-banner__image">
-      <div class="custom-banner__product">
+    <div class="hero__image">
+      <div class="hero__product">
         <img src="assets/volufiline-hero.png" width="420" height="667">
       </div>
-      <div class="custom-banner__text">
+      <div class="hero__text">
         <svg width="1606" height="303" viewBox="0 0 1606 303" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M344.109 286.591C333.245 285.612 322.995 282.909 313.643 278.48C289.128 266.873 272.123 245.01 265.746 216.948C261.306 197.416 261.306 172.85 265.793 154.064C269.053 140.359 274.437 128.798 282.515 118.17C285.916 113.648 295.079 104.558 299.708 101.062C317.61 87.6369 339.386 81.7168 363.004 83.9077C384.354 85.9122 402.87 94.7691 418.033 110.292C425.401 117.844 429.841 124.183 434.612 134.019C441.32 147.911 444.39 161.988 444.815 181.38C445.24 200.073 443.304 214.524 438.344 228.695C436.218 234.755 430.314 246.176 426.677 251.257C422.567 256.944 412.034 267.339 406.224 271.395C400.839 275.171 390.211 280.485 384.023 282.489C372.12 286.312 357.619 287.803 344.109 286.591ZM363.523 243.379C379.158 240.209 390.306 228.229 395.076 209.536C398.525 196.018 398.666 175.181 395.36 162.222C391.723 147.864 383.693 136.443 373.159 130.616C362.578 124.789 346.377 124.556 335.229 130.104C321.295 137.003 313.265 150.102 310.478 170.333C309.58 177.045 309.486 192.568 310.289 198.815C312.273 213.825 316.618 224.313 324.034 232.331C329.844 238.531 335.749 241.608 346.471 243.938C349.211 244.544 359.508 244.218 363.523 243.379Z" fill="black"/>
           <path d="M642.164 286.638C625.348 285.286 612.453 280.019 603.147 270.742C593.464 261.139 587.465 248.274 584.442 230.746C583.686 226.224 583.592 220.444 583.498 157.234L583.309 88.5692H607.21H631.063V149.868C631.063 211.541 631.205 216.808 632.764 223.055C636.118 236.2 645.612 241.98 662.947 241.328C670.316 241.048 675.417 240.023 680.377 237.785C688.265 234.242 693.65 228.928 696.295 221.936C698.988 214.757 698.799 219.652 699.082 151.5L699.318 88.8023H723.172H747.026L747.168 185.203L747.262 281.557H724.353H701.444V272.141V262.724L696.626 267.805C688.738 276.056 681.464 280.718 671.591 283.841C662.995 286.545 652.744 287.524 642.164 286.638Z" fill="black"/>
@@ -19,35 +21,26 @@
           <path d="M1095.39 33.0969V16.3154H1112.63H1129.87V33.0969V49.8785H1112.63H1095.39V33.0969Z" fill="black"/>
         </svg>
       </div>
-      <h2 class="custom-banner__title">{{ section.settings.heading }}</h2>
+      <h2 class="hero__title">Beauty in Volume</h2>
     </div>
 
-    <div class="custom-banner__bottom">
-      <div class="custom-banner__review">
-        <img class="custom-banner__stars" src="assets/stars.png" width="150" height="23">
-        <p>{{ section.settings.text }}</p>
+    <div class="hero__bottom">
+      <div class="hero__review">
+        <img class="hero__stars" src="assets/stars.png" width="150" height="23">
+        <p>50K+ glowing customers</p>
       </div>
       {% assign product = all_products.volufiline %}
-      <a class="custom-banner__link" href="{{ product.url }}"> Elevate Your Skin</a>
+      <a class="hero__link" href="{{ product.url }}"> Elevate Your Skin</a>
     </div>
   </div>
 </section>
-
 {% schema %}
 {
-  "name": "Custom Banner",
-  "settings": [
+  "name": "Hero Section",
+  "settings": [],
+  "presets": [
     {
-      "type": "text",
-      "id": "heading",
-      "label": "Заголовок",
-      "default": "Beauty in Volume"
-    },
-    {
-      "type": "textarea",
-      "id": "text",
-      "label": "Текст баннера",
-      "default": "50K+ glowing customers"
+      "name": "Hero Section"
     }
   ]
 }
