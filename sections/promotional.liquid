@@ -1,0 +1,30 @@
+{{ 'promotional.css' | asset_url | stylesheet_tag }}
+
+<section class="promotional page-width">
+  <div class="promotional__wrapper">
+    <div class="promotional__text">
+      <h2 class="promotional__text-title">
+        volume <span>where</span> <br>
+        <span>you</span>actually <br>
+        need it.
+      </h2>
+    </div>
+    <div class="promotional__image">
+      <p class="promotional__image-text left">Precision-plumping for delicate areas</p>
+      <img src="{{ 'volufiline-promo.png' | asset_url }}" width="280" height="822">
+      <p class="promotional__image-text right">Skin looks fuller, feels firmer</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Promotional seection",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Promotional seection"
+    }
+  ]
+}
+{% endschema %}
