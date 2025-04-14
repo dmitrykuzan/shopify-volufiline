@@ -20,11 +20,16 @@
     "banner_cta_iVN3B9": {
       "type": "banner-cta",
       "settings": {}
+    },
+    "promotional_ktUnR9": {
+      "type": "promotional",
+      "settings": {}
     }
   },
   "order": [
     "hero_qw4kjE",
     "partners_mnWBtN",
-    "banner_cta_iVN3B9"
+    "banner_cta_iVN3B9",
+    "promotional_ktUnR9"
   ]
 }
