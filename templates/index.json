@@ -28,12 +28,17 @@
     "banner_with_title_CJGtUQ": {
       "type": "banner-with-title",
       "settings": {}
+    },
+    "before_after_slider_tUxVTj": {
+      "type": "before-after-slider",
+      "settings": {}
     }
   },
   "order": [
     "hero_qw4kjE",
     "partners_mnWBtN",
     "banner_cta_iVN3B9",
+    "before_after_slider_tUxVTj",
     "promotional_ktUnR9",
     "banner_with_title_CJGtUQ"
   ]
