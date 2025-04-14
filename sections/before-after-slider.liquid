@@ -1,0 +1,118 @@
+{{ 'before-after-slider.css' | asset_url | stylesheet_tag }}
+
+<section class="before-after-slider">
+  <div class="before-after-slider__titles page-width">
+    <h2>See for yourself</h2>
+    <p>These results were shared by actual customers</p>
+  </div>
+  <div class="before-after-slider__wrapper">
+    <div class="swiper before-after-slider__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="before-after-slider__slide">
+            <div class="before-after-slider__slide-part">
+              <div class="before-after-slider__slide-image">
+                <img src="{{ 'before-slide-1.jpg' | asset_url }}" width="320" height="470" alt="Before">
+              </div>
+              <span class="before-after-slider__slide-text">Before</span>
+            </div>
+            <div class="before-after-slider__slide-part">
+              <div class="before-after-slider__slide-image">
+                <img src="{{ 'after-slide-1.jpg' | asset_url }}" width="320" height="470" alt="Before">
+              </div>
+              <span class="before-after-slider__slide-text">After 2 Weeks</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="before-after-slider__slide">
+            <div class="before-after-slider__slide-part">
+              <div class="before-after-slider__slide-image">
+                <img src="{{ 'before-slide-2.jpg' | asset_url }}" width="320" height="470" alt="Before">
+              </div>
+              <span class="before-after-slider__slide-text">Before</span>
+            </div>
+            <div class="before-after-slider__slide-part">
+              <div class="before-after-slider__slide-image">
+                <img src="{{ 'after-slide-2.jpg' | asset_url }}" width="320" height="470" alt="Before">
+              </div>
+              <span class="before-after-slider__slide-text">After 60 Days</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="before-after-slider__slide">
+            <div class="before-after-slider__slide-part">
+              <div class="before-after-slider__slide-image">
+                <img src="{{ 'before-slide-3.jpg' | asset_url }}" width="320" height="470" alt="Before">
+              </div>
+              <span class="before-after-slider__slide-text">Before</span>
+            </div>
+            <div class="before-after-slider__slide-part">
+              <div class="before-after-slider__slide-image">
+                <img src="{{ 'after-slide-3.jpg' | asset_url }}" width="320" height="470" alt="Before">
+              </div>
+              <span class="before-after-slider__slide-text">After 6 Weeks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="before-after-slider__slide">
+            <div class="before-after-slider__slide-part">
+              <div class="before-after-slider__slide-image">
+                <img src="{{ 'before-slide-3.jpg' | asset_url }}" width="320" height="470" alt="Before">
+              </div>
+              <span class="before-after-slider__slide-text">Before</span>
+            </div>
+            <div class="before-after-slider__slide-part">
+              <div class="before-after-slider__slide-image">
+                <img src="{{ 'after-slide-3.jpg' | asset_url }}" width="320" height="470" alt="Before">
+              </div>
+              <span class="before-after-slider__slide-text">After 6 Weeks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiperBeforeAfter = new Swiper('.swiper', {
+      spaceBetween: 8,
+      slidesPerView: 1.2,
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      breakpoints: {
+        767: {
+          spaceBetween: 10,
+          slidesPerView: 2,
+        },
+
+        992: {
+          slidesPerView: 3,
+          centeredSlides: true,
+          loop: true,
+        },
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Before After Slider",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Before After Slider"
+    }
+  ]
+}
+{% endschema %}
