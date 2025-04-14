@@ -24,12 +24,17 @@
     "promotional_ktUnR9": {
       "type": "promotional",
       "settings": {}
+    },
+    "banner_with_title_CJGtUQ": {
+      "type": "banner-with-title",
+      "settings": {}
     }
   },
   "order": [
     "hero_qw4kjE",
     "partners_mnWBtN",
     "banner_cta_iVN3B9",
-    "promotional_ktUnR9"
+    "promotional_ktUnR9",
+    "banner_with_title_CJGtUQ"
   ]
 }
