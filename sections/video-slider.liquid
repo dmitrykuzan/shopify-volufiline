@@ -1,0 +1,61 @@
+{{ 'video-slider.css' | asset_url | stylesheet_tag }}
+
+<section class="video-slider">
+  <div class="video-slider__titles page-width">
+    <h2>See for yourself</h2>
+    <p>These results were shared by actual customers</p>
+  </div>
+  <div class="video-slider__wrapper">
+    <div class="swiper video-slider__swiper video-slider__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <video id="custom-video" width="100%" muted>
+            <source src="{{ 'example.mp4' | asset_url }}" type="video/mp4">
+          </video>
+          <button class="play-button" id="play-btn" aria-label="Play video">▶️ Play</button>
+        </div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiperBeforeAfter = new Swiper('.video-slider__swiper', {
+      spaceBetween: 8,
+      slidesPerView: 1.2,
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      breakpoints: {
+        767: {
+          spaceBetween: 10,
+          slidesPerView: 2,
+        },
+
+        992: {
+          slidesPerView: 3,
+          centeredSlides: true,
+          loop: true,
+        },
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Video Review Slider",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Video Review Slider"
+    }
+  ]
+}
+{% endschema %}
