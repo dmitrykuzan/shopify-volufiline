@@ -137,9 +137,11 @@
 
   .review-slider__titles {
     margin-bottom: 5rem;
+   
 
     h2 {
       font-size: 6.4rem;
+      max-width: 85rem;
     }
   }
 

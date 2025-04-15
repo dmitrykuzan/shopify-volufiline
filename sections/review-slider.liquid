@@ -182,7 +182,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const swiperBeforeAfter = new Swiper('.review-slider__swiper', {
-      spaceBetween: 20,
+      spaceBetween: 12,
       slidesPerView: 1.2,
       centeredSlides: true,
       initialSlide: 1,
@@ -191,11 +191,13 @@
         575: {
           spaceBetween: 20,
           slidesPerView: 2,
+          centeredSlides: false,
         },
 
         1024: {
           spaceBetween: 30,
           slidesPerView: 3,
+          centeredSlides: true,
         },
       },
     });
