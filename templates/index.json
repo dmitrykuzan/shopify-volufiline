@@ -21,6 +21,10 @@
       "type": "banner-cta",
       "settings": {}
     },
+    "before_after_slider_tUxVTj": {
+      "type": "before-after-slider",
+      "settings": {}
+    },
     "promotional_ktUnR9": {
       "type": "promotional",
       "settings": {}
@@ -29,8 +33,8 @@
       "type": "banner-with-title",
       "settings": {}
     },
-    "before_after_slider_tUxVTj": {
-      "type": "before-after-slider",
+    "video_slider_pY8jby": {
+      "type": "video-slider",
       "settings": {}
     }
   },
@@ -40,6 +44,7 @@
     "banner_cta_iVN3B9",
     "before_after_slider_tUxVTj",
     "promotional_ktUnR9",
+    "video_slider_pY8jby",
     "banner_with_title_CJGtUQ"
   ]
 }
