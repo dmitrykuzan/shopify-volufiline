@@ -64,7 +64,6 @@
   margin-top: 8rem;
 }
 
-
 .review-slider__slide {
   display: flex;
   flex-direction: column;
@@ -84,6 +83,10 @@
 }
 
 .review-slider__wrapper {
+  
+}
+
+.review-slider__swiper {
   width: calc(100% + 3rem);
   margin-left: -1.5rem;
 }
@@ -108,7 +111,7 @@
 }
 
 @media screen and (min-width: 575px) {
-  .review-slider__wrapper {
+  .review-slider__swiper {
     width: initial;
     margin-left: initial;
     margin: 0 auto;
