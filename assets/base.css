@@ -76,8 +76,21 @@
 
 /* base */
 
-/* partners */
+/* stars  */
 
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* partners */
 .partners {
   overflow: hidden;
 }
