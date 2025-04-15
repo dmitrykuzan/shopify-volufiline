@@ -29,12 +29,16 @@
       "type": "promotional",
       "settings": {}
     },
+    "video_slider_pY8jby": {
+      "type": "video-slider",
+      "settings": {}
+    },
     "banner_with_title_CJGtUQ": {
       "type": "banner-with-title",
       "settings": {}
     },
-    "video_slider_pY8jby": {
-      "type": "video-slider",
+    "review_slider_tffJjE": {
+      "type": "review-slider",
       "settings": {}
     }
   },
@@ -45,6 +49,7 @@
     "before_after_slider_tUxVTj",
     "promotional_ktUnR9",
     "video_slider_pY8jby",
+    "review_slider_tffJjE",
     "banner_with_title_CJGtUQ"
   ]
 }
