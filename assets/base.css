@@ -2611,6 +2611,12 @@ input[type='checkbox'] {
     min-height: 4.3rem;
     color: #000;
     font-size: 1.8rem;
+    transition: background-color 0.3s linear, color 0.3s linear;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
   }
 }
 

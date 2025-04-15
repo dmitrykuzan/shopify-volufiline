@@ -1,4 +1,8 @@
 {{ 'hero.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'parallax-mouse.min.js' | asset_url | script_tag }} {% endcomment %}
+
+<script src="{{ 'parallax-mouse.min.js' | asset_url }}" defer="defer"></script>
+
 {% assign product = all_products.volufiline %}
 
 <section class="hero page-width">
@@ -111,6 +115,7 @@
     </div>
   </div>
 </section>
+
 {% schema %}
 {
   "name": "Hero Section",
@@ -122,3 +127,13 @@
   ]
 }
 {% endschema %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    parallaxMouse({
+      elements: '.hero__product',
+      moveFactor: 20,
+      wrap: '.hero',
+    });
+  });
+</script>
