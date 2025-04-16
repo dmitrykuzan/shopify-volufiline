@@ -34,6 +34,10 @@
             "swatch_shape": "circle"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -44,10 +48,6 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         },
         "share": {
           "type": "share",
@@ -61,9 +61,9 @@
         "title",
         "price",
         "variant_picker",
+        "description",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "share"
       ],
       "settings": {
