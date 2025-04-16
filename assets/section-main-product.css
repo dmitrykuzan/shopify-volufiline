@@ -1585,7 +1585,18 @@ a.product__text {
   gap: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .custom__lowstock {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   
+  }
 }
 
 .custom__lowstock-icon {
