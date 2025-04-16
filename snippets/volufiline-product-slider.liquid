@@ -16,8 +16,17 @@
         {%- endif -%}
       {%- endfor -%}
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="volufiline-swiper-button-next">
+      <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.125 10.5L24.875 10.5M24.875 10.5L15.9688 1M24.875 10.5L15.9688 20" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="volufiline-swiper-button-prev">
+      <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24.875 10.5L1.125 10.5M1.125 10.5L10.0312 20M1.125 10.5L10.0312 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="volufiline-product-pagination"></div>
   </div>
 
   <!-- Миниатюры (thumbs) -->
@@ -43,15 +52,25 @@
     var swiper = new Swiper('.volufiline-product-slider__thumbs', {
       spaceBetween: 12,
       slidesPerView: 5,
-      direction: 'vertical',
+      {% comment %} direction: 'vertical', {% endcomment %}
       watchSlidesProgress: true,
+
+      breakpoints: {
+        1480: {
+          direction: 'vertical',
+        },
+      },
     });
 
     var swiper2 = new Swiper('.volufiline-product-slider__big', {
       spaceBetween: 10,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.volufiline-swiper-button-next',
+        prevEl: '.volufiline-swiper-button-prev',
+      },
+      pagination: {
+        el: ".volufiline-product-pagination",
+        clickable: true,
       },
       thumbs: {
         swiper: swiper,

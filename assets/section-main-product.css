@@ -4,6 +4,24 @@ product-info {
 
 .product {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  .grid__item {
+    width: initial;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .product {
+    display: flex;
+    flex-direction: row;
+
+    .grid__item {
+      max-width: 65%;
+      width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
+    }
+  }
 }
 
 .product.grid {
@@ -32,7 +50,7 @@ product-info {
   }
 
   .product__info-wrapper {
-    padding: 0 0 0 5rem;
+    /* padding: 0 0 0 5rem; */
   }
 
   .product__info-wrapper--extra-padding {
@@ -66,11 +84,11 @@ product-info {
     width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
-  .product--large:not(.product--no-media) .product__info-wrapper {
+  /* .product--large:not(.product--no-media) .product__info-wrapper {
     padding: 0 0 0 4rem;
     max-width: 35%;
     width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
-  }
+  } */
 
   .product--large:not(.product--no-media).product--right .product__info-wrapper {
     padding: 0 4rem 0 0;
@@ -86,6 +104,14 @@ product-info {
   .product--small:not(.product--no-media) .product__media-wrapper {
     max-width: 45%;
     width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .product--large:not(.product--no-media) .product__info-wrapper {
+    padding: 0 0 0 4rem;
+    max-width: 35%;
+    width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
 
@@ -252,11 +278,30 @@ a.product__text {
   gap: 0.8rem;
   word-break: break-word;
   margin-bottom: 1.5rem;
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+  }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 520px) {
   .product__title {
     flex-direction: row;
+
+    h1 {
+      font-size: 4.4rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .product__title {
+    h1 {
+      font-size: 4.4rem;
+      font-weight: 500;
+    }
   }
 }
 
@@ -299,7 +344,7 @@ a.product__text {
 
 @media screen and (min-width: 750px) {
   .product__info-container {
-    max-width: 60rem;
+    /* max-width: 60rem; */
   }
 
   .product__info-container .price--on-sale .price-item--regular {
@@ -375,6 +420,13 @@ a.product__text {
 
 .product-form__buttons {
   max-width: 44rem;
+}
+
+@media screen and (max-width: 575px) {
+  .product-form__buttons {
+   
+    max-width: initial;
+  }
 }
 
 .product--no-media .product__info-container > modal-opener {
