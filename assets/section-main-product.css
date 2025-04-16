@@ -246,8 +246,18 @@ a.product__text {
 }
 
 .product__title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.8rem;
   word-break: break-word;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1500px) {
+  .product__title {
+    flex-direction: row;
+  }
 }
 
 .product__title > * {
@@ -1491,4 +1501,81 @@ a.product__text {
   .recipient-form > input[type='checkbox']:checked + label .icon-checkmark {
     border: none;
   }
+}
+
+
+/* custon style */
+
+.custom__product-title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  p {
+    margin: initial;
+    line-height: 133%;
+  }
+}
+
+.custom__lowstock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.custom__lowstock-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom__lowstock-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    margin: initial;
+    font-size: 3.2rem;
+    color: #000;
+    line-height: 110%;
+  }
+}
+
+.custom__lowstock-text {
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.custom__lowstock-indicator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.custom__lowstock-track {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 1rem;
+  border-radius: 10rem;
+  background: #E8E8E8;
+
+  span {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: #E31F05;
+    border-radius: 10rem;
+  }
+}
+
+.custom__lowstock-value {
+  flex-shrink: 0;
+  font-size: 1.6rem;
+  color: #000;
 }

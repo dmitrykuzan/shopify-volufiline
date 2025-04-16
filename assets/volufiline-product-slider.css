@@ -1,0 +1,41 @@
+.volufiline-product-slider__wrapper {
+  max-height: 87rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2rem;
+  
+
+  .swiper-slide-thumb-active {
+    .volufiline-product-slider__image-thumbs {
+      border: 0.1rem solid #000;
+    }
+  }
+}
+
+.volufiline-product-slider__thumbs {
+  flex-shrink: 0;
+  padding-bottom: 0.2rem;
+}
+
+.volufiline-product-slider__image-thumbs, .volufiline-product-slider__image-big {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+}
+
+.volufiline-product-slider__image-thumbs {
+  max-width: 16rem;
+  height: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0.1rem solid transparent;
+  transition: border 0.3s linear;
+}
+
+.volufiline-product-slider__image-big {
+  height: 100%;
+}
