@@ -88,11 +88,17 @@
     "video_slider_nxQkmR": {
       "type": "video-slider",
       "settings": {}
+    },
+    "volufiline_purchase_ykQfwT": {
+      "type": "volufiline-purchase",
+      "name": "Volufiline purchase",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "related-products",
-    "video_slider_nxQkmR"
+    "video_slider_nxQkmR",
+    "volufiline_purchase_ykQfwT"
   ]
 }
