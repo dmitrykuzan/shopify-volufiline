@@ -71,6 +71,10 @@
       "type": "volufiline-benefits",
       "settings": {}
     },
+    "result_slider_wkmUUh": {
+      "type": "result-slider",
+      "settings": {}
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -97,14 +101,6 @@
     "volufiline_purchase_ykQfwT": {
       "type": "volufiline-purchase",
       "settings": {}
-    },
-    "result_slider_6UAzHB": {
-      "type": "result-slider",
-      "settings": {}
-    },
-    "result_slider_wkmUUh": {
-      "type": "result-slider",
-      "settings": {}
     }
   },
   "order": [
@@ -113,7 +109,6 @@
     "result_slider_wkmUUh",
     "related-products",
     "video_slider_nxQkmR",
-    "volufiline_purchase_ykQfwT",
-    "result_slider_6UAzHB"
+    "volufiline_purchase_ykQfwT"
   ]
 }
