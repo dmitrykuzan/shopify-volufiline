@@ -115,7 +115,9 @@
 
 
 /* base */
-
+.quantity__label {
+  display: none !important;
+}
 /* stars  */
 
 .volufiline-rating-stars {
