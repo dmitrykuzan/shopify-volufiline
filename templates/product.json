@@ -101,6 +101,107 @@
     "volufiline_purchase_ykQfwT": {
       "type": "volufiline-purchase",
       "settings": {}
+    },
+    "collapsible_content_bBUtmC": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_9aTFmX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is Volufiline?",
+            "icon": "none",
+            "row_content": "<p>Volufiline is a cosmetic ingredient that helps improve skin volume and firmness. It works by encouraging fat storage in the area it's applied, giving a fuller, plumper appearance over time.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_r9EwLC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where can I use it?",
+            "icon": "none",
+            "row_content": "<p> Most people apply Volufiline around the eyes, lips, cheeks, or nasolabial folds — anywhere that’s lost volume or looks hollow. It’s for external use only.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_R4WdVM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take to see results?",
+            "icon": "none",
+            "row_content": "<p>Results vary, but many users notice visible plumping within 4 to 8 weeks of consistent use, with best results after 2 to 3 months.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_77nMm6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Volufiline permanent?",
+            "icon": "none",
+            "row_content": "<p>No, results are not permanent. Continued use is needed to maintain the plumping effect. If you stop using it, the effects will gradually fade.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Wd6r9q": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How often should I apply it?",
+            "icon": "none",
+            "row_content": "<p>Once or twice daily is recommended — typically in the morning and at night on clean skin.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_driCzg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use it with other skincare products?",
+            "icon": "none",
+            "row_content": "<p>Yes. Apply Volufiline before heavier creams or oils, ideally after cleansing and toning.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_39XCHh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it safe for sensitive skin?",
+            "icon": "none",
+            "row_content": "<p>Volufiline is generally well-tolerated, but if you have sensitive skin, do a patch test first. If irritation occurs, discontinue use.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YP3PRe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does it really work?",
+            "icon": "none",
+            "row_content": "<p>Many users report visible improvements in volume and skin texture. Like any cosmetic product, individual results can vary based on skin type, age, and consistency.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_9aTFmX",
+        "collapsible_row_r9EwLC",
+        "collapsible_row_R4WdVM",
+        "collapsible_row_77nMm6",
+        "collapsible_row_Wd6r9q",
+        "collapsible_row_driCzg",
+        "collapsible_row_39XCHh",
+        "collapsible_row_YP3PRe"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
@@ -109,6 +210,7 @@
     "result_slider_wkmUUh",
     "related-products",
     "video_slider_nxQkmR",
-    "volufiline_purchase_ykQfwT"
+    "volufiline_purchase_ykQfwT",
+    "collapsible_content_bBUtmC"
   ]
 }
