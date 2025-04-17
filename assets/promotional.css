@@ -9,6 +9,7 @@
   text-align: center;
   letter-spacing: 3px;
   margin: initial;
+  font-family: 'Manrope', sans-serif !important;
 
   span {
     color: rgba(0, 0, 0, 0.1);
