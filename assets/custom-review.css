@@ -76,6 +76,12 @@
     font-size: 3.2rem;
     top: 5rem;
   }
+
+  .custom-review__item {
+    .custom-review__item-stars {
+      min-width: 16.5rem;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
