@@ -113,41 +113,6 @@
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: "Manrope";
-  src: url("{{ 'Manrope-Regular.woff2' | asset_url }}") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Manrope";
-  src: url("{{ 'Manrope-Medium.woff2' | asset_url }}") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Manrope";
-  src: url("{{ 'Manrope-Bold.woff2' | asset_url }}") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Manrope";
-  src: url("{{ 'Manrope-Semibold.woff2' | asset_url }}") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Manrope";
-  src: url("{{ 'Manrope-ExtraBold.woff2' | asset_url }}") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-}  */
-
 
 /* base */
 .quantity__label {

@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 5rem;
+  gap: 3rem;
   flex-direction: column-reverse;
   background-color: #F2F2F2;
   border-radius: 2rem;
@@ -17,20 +17,50 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: initial;
   padding-left: 3rem;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   padding-right: 3rem;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
   gap: 3rem;
 }
 
+.banner-cta__mobile-text > * {
+  margin: initial;
+}
+
+.banner-cta__mobile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 133%;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 133%;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .banner-cta__mobile-text {
+    display: none;
+  }
+}
+
+
+
 .banner-cta__benefits {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1.2rem;
 
   span {
@@ -45,8 +75,9 @@
 .banner-cta__image {
   max-width: initial;
   margin-left: auto;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .banner-cta__link {
@@ -58,11 +89,11 @@
   border-radius: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   text-decoration: none;
-  min-width: 25rem;
-  min-height: 7rem;
+  min-width: 12rem;
+  min-height: 4.2rem;
   color: #fff;
 
   transition: background-color 0.3s linear;
@@ -72,6 +103,13 @@
   }
 }
 
+@media screen and (min-width: 767px) {
+  .banner-cta__wrapper {
+   max-width: 60rem;
+   margin-left: auto;
+   margin-right: auto;
+  }
+}
 
 @media screen and (min-width: 1480px) {
   .banner-cta {
@@ -80,6 +118,7 @@
   
   .banner-cta__wrapper {
     flex-direction: row;
+    max-width: initial;
   }
 
   .banner-cta__image {
@@ -89,12 +128,22 @@
   .banner-cta__text {
     padding-top: 3rem;
     gap: 5rem;
+    align-items: center;
   }
 
   .banner-cta__benefits {
+    align-items: center;
+
     span {
       font-size: 9.6rem;
     }
+  }
+
+  .banner-cta__link {
+    font-size: 2rem;
+    font-weight: 900;
+    min-width: 26rem;
+    min-height: 7rem;
   }
 }
 
