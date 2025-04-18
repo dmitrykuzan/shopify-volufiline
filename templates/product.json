@@ -206,6 +206,24 @@
     "volufiline_review_rating_cRaKrF": {
       "type": "volufiline-review-rating",
       "settings": {}
+    },
+    "custom_review_7z7dGf": {
+      "type": "custom-review",
+      "blocks": {
+        "list_item_P49RRY": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Christopher",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Lightning fast delivery, great job</p>"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_P49RRY"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -216,6 +234,7 @@
     "video_slider_nxQkmR",
     "volufiline_purchase_ykQfwT",
     "collapsible_content_bBUtmC",
-    "volufiline_review_rating_cRaKrF"
+    "volufiline_review_rating_cRaKrF",
+    "custom_review_7z7dGf"
   ]
 }
