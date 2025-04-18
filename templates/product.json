@@ -254,6 +254,15 @@
             "review_rating": 5,
             "review_text": "<p>Lightning fast delivery, great job. Lightning fast delivery, great job. Lightning fast delivery, great job.Lightning fast delivery, great job. Lightning fast delivery, great job. Lightning fast delivery, great job.</p>"
           }
+        },
+        "list_item_ijewhh": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Michael",
+            "review_date": "2 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Lightning fast delivery, great job.</p>"
+          }
         }
       },
       "block_order": [
@@ -261,7 +270,8 @@
         "list_item_E4YYGR",
         "list_item_KcdEpr",
         "list_item_f7pUGz",
-        "list_item_TTEFC7"
+        "list_item_TTEFC7",
+        "list_item_ijewhh"
       ],
       "settings": {}
     }
