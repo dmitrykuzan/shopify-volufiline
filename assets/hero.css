@@ -138,8 +138,6 @@
     padding-top: initial;
   }
 
-
-  
   .hero__image {
     position: relative;
     display: flex;
@@ -195,25 +193,11 @@
 
 }
 
-@media screen and (min-width: 750px) {
-  /* .hero__review {
-    .counter-value {
-      min-width: 16rem;
-     }
-  } */
-}
-
 
 @media screen and (min-width: 1023px) {
   .hero__product {
     max-width: 28rem;
    }
-
-   /* .hero__review {
-    .counter-value {
-      min-width: 20rem;
-     }
-  } */
 }
 
 @media screen and (min-width: 1080px) {
@@ -249,3 +233,5 @@
     top: 20rem;
   }
 }
+
+
