@@ -7,18 +7,7 @@
   "location": [],
   "market": [],
   "order": [],
-  "page": [
-    {
-      "key": "reviews",
-      "namespace": "custom",
-      "name": "reviews",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    }
-  ],
+  "page": [],
   "product": [],
   "variant": [],
   "shop": []

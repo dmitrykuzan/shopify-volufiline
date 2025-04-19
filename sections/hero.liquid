@@ -24,7 +24,7 @@
         </svg>
       </div>
       <h2 class="hero__title-mobile">Beauty in Volume</h2>
-      <a class="hero__link-mobile" href="{{ product.url }}"> Elevate Your Skin</a>
+      <a class="hero__link-mobile" href="{{ product.url }}">Elevate Your Skin</a>
       <div class="hero__review-mobile">
         <div class="volufiline-rating-stars">
           <span class="volufiline-rating-star">
@@ -53,7 +53,7 @@
             </svg>
           </span>
         </div>
-        <p><span>50K+</span> glowing customers</p>
+        <p><span class="counter-value" akhi="50000">0</span> glowing customers</p>
       </div>
     </div>
 
@@ -108,7 +108,7 @@
             </svg>
           </span>
         </div>
-        <p><span>50K+</span> glowing customers</p>
+        <p><span class="counter-value" akhi="50000">0</span> glowing customers</p>
       </div>
 
       <a class="hero__link" href="{{ product.url }}"> Elevate Your Skin</a>
@@ -132,22 +132,36 @@
   document.addEventListener('DOMContentLoaded', function () {
     parallaxMouse({
       elements: '.hero__product',
-      moveFactor: 20,
+      moveFactor: -15,
       wrap: '.hero',
     });
 
     parallaxMouse({
       elements: '.hero__text',
-      moveFactor: -5,
       wrap: '.hero',
       perspective: '100px',
     });
 
-    parallaxMouse({
-      elements: '.hero__title',
-      moveFactor: -5,
-      wrap: '.hero',
-      perspective: '100px',
+    //counter
+    const counters = document.querySelectorAll('.counter-value');
+    const speed = 800;
+
+    counters.forEach((counter) => {
+      const animate = () => {
+        const value = +counter.getAttribute('akhi');
+        const data = +counter.innerText;
+
+        const time = value / speed;
+        if (data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 1);
+        } else {
+          {% comment %} counter.innerText = value + '+'; {% endcomment %}
+          counter.innerText = "50K";
+        }
+      };
+
+      animate();
     });
   });
 </script>

@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 
 .hero__image {
@@ -10,7 +10,6 @@
   margin-top: auto;
   margin-left: auto;
   padding-bottom: initial;
-
   display: none;
 }
 
@@ -21,10 +20,9 @@
   left: initial;
   top: initial;
   transform: initial;
-  max-width: 42rem;
+  max-width: 24rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2.5rem;
   transition: transform 0.3s linear;
 
   img {
@@ -37,10 +35,7 @@
 .hero__text {
   display: none;
   position: absolute;
-  top: 20rem;
-  /* left: 50%;
-  top: 50%; */
-  /* transform: translate(-50%, -50%); */
+  top: 14rem;
   z-index: -1;
   width: 100%;
   margin: 0;
@@ -79,7 +74,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .hero__text-mobile {
@@ -108,6 +103,7 @@
   min-height: 50px;
   display: flex;
   max-width: 260px;
+  font-weight: 900;
   width: 100%;
   border-radius: 10px;
   font-size: 16px;
@@ -142,21 +138,15 @@
     padding-top: initial;
   }
 
-  .hero__product {
-    /* position: absolute;
-    left: 55rem;
-    top: 1rem; */
-  }
+
   
   .hero__image {
-    min-height: 640px;
     position: relative;
     display: flex;
     flex-direction: column;
   }
  
   .hero__bottom {
-    margin-top: 5rem;
     display: flex;
     align-items: center;  
     justify-content: space-between;
@@ -174,7 +164,7 @@
     gap: 1rem;
 
     p {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       color: rgba(0, 0, 0, 0.5);
       margin: initial;
       height: max-content;
@@ -185,9 +175,10 @@
   
 
     span  {
-      font-weight: 500;
+      font-weight: 700;
       font-size: 4rem;
     }
+
   }
 
   .hero__text, .hero__title, .hero__review {
@@ -204,9 +195,32 @@
 
 }
 
+@media screen and (min-width: 750px) {
+  /* .hero__review {
+    .counter-value {
+      min-width: 16rem;
+     }
+  } */
+}
+
+
+@media screen and (min-width: 1023px) {
+  .hero__product {
+    max-width: 28rem;
+   }
+
+   /* .hero__review {
+    .counter-value {
+      min-width: 20rem;
+     }
+  } */
+}
+
 @media screen and (min-width: 1080px) {
+
   .hero__title {
     padding-bottom: 50px;
+    margin-top: -7rem;
   }
 
   .hero__review  {
@@ -217,5 +231,21 @@
     span  {
       font-size: 5rem;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__product {
+    max-width: 33rem;
+   }
+}
+
+@media screen and (min-width: 1480px) {
+  .hero__product {
+    max-width: 42rem;
+  }
+
+  .hero__text {
+    top: 20rem;
   }
 }
