@@ -15,11 +15,7 @@
 
 
 .hero__product {
-  position: initial;
-  left: initial;
-  left: initial;
-  top: initial;
-  transform: initial;
+  position: relative;
   max-width: 24rem;
   margin-left: auto;
   margin-right: auto;
@@ -227,6 +223,7 @@
 @media screen and (min-width: 1480px) {
   .hero__product {
     max-width: 42rem;
+    top: 2rem;
   }
 
   .hero__text {
