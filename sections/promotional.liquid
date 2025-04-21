@@ -9,14 +9,19 @@
         need it.
       </h2>
     </div>
-    <div class="promotional__image">
-      <p class="promotional__image-text left-text" style="white-space: normal; margin-left: -50px;">
+
+    <!-- Wrap with relative container -->
+    <div class="promotional__image" style="position: relative;">
+      <!-- Position the left text absolutely -->
+      <p class="promotional__image-text left-text" style="position: absolute; top: 20px; left: -60px; white-space: normal;">
         <span style="white-space: nowrap;">Precision‑plumping</span><br>
         <span style="white-space: nowrap;">for&nbsp;delicate&nbsp;areas</span>
       </p>
+
       <div class="promotional__image-wrapper" style="transform: scale(1.2) translateY(-2%); transform-origin: bottom center;">
         <img src="{{ 'volufiline-promo.png' | asset_url }}" width="280" height="822">
       </div>
+
       <p class="promotional__image-text right-text">Skin looks fuller, feels firmer</p>
     </div>
   </div>
