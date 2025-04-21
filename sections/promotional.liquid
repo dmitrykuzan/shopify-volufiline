@@ -1,5 +1,14 @@
 {{ 'promotional.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .force-shift-left {
+    transform: translateX(-60px) !important;
+    display: block !important;
+    white-space: nowrap !important;
+    color: inherit !important;
+  }
+</style>
+
 <section class="promotional page-width">
   <div class="promotional__wrapper">
     <div class="promotional__text">
@@ -12,7 +21,7 @@
 
     <div class="promotional__image">
       <p class="promotional__image-text left-text" style="white-space: normal;">
-        <span style="display: block; white-space: nowrap; transform: translateX(-40px);">
+        <span class="force-shift-left">
           Precision‑plumping
         </span>
         <span style="display: block; white-space: nowrap;">
