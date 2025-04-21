@@ -32,6 +32,12 @@
   }
 }
 
+@media screen and (min-width: 1880px) {
+  .volufiline-product-slider__wrapper {
+    max-height: 87rem;
+  }
+}
+
 .volufiline-product-slider__big {
   position: relative;
   width: 100%;
