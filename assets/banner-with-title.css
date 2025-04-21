@@ -164,10 +164,6 @@ transparent;
 
 @media screen and (min-width: 1200px) {
 
-  .banner-with-title__wrapper {
-    /* gap: 5rem; */
-   }
-
   .banner-with-title__image {
    max-width: 50rem;
   }
@@ -184,11 +180,11 @@ transparent;
     margin-top: auto;
 
     h2 {
-      font-size: 8rem;
+      font-size: 6rem;
     }
 
     p {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 
@@ -199,16 +195,27 @@ transparent;
     font-weight: 900;
   }
 }
- 
 
- @media screen and (min-width: 1450px) {
+@media screen and (min-width: 1450px) {
   .banner-with-title__image {
     max-width: 72rem;
    }
+
+  .banner-with-title__text {
+    h2 {
+      font-size: 8rem;
+    }
+
+    p {
+      font-size: 3rem;
+    }
+  }
    
    .banner-with-title__title-top-wrapper {
     margin-bottom: 16rem;
    }
+
+  
 
   .banner-with-title__title-top {
     font-size: 19rem;
