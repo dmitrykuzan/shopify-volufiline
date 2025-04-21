@@ -159,6 +159,7 @@ transparent;
 
  .banner-with-title__content {
   max-width: 70rem;
+   justify-content: center;
  }
 }
 
