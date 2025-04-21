@@ -13,7 +13,7 @@
     display: inline-block;
     text-align: right;
     line-height: 1.2;
-    transform: translateX(15px);
+    transform: translateX(15px) translateY(-5px); /* ← moved up slightly */
     font-weight: 400;
     font-size: 15px;
   }
@@ -40,7 +40,6 @@
         for&nbsp;delicate&nbsp;areas
       </p>
 
-      <!-- Bottle: perfectly balanced, now nudged down ~5px -->
       <div class="promotional__image-wrapper" style="display: flex; justify-content: center;">
         <div style="transform: scale(1.2) translateY(0.5%) translateX(-12px); transform-origin: bottom center;">
           <img src="{{ 'volufiline-promo.png' | asset_url }}" width="280" height="822">
