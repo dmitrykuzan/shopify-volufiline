@@ -131,6 +131,16 @@
   .banner-cta__benefits span {
     font-size: 6rem
   }
+
+  .banner-cta__mobile-text {
+    h3 {
+      font-size: 2rem
+    }
+
+    p {
+       font-size: 1.8rem
+    }
+  }
 }
 
 @media screen and (min-width: 1480px) {
