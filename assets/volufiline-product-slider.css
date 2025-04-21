@@ -15,6 +15,12 @@
   }
 }
 
+@media screen and (min-width: 1023px) {
+  .volufiline-product-slider__wrapper {
+   max-width: 45rem;
+  }
+}
+
 @media screen and (min-width: 1480px) {
   .volufiline-product-slider__wrapper {
     flex-direction: row-reverse;
