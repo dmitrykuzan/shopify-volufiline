@@ -9,14 +9,19 @@
 
   .right-text-fixed {
     display: inline-block;
-    text-align: center;
-    width: 240px;
+    text-align: left;
+    width: 300px; /* enough width for stagger */
     white-space: normal;
     line-height: 1.2;
   }
 
-  .right-text-fixed span {
+  .right-text-fixed .line-1 {
     display: block;
+  }
+
+  .right-text-fixed .line-2 {
+    display: block;
+    margin-left: 60px; /* indent to create that exact visual */
   }
 </style>
 
@@ -41,8 +46,8 @@
       </div>
 
       <p class="promotional__image-text right-text right-text-fixed">
-        <span>Skin looks fuller,</span>
-        <span>feels firmer</span>
+        <span class="line-1">Skin looks fuller,</span>
+        <span class="line-2">feels firmer</span>
       </p>
     </div>
   </div>
