@@ -13,7 +13,7 @@
     display: inline-block;
     text-align: right;
     line-height: 1.2;
-    transform: translateX(15px) translateY(-30px); /* lifted 30px */
+    transform: translateX(15px) translateY(-30px);
     font-weight: 400;
     font-size: 15px;
   }
@@ -21,6 +21,43 @@
   .staggered-right-align span {
     display: block;
     white-space: nowrap;
+  }
+
+  .promotional__text-title {
+    font-size: 58px !important;
+    line-height: 1.1;
+  }
+
+  /* Tablet/laptop (mid-range) */
+  @media (max-width: 1024px) {
+    .promotional__text-title {
+      font-size: 46px !important;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .promotional__text-title {
+      font-size: 38px !important;
+    }
+
+    .shift-whole-left,
+    .staggered-right-align {
+      font-size: 13px;
+      transform: none !important;
+      text-align: center;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .staggered-right-align span {
+      display: inline;
+      white-space: normal;
+    }
+
+    .promotional__image-wrapper {
+      margin: 20px 0;
+    }
   }
 </style>
 
