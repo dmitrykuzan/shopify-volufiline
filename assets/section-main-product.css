@@ -21,6 +21,7 @@ product-info {
   .product {
     display: flex;
     flex-direction: row;
+    gap: 1.5rem;
 
     /* .grid__item {
       max-width: 65%;
