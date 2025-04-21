@@ -33,7 +33,7 @@
 }
 
 .promotional__image-text {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 800;
   line-height: 114%;
   color: #000;
@@ -53,6 +53,11 @@
 }
 
 @media screen and (min-width: 370px) {
+
+  .promotional__image-text {
+    font-size: 1.5rem;
+  }
+  
   .promotional__text-title {
     font-size: 4.5rem;
   }
