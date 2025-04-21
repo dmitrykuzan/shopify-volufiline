@@ -203,11 +203,11 @@ transparent;
 
   .banner-with-title__text {
     h2 {
-      font-size: 8rem;
+      /* font-size: 8rem; */
     }
 
     p {
-      font-size: 3rem;
+      /* font-size: 3rem; */
     }
   }
    
