@@ -201,6 +201,10 @@ transparent;
     max-width: 72rem;
    }
 
+  .banner-with-title__content {
+    justify-content: center;
+  }
+
   .banner-with-title__text {
     
     h2 {
