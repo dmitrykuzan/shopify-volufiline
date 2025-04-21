@@ -117,6 +117,10 @@
   .banner-cta {
     margin-top: 12rem;
   }
+
+  .banner-cta__wrapper {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1480px) {
@@ -125,7 +129,6 @@
   }
   
   .banner-cta__wrapper {
-    flex-direction: row;
     max-width: initial;
   }
 
