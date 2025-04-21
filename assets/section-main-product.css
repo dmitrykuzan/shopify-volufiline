@@ -21,10 +21,10 @@ product-info {
     display: flex;
     flex-direction: row;
 
-    .grid__item {
+    /* .grid__item {
       max-width: 65%;
       width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
-    }
+    } */
   }
 }
 
