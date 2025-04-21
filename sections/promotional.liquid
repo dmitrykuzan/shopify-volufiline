@@ -13,7 +13,7 @@
     display: inline-block;
     text-align: right;
     line-height: 1.2;
-    transform: translateX(15px) translateY(-30px); /* moved up more */
+    transform: translateX(15px) translateY(-45px); /* lifted 45px */
     font-weight: 400;
     font-size: 15px;
   }
@@ -31,39 +31,3 @@
         volume <span>where</span> <br>
         <span>you </span> actually <br>
         need it.
-      </h2>
-    </div>
-
-    <div class="promotional__image">
-      <p class="promotional__image-text left-text shift-whole-left">
-        Precision‑plumping<br>
-        for&nbsp;delicate&nbsp;areas
-      </p>
-
-      <div class="promotional__image-wrapper" style="display: flex; justify-content: center;">
-        <div style="transform: scale(1.2) translateY(0.5%) translateX(-12px); transform-origin: bottom center;">
-          <img src="{{ 'volufiline-promo.png' | asset_url }}" width="280" height="822">
-        </div>
-      </div>
-
-      <p class="promotional__image-text right-text">
-        <span class="staggered-right-align">
-          <span>Skin looks fuller,</span>
-          <span>feels firmer</span>
-        </span>
-      </p>
-    </div>
-  </div>
-</section>
-
-{% schema %}
-{
-  "name": "Promotional section",
-  "settings": [],
-  "presets": [
-    {
-      "name": "Promotional section"
-    }
-  ]
-}
-{% endschema %}
