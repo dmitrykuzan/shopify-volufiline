@@ -34,8 +34,11 @@ product-info {
 
 @media screen and (min-width: 1480px) {
   .product {
-    gap: 0rem !important; 
+  gap: 0rem !important;
+  .grid__item {   
+    max-width: 60rem;
   }
+}
 }
 
 .product.grid {
