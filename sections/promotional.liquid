@@ -1,70 +1,9 @@
 {{ 'promotional.css' | asset_url | stylesheet_tag }}
 
-<style>
-  .shift-whole-left {
-    transform: translateX(-70px) !important;
-    display: inline-block;
-    text-align: left;
-    font-weight: 400;
-    font-size: 15px;
-  }
-
-  .staggered-right-align {
-    display: inline-block;
-    text-align: right;
-    line-height: 1.2;
-    transform: translateX(15px) translateY(-30px);
-    font-weight: 400;
-    font-size: 15px;
-  }
-
-  .staggered-right-align span {
-    display: block;
-    white-space: nowrap;
-  }
-
-  .promotional__text-title {
-    font-size: 58px !important;
-    line-height: 1.1;
-  }
-
-  /* Tablet/laptop (mid-range) */
-  @media (max-width: 1024px) {
-    .promotional__text-title {
-      font-size: 46px !important;
-    }
-  }
-
-  /* Mobile */
-  @media (max-width: 600px) {
-    .promotional__text-title {
-      font-size: 38px !important;
-    }
-
-    .shift-whole-left,
-    .staggered-right-align {
-      font-size: 13px;
-      transform: none !important;
-      text-align: center;
-      display: block;
-      margin: 10px auto;
-    }
-
-    .staggered-right-align span {
-      display: inline;
-      white-space: normal;
-    }
-
-    .promotional__image-wrapper {
-      margin: 20px 0;
-    }
-  }
-</style>
-
 <section class="promotional page-width">
   <div class="promotional__wrapper">
     <div class="promotional__text">
-      <h2 class="promotional__text-title" style="font-weight: 500 !important;">
+      <h2 class="promotional__text-title">
         volume <span>where</span> <br>
         <span>you </span> actually <br>
         need it.
@@ -72,22 +11,18 @@
     </div>
 
     <div class="promotional__image">
-      <p class="promotional__image-text left-text shift-whole-left">
-        Precision‑plumping<br>
-        for&nbsp;delicate&nbsp;areas
+      <p class="promotional__image-text left-text">
+        Precision-plumping<br>
+        for delicate areas
       </p>
 
-      <div class="promotional__image-wrapper" style="display: flex; justify-content: center;">
-        <div style="transform: scale(1.2) translateY(0.5%) translateX(-12px); transform-origin: bottom center;">
-          <img src="{{ 'volufiline-promo.png' | asset_url }}" width="280" height="822">
-        </div>
+      <div class="promotional__image-wrapper">
+        <img src="{{ 'volufiline-promo.png' | asset_url }}" width="280" height="822">
       </div>
 
       <p class="promotional__image-text right-text">
-        <span class="staggered-right-align">
-          <span>Skin looks fuller,</span>
-          <span>feels firmer</span>
-        </span>
+        Skin looks fuller,<br>
+        feels firmer
       </p>
     </div>
   </div>
