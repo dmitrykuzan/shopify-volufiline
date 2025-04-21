@@ -23,7 +23,7 @@ product-info {
   .product {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem !important; 
+    gap: 2rem !important; 
 
   }
 }
