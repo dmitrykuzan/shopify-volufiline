@@ -177,8 +177,6 @@ transparent;
   }
 
   .banner-with-title__text {
-    margin-top: auto;
-
     h2 {
       font-size: 6rem;
     }
