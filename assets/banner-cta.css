@@ -121,6 +121,7 @@
   .banner-cta__wrapper {
     flex-direction: row;
     max-width: initial;
+    gap: initial;
   }
 }
 
