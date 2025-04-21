@@ -13,6 +13,7 @@
     display: inline-block;
     text-align: right;
     line-height: 1.2;
+    transform: translateX(15px);
     font-weight: 400;
     font-size: 15px;
   }
@@ -22,10 +23,18 @@
     white-space: nowrap;
   }
 
-  /* Desktop only: lift the right text up */
+  .promotional__text-title {
+    font-size: 48px !important;
+    line-height: 1.1;
+  }
+
   @media (min-width: 768px) {
     .staggered-right-align {
       transform: translateX(15px) translateY(-30px);
+    }
+
+    .promotional__text-title {
+      font-size: 58px !important;
     }
   }
 </style>
