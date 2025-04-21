@@ -24,7 +24,7 @@
 @media screen and (min-width: 1480px) {
   .volufiline-product-slider__wrapper {
     flex-direction: row-reverse;
-    max-height: 87rem;
+    max-height: 74rem;
     margin-bottom: initial;
     max-width: initial;
     margin-left: initial;
