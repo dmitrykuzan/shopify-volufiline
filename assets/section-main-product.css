@@ -32,7 +32,17 @@ product-info {
   .product {
   gap: 0rem !important;
   .grid__item {   
-    max-width: 90rem;
+    max-width: 87rem;
+  }
+}
+}
+
+
+@media screen and (min-width: 1680px) {
+  .product {
+ 
+  .grid__item {   
+    max-width: 97rem;
   }
 }
 }
