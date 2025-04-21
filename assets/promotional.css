@@ -127,6 +127,10 @@
     line-height: 90%;
    }
 
+   .promotional__image-wrapper {
+     max-width: 20rem;
+   }
+
    .promotional__image {
     margin-top: -10rem;
     max-width: 63rem;
