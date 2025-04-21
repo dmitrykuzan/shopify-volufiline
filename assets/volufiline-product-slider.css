@@ -149,7 +149,7 @@
   display: flex;
   max-width: initial;
   height: 100%;
-  border-radius: 2rem;
+  border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
   border: 0.1rem solid transparent;
@@ -159,6 +159,7 @@
 @media screen and (min-width: 1480px) {
   .volufiline-product-slider__image-thumbs {
     max-width: 16rem;
+     border-radius: 2rem;
   }
 }
 
