@@ -13,14 +13,7 @@ product-info {
   }
 }
 
-@media screen and (min-width: 1480px) {
-  .product {
 
-  .grid__item {   
-    max-width: 60rem;
-  }
-}
-}
 
 .product.grid {
   flex-wrap: initial;
@@ -36,6 +29,12 @@ product-info {
       max-width: 65%;
       width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
     } */
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .product {
+    gap: 0rem !important; 
   }
 }
 
