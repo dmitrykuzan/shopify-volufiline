@@ -52,6 +52,11 @@
   max-width: 9rem;
 }
 
+@media screen and (min-width: 370px) {
+  .promotional__text-title {
+    font-size: 4.5rem;
+  }
+}
 
 @media screen and (min-width: 620px) {
 
