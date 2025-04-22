@@ -103,14 +103,14 @@
 .custom-review__item-block-left {
   display: flex;
   gap: 2rem;
-  padding-left: 4rem;
+  /* padding-left: 4rem; */
   flex-shrink: 0;
 }
 
 
 @media screen and (min-width: 1024px) {
   .custom-review__item-block-left {
-    padding-left: 8rem;
+    /* padding-left: 8rem; */
     min-width: 37rem;
   }
 }
