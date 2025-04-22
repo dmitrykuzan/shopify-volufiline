@@ -39,14 +39,14 @@
 
   h3 {
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 800; /* More bold */
     line-height: 133%;
   }
 
   p {
     font-size: 1.4rem;
     line-height: 133%;
-    font-weight: 700;
+    font-weight: 700; /* More bold */
   }
 }
 
@@ -89,7 +89,7 @@
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 1.4rem;
-  font-weight: 800;
+  font-weight: 800; /* Extra bold */
   text-decoration: none;
   min-width: 12rem;
   min-height: 4.2rem;
@@ -118,7 +118,6 @@
     flex-direction: row;
     max-width: initial;
     gap: initial;
-    align-items: center; /* 👈 Vertically center all content */
   }
 
   .banner-cta__image {
@@ -128,7 +127,6 @@
   .banner-cta__text {
     padding-left: 6.9rem;
     gap: 3.3rem;
-    justify-content: center; /* 👈 Vertical center text content */
   }
 
   .banner-cta__benefits span {
@@ -138,12 +136,12 @@
 
   .banner-cta__mobile-text h3 {
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 800; /* More bold */
   }
 
   .banner-cta__mobile-text p {
     font-size: 1.44rem;
-    font-weight: 700;
+    font-weight: 700; /* More bold */
   }
 
   .banner-cta__link {
