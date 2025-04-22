@@ -38,7 +38,7 @@
 .promotional__image-text {
   font-size: 1.4rem;
   font-weight: 800;
-  line-height: 120%;
+  line-height: 100%;
   color: #000;
 }
 
@@ -46,7 +46,7 @@
   margin-top: 18rem;
   margin-bottom: auto;
   max-width: 11rem;
-  line-height: 120%;
+  line-height: 100%;
 }
 
 .right-text {
@@ -54,7 +54,7 @@
   margin-bottom: 4rem;
   text-align: right;
   max-width: 9rem;
-  line-height: 120%;
+  line-height: 100%;
 }
 
 @media screen and (min-width: 370px) {
@@ -95,8 +95,9 @@
   }
 
   .promotional__image-wrapper {
-    max-width: 18rem; /* 20% larger than original 15rem */
-    transform: translateY(-4rem);
+    max-width: 15rem;
+    transform: scale(1.6) translateY(-2.5rem); /* 60% scaled and lifted */
+    transform-origin: bottom center;
   }
 
   .promotional__image {
@@ -106,31 +107,31 @@
 
   .promotional__text-title {
     font-size: 10rem;
-    line-height: 85%;
+    line-height: 100%;
   }
 
   .promotional__image-text {
     font-size: 1.8rem;
-    line-height: 120%;
+    line-height: 100%;
   }
 
   .left-text {
     max-width: 14rem;
     margin-top: 16rem;
-    line-height: 120%;
+    line-height: 100%;
   }
 
   .right-text {
     max-width: 11rem;
     margin-bottom: 8rem;
-    line-height: 120%;
+    line-height: 100%;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .promotional__text-title {
     font-size: 16rem;
-    line-height: 90%;
+    line-height: 100%;
   }
 
   .promotional__image-wrapper {
