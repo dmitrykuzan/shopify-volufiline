@@ -124,7 +124,7 @@
   }
 
   .banner-cta__benefits span {
-    font-size: 4.8rem;
+    font-size: 4.4rem; /* 👈 8% smaller than previous ~4.8rem */
     line-height: 100%;
   }
 
@@ -164,11 +164,10 @@
 
   .banner-cta__benefits {
     align-items: center;
-  }
 
-  .banner-cta__benefits span {
-    font-size: 9.6rem;
-    line-height: 100%;
+    span {
+      font-size: 9.6rem;
+    }
   }
 
   .banner-cta__link {
