@@ -39,7 +39,7 @@
 
   h3 {
     font-size: 1.6rem;
-    font-weight: 900;
+    font-weight: 900; /* 🔥 Bumped to bold across all breakpoints */
     line-height: 133%;
   }
 
@@ -130,11 +130,12 @@
 
   .banner-cta__benefits span {
     font-size: 5.1rem;
-    line-height: 83%; /* 🆕 Increased a touch from 79% */
+    line-height: 83%;
   }
 
   .banner-cta__mobile-text h3 {
     font-size: 1.6rem;
+    font-weight: 900;
   }
 
   .banner-cta__mobile-text p {
