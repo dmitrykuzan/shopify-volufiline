@@ -135,12 +135,12 @@
     font-size: 1.8rem;
   }
 
-  /* ADJUSTED BUTTON SIZE FOR LAPTOP BREAKPOINT ONLY */
+  /* Laptop-specific button size update: 10% wider and 10% shorter than before */
   .banner-cta__link {
     font-size: 1.4rem;
     font-weight: 500;
-    min-width: 22rem;
-    min-height: 7rem;
+    min-width: 24.2rem; /* wider */
+    min-height: 6.3rem;  /* shorter */
     padding-left: 3rem;
     padding-right: 3rem;
     border-radius: 4rem;
