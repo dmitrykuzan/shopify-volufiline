@@ -153,4 +153,9 @@
   .video-slider__slide {
     max-height: 70rem;
   }
+
+   .video-slider__wrapper {
+     max-width: 110rem;
+    
+  }
 }
