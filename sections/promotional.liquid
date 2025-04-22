@@ -7,10 +7,24 @@
     width: 100%;
   }
 
+  @media (max-width: 767px) {
+    .promotional__text-title {
+      font-size: 38px !important;
+      line-height: 1.2 !important;
+    }
+  }
+
   @media (min-width: 768px) and (max-width: 1024px) {
     .promotional__text-title {
       font-size: 48px !important;
       line-height: 1.2 !important;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .promotional__text-title {
+      font-size: 58px !important;
+      line-height: 1.1 !important;
     }
   }
 </style>
@@ -38,19 +52,3 @@
       <p class="promotional__image-text right-text">
         Skin looks fuller,<br>
         feels firmer
-      </p>
-    </div>
-  </div>
-</section>
-
-{% schema %}
-{
-  "name": "Promotional section",
-  "settings": [],
-  "presets": [
-    {
-      "name": "Promotional section"
-    }
-  ]
-}
-{% endschema %}
