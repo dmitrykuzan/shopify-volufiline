@@ -1,17 +1,9 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  overflow: hidden;
+  padding-top: 3rem;
 }
 
 .hero__image {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
+  height: initial;
 }
 
 .hero__title {
@@ -20,6 +12,7 @@
   padding-bottom: initial;
   display: none;
 }
+
 
 .hero__product {
   position: relative;
@@ -33,6 +26,7 @@
     height: 100%;
   }
 }
+
 
 .hero__text {
   display: none;
@@ -59,7 +53,6 @@
   min-width: 260px;
   border-radius: 10px;
   font-size: 24px;
-  font-weight: 900;
   text-decoration: initial;
   transition: background-color 0.3s linear;
 
@@ -70,7 +63,6 @@
 
 .hero__bottom {
   display: none;
-  padding-bottom: 2rem;
 }
 
 .hero__mobile-top {
@@ -135,21 +127,24 @@
   }
 }
 
+
+
 @media screen and (min-width: 750px) {
+  .hero {
+    padding-top: initial;
+  }
+
   .hero__image {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
   }
-
+ 
   .hero__bottom {
     display: flex;
     align-items: center;  
     justify-content: space-between;
     gap: 1.5rem;
-    padding-bottom: 2rem;
   }
 
   .hero__title {
@@ -171,11 +166,13 @@
       align-items: center;
       display: flex;
     }
+  
 
     span  {
       font-weight: 700;
       font-size: 4rem;
     }
+
   }
 
   .hero__text, .hero__title, .hero__review {
@@ -189,16 +186,49 @@
   .hero__text-mobile, .hero__title-mobile, .hero__link-mobile, .hero__review-mobile {
     display: none;
   }
+
+}
+
+
+@media screen and (min-width: 1023px) {
+  .hero__product {
+    max-width: 28rem;
+   }
+}
+
+@media screen and (min-width: 1080px) {
+
+  .hero__title {
+    padding-bottom: 50px;
+    margin-top: -7rem;
+  }
+
+  .hero__review  {
+    p {
+      font-size: 4rem;
+    }
+
+    span  {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__product {
+    max-width: 33rem;
+   }
 }
 
 @media screen and (min-width: 1480px) {
-  .hero {
-    height: 100vh;
-    justify-content: space-between;
+  .hero__product {
+    max-width: 42rem;
+    top: 2rem;
   }
 
-  .hero__bottom {
-    margin-top: 2rem;
-    padding-bottom: 3rem;
+  .hero__text {
+    top: 20rem;
   }
 }
+
+
