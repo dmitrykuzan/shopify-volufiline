@@ -124,31 +124,36 @@
   }
 
   .banner-cta__text {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    gap: 5rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 6rem;
+    gap: 4rem;
     align-items: flex-start;
   }
 
-  .banner-cta__benefits span {
-    font-size: 6rem;
+  .banner-cta__benefits {
+    align-items: flex-start;
+
+    span {
+      font-size: 6rem;
+    }
   }
 
   .banner-cta__mobile-text {
     h3 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     p {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
 
   .banner-cta__link {
-    font-size: 2rem;
-    font-weight: 900;
+    font-size: 1.6rem;
+    font-weight: 600;
     min-width: 24rem;
-    min-height: 5.4rem; /* slightly smaller */
+    min-height: 6.2rem;
   }
 }
 
