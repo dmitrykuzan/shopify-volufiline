@@ -33,7 +33,9 @@
   margin: initial;
 }
 
-
+.custom-review__item-verified {
+  color: #000;
+}
 
 .custom-review__item {
   position: relative;
