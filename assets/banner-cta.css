@@ -124,17 +124,21 @@
     max-width: 55rem;
   }
 
+  .banner-cta__text {
+    align-items: center;
+  }
+
   .banner-cta__benefits span {
-    font-size: 5.1rem; /* 15% smaller than original 6rem */
+    font-size: 5.1rem; /* 15% smaller than 6rem */
   }
 
   .banner-cta__mobile-text {
     h3 {
-      font-size: 2rem;
+      font-size: 1.7rem; /* 15% smaller than 2rem */
     }
 
     p {
-      font-size: 1.8rem;
+      font-size: 1.53rem; /* 15% smaller than 1.8rem */
     }
   }
 }
@@ -158,7 +162,7 @@
     align-items: center;
 
     span {
-      font-size: 8.16rem; /* 15% smaller than original 9.6rem */
+      font-size: 8.16rem; /* 15% smaller than 9.6rem */
     }
   }
 
