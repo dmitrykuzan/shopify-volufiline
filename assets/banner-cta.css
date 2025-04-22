@@ -135,12 +135,12 @@
     font-size: 1.8rem;
   }
 
-  /* Updated button size for laptop: another 10% shorter & narrower */
+  /* 👇 Laptop button: 20.2% width reduction to 17.4rem */
   .banner-cta__link {
     font-size: 1.4rem;
     font-weight: 500;
-    min-width: 21.8rem; /* reduced from 24.2rem */
-    min-height: 5.7rem; /* reduced from 6.3rem */
+    min-width: 17.4rem;
+    min-height: 5.7rem;
     padding-left: 3rem;
     padding-right: 3rem;
     border-radius: 4rem;
