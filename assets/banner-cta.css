@@ -39,7 +39,7 @@
 
   h3 {
     font-size: 1.6rem;
-    font-weight: 900; /* 🔥 Bumped to bold across all breakpoints */
+    font-weight: 1000; /* 💥 Max boldness */
     line-height: 133%;
   }
 
@@ -135,7 +135,7 @@
 
   .banner-cta__mobile-text h3 {
     font-size: 1.6rem;
-    font-weight: 900;
+    font-weight: 1000;
   }
 
   .banner-cta__mobile-text p {
