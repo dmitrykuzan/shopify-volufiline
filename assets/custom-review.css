@@ -25,15 +25,12 @@
 }
 
 .custom-review__list {
-  list-style-type: none; 
-	counter-reset: num;
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   padding: initial;
   margin: initial;
 }
-
-
 
 .custom-review__item {
   position: relative;
@@ -44,11 +41,11 @@
   padding-bottom: 3rem;
   gap: 1.5rem;
   transition: opacity 0.3s linear, visibility 0.3s linear;
+}
 
-  .custom-review__item-stars {
-    display: flex;
-    gap: 1rem;
-  }
+.custom-review__item .custom-review__item-stars {
+  display: flex;
+  gap: 1rem;
 }
 
 .custom-review__item.hidden-review {
@@ -58,29 +55,9 @@
   transition: opacity 0.3s linear, visibility 0.3s linear;
 }
 
-.custom-review__item::before {
-  counter-increment: num;
-  content: counter(num, decimal-leading-zero);
-	display: inline-block;
-	position: absolute;
-	top: 2.2rem;
-	left: 1rem;
-	color: #000;
-  line-height: 120%;
-  font-size: 1.4rem;
-	font-weight: bold;
-}
-
 @media screen and (min-width: 1024px) {
-  .custom-review__item::before {
-    font-size: 3.2rem;
-    top: 5rem;
-  }
-
-  .custom-review__item {
-    .custom-review__item-stars {
-      min-width: 16.5rem;
-    }
+  .custom-review__item .custom-review__item-stars {
+    min-width: 16.5rem;
   }
 }
 
@@ -107,15 +84,12 @@
   flex-shrink: 0;
 }
 
-
 @media screen and (min-width: 1024px) {
   .custom-review__item-block-left {
     padding-left: 8rem;
     min-width: 37rem;
   }
 }
-
-
 
 .custom-review__item-block-right {
   display: flex;
@@ -138,10 +112,10 @@
   gap: 2rem;
   width: 100%;
   justify-content: space-between;
+}
 
-  p {
-    margin: initial;
-  }
+.custom-review__item-info p {
+  margin: initial;
 }
 
 @media screen and (min-width: 1024px) {
@@ -163,7 +137,6 @@
   }
 }
 
-
 .custom-review__item-name {
   font-size: 1.8rem;
   font-weight: 500;
@@ -177,22 +150,19 @@
   }
 }
 
-.custom-review__item-text {
-
-  p {
-    margin: initial;
-    color: #000;
-    line-height: 166%;
-  }
+.custom-review__item-text p {
+  margin: initial;
+  color: #000;
+  line-height: 166%;
 }
 
 @media screen and (min-width: 1024px) {
   .custom-review__item-text {
     width: 100%;
+  }
 
-      p {
-        font-size: 2.4rem;
-      }
+  .custom-review__item-text p {
+    font-size: 2.4rem;
   }
 }
 
