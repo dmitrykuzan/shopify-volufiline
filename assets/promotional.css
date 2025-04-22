@@ -95,7 +95,7 @@
   }
 
   .promotional__image-wrapper {
-    max-width: 16.5rem;
+    max-width: 18rem; /* 20% larger than original 15rem */
     transform: translateY(-4rem);
   }
 
