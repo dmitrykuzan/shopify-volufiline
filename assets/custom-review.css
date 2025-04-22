@@ -139,6 +139,7 @@
 .custom-review__item-info {
   display: flex;
   gap: 2rem;
+  align-items: center;
   width: 100%;
   /* justify-content: space-between; */
 
