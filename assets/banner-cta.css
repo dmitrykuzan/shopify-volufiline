@@ -124,8 +124,8 @@
   }
 
   .banner-cta__text {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     gap: 5rem;
     align-items: flex-start;
   }
@@ -148,7 +148,7 @@
     font-size: 2rem;
     font-weight: 900;
     min-width: 24rem;
-    min-height: 7.4rem;
+    min-height: 5.4rem; /* slightly smaller */
   }
 }
 
