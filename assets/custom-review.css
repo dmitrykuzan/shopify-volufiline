@@ -54,6 +54,10 @@
   }
 }
 
+.custom-review__item-verified {
+  font-size: 1.4rem;
+}
+
 .custom-review__item.hidden-review {
   visibility: hidden;
   position: absolute;
