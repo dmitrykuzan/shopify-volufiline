@@ -62,7 +62,7 @@
 /* Tablet: 768px+ */
 @media screen and (min-width: 768px) {
   .promotional__text-title {
-    font-size: 6rem; /* smoother transition */
+    font-size: 5.2rem;
   }
 
   .promotional__image-text {
