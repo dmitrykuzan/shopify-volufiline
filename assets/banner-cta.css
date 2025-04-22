@@ -125,7 +125,7 @@
   }
 
   .banner-cta__text {
-    padding-left: 14rem;
+    padding-left: 7rem;
     gap: 3.3rem;
   }
 
@@ -166,6 +166,7 @@
 
   .banner-cta__text {
     padding-top: 3rem;
+    padding-left: 14rem;
     gap: 5rem;
     align-items: center;
   }
