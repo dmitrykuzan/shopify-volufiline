@@ -127,23 +127,14 @@
     font-size: 6rem;
   }
 
-  .banner-cta__mobile-text h3 {
-    font-size: 2rem;
-  }
+  .banner-cta__mobile-text {
+    h3 {
+      font-size: 2rem;
+    }
 
-  .banner-cta__mobile-text p {
-    font-size: 1.8rem;
-  }
-
-  /* 👇 Laptop button: 20.2% width reduction to 17.4rem */
-  .banner-cta__link {
-    font-size: 1.4rem;
-    font-weight: 500;
-    min-width: 17.4rem;
-    min-height: 5.7rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    border-radius: 4rem;
+    p {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -166,7 +157,8 @@
     align-items: center;
 
     span {
-      font-size: 9.6rem;
+      font-size: 7.1rem; /* Originally 9.6rem → reduced by ~26.15% */
+      line-height: 100%;
     }
   }
 
