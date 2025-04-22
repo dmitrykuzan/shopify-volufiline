@@ -160,7 +160,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #444444; /* ← changed from red to dark gray */
+  background-color: #FFC107; /* matching star yellow */
   border-radius: 10rem;
 }
 
