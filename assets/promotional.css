@@ -10,19 +10,19 @@
   margin: initial;
   line-height: 100%;
   font-family: 'Manrope', sans-serif !important;
+}
 
-  span {
-    color: rgba(0, 0, 0, 0.1);
-  }
+.promotional__text-title span {
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .promotional__image-wrapper {
   max-width: 13rem;
+}
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
+.promotional__image-wrapper img {
+  width: 100%;
+  height: 100%;
 }
 
 .promotional__image {
@@ -96,7 +96,7 @@
 
   .promotional__image-wrapper {
     max-width: 18rem;
-    transform: scale(1.1) translateY(-4rem);
+    transform: scale(1.1) translate(-8px, -4rem);
     transform-origin: bottom center;
   }
 
