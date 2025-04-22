@@ -136,8 +136,8 @@
     align-items: flex-start;
 
     span {
-      font-size: 7.2rem;
-      line-height: 1;
+      font-size: 5.6rem; /* Reduced from 7.2rem */
+      line-height: 1.1;
     }
   }
 
