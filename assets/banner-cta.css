@@ -108,7 +108,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1479px) {
   .banner-cta {
     margin-top: 12rem;
   }
@@ -124,7 +124,8 @@
   }
 
   .banner-cta__benefits span {
-    font-size: 6rem;
+    font-size: 4.8rem;
+    line-height: 100%;
   }
 
   .banner-cta__mobile-text h3 {
@@ -166,7 +167,7 @@
   }
 
   .banner-cta__benefits span {
-    font-size: 7.2rem;
+    font-size: 9.6rem;
     line-height: 100%;
   }
 
