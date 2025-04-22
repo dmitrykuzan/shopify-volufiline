@@ -2,13 +2,11 @@
   margin-top: 8rem;
 }
 
-
 @media screen and (min-width: 1024px) {
   .volufiline-review-rating {
     margin-top: 15rem;
   }
 }
-
 
 @media screen and (min-width: 1280px) {
   .volufiline-review-rating {
@@ -73,10 +71,9 @@
 
 @media screen and (min-width: 1280px) {
   .volufiline-review-rating__summary {
-   gap: 2rem;
+    gap: 2rem;
   }
 }
-
 
 .volufiline-review-rating__total {
   font-size: 1.8rem;
@@ -88,8 +85,8 @@
 
 @media screen and (min-width: 1024px) {
   .volufiline-review-rating__total {
-   font-size: 3.2rem;
-   min-width: 5rem;
+    font-size: 3.2rem;
+    min-width: 5rem;
   }
 }
 
@@ -103,7 +100,7 @@
 
 @media screen and (min-width: 1024px) {
   .volufiline-review-rating__summary-text {
-   font-size: 2.4rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -124,33 +121,24 @@
 
 @media screen and (min-width: 1280px) {
   .volufiline-review-rating__item {
-   gap: 2rem;
+    gap: 2rem;
   }
 }
 
-
-.volufiline-review-rating__item:nth-child(2) {
-  .volufiline-review-rating__progress::before {
-    width: 60%;
-  }
+.volufiline-review-rating__item:nth-child(2) .volufiline-review-rating__progress::before {
+  width: 60%;
 }
 
-.volufiline-review-rating__item:nth-child(3) {
-  .volufiline-review-rating__progress::before {
-    width: 50%;
-  }
+.volufiline-review-rating__item:nth-child(3) .volufiline-review-rating__progress::before {
+  width: 50%;
 }
 
-.volufiline-review-rating__item:nth-child(4) {
-  .volufiline-review-rating__progress::before {
-    width: 30%;
-  }
+.volufiline-review-rating__item:nth-child(4) .volufiline-review-rating__progress::before {
+  width: 30%;
 }
 
-.volufiline-review-rating__item:nth-child(5) {
-  .volufiline-review-rating__progress::before {
-    width: 10%;
-  }
+.volufiline-review-rating__item:nth-child(5) .volufiline-review-rating__progress::before {
+  width: 10%;
 }
 
 .volufiline-review-rating__star {
@@ -172,7 +160,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #E31F05;
+  background-color: #444444; /* ← changed from red to dark gray */
   border-radius: 10rem;
 }
 
@@ -185,8 +173,8 @@
 
 @media screen and (min-width: 1024px) {
   .volufiline-review-rating__all {
-   font-size: 1.8rem;
-   min-width: 4rem;
+    font-size: 1.8rem;
+    min-width: 4rem;
   }
 }
 
@@ -201,20 +189,20 @@
   }
 }
 
-
 .volufiline-review-rating__image {
   display: flex;
   max-width: 30rem;
-  img {
-    border-radius: 2rem;
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
-  }
+}
+
+.volufiline-review-rating__image img {
+  border-radius: 2rem;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 1280px) {
   .volufiline-review-rating__image {
-   max-width: 44rem;
+    max-width: 44rem;
   }
 }
