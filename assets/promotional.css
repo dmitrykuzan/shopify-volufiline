@@ -96,7 +96,7 @@
 
   .promotional__image-wrapper {
     max-width: 18rem;
-    transform: scale(1.1) translate(-16px, -2.5rem);
+    transform: scale(1.1) translate(-16px, -1rem);
     transform-origin: bottom center;
   }
 
