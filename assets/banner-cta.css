@@ -123,7 +123,6 @@
     max-width: 55rem;
   }
 
-  /* 🔺 Moved right by increasing left padding 130% (from 3rem → 6.9rem) */
   .banner-cta__text {
     padding-left: 6.9rem;
     gap: 3.3rem;
@@ -131,7 +130,7 @@
 
   .banner-cta__benefits span {
     font-size: 5.1rem;
-    line-height: 100%;
+    line-height: 75%; /* 🔻 Reduced line height by 25% */
   }
 
   .banner-cta__mobile-text h3 {
@@ -173,6 +172,7 @@
 
     span {
       font-size: 9.6rem;
+      line-height: 100%;
     }
   }
 
