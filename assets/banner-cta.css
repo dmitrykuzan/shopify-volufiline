@@ -123,7 +123,11 @@
     max-width: 55rem;
   }
 
-  /* 🔺 16% bigger than previous 4.4rem */
+  /* 🔺 10% taller gap between text blocks (from 3rem to 3.3rem) */
+  .banner-cta__text {
+    gap: 3.3rem;
+  }
+
   .banner-cta__benefits span {
     font-size: 5.1rem;
     line-height: 100%;
