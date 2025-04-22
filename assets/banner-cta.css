@@ -36,17 +36,17 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
 
-  h3 {
-    font-size: 1.6rem;
-    font-weight: 900;
-    line-height: 133%;
-  }
+.banner-cta__mobile-text h3 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 133%;
+}
 
-  p {
-    font-size: 1.4rem;
-    line-height: 133%;
-  }
+.banner-cta__mobile-text p {
+  font-size: 1.4rem;
+  line-height: 133%;
 }
 
 @media screen and (min-width: 1480px) {
@@ -60,14 +60,14 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1.2rem;
+}
 
-  span {
-    text-align: center;
-    font-size: 3.6rem;
-    line-height: 100%;
-    color: #000;
-    font-weight: 700;
-  }
+.banner-cta__benefits span {
+  text-align: center;
+  font-size: 3.6rem;
+  line-height: 100%;
+  color: #000;
+  font-weight: 700;
 }
 
 .banner-cta__image {
@@ -94,10 +94,10 @@
   min-height: 4.2rem;
   color: #fff;
   transition: background-color 0.3s linear;
+}
 
-  &:hover {
-    background-color: #2b2b2b;
-  }
+.banner-cta__link:hover {
+  background-color: #2b2b2b;
 }
 
 @media screen and (min-width: 767px) {
@@ -127,14 +127,12 @@
     font-size: 6rem;
   }
 
-  .banner-cta__mobile-text {
-    h3 {
-      font-size: 2rem;
-    }
+  .banner-cta__mobile-text h3 {
+    font-size: 2rem;
+  }
 
-    p {
-      font-size: 1.8rem;
-    }
+  .banner-cta__mobile-text p {
+    font-size: 1.8rem;
   }
 }
 
@@ -155,17 +153,17 @@
 
   .banner-cta__benefits {
     align-items: center;
+  }
 
-    span {
-      font-size: 7.1rem; /* Originally 9.6rem → reduced by ~26.15% */
-      line-height: 100%;
-    }
+  .banner-cta__benefits span {
+    font-size: 7.1rem;
+    line-height: 90%;
   }
 
   .banner-cta__link {
     font-size: 2rem;
     font-weight: 900;
-    min-width: 26rem;
-    min-height: 7rem;
+    min-width: 23rem;
+    min-height: 6.3rem;
   }
 }
