@@ -13,7 +13,6 @@
   display: none;
 }
 
-
 .hero__product {
   position: relative;
   max-width: 24rem;
@@ -26,7 +25,6 @@
     height: 100%;
   }
 }
-
 
 .hero__text {
   display: none;
@@ -53,6 +51,7 @@
   min-width: 260px;
   border-radius: 10px;
   font-size: 24px;
+  font-weight: 800;
   text-decoration: initial;
   transition: background-color 0.3s linear;
 
@@ -127,8 +126,6 @@
   }
 }
 
-
-
 @media screen and (min-width: 750px) {
   .hero {
     padding-top: initial;
@@ -139,7 +136,7 @@
     display: flex;
     flex-direction: column;
   }
- 
+
   .hero__bottom {
     display: flex;
     align-items: center;  
@@ -166,69 +163,40 @@
       align-items: center;
       display: flex;
     }
-  
 
     span  {
       font-weight: 700;
       font-size: 4rem;
     }
-
   }
 
-  .hero__text, .hero__title, .hero__review {
+  .hero__text,
+  .hero__title,
+  .hero__review {
     display: block;
   }
 
-  .hero__link, .hero__review {
+  .hero__link,
+  .hero__review {
     display: flex;
   }
 
-  .hero__text-mobile, .hero__title-mobile, .hero__link-mobile, .hero__review-mobile {
+  .hero__text-mobile,
+  .hero__title-mobile,
+  .hero__link-mobile,
+  .hero__review-mobile {
     display: none;
   }
-
 }
 
-
-@media screen and (min-width: 1023px) {
-  .hero__product {
-    max-width: 28rem;
-   }
-}
-
-@media screen and (min-width: 1080px) {
-
-  .hero__title {
-    padding-bottom: 50px;
-    margin-top: -7rem;
-  }
-
-  .hero__review  {
-    p {
-      font-size: 4rem;
-    }
-
-    span  {
-      font-size: 5rem;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__product {
-    max-width: 33rem;
-   }
-}
-
+/* ✅ Fix for large laptop screens so content fits vertically */
 @media screen and (min-width: 1480px) {
-  .hero__product {
-    max-width: 42rem;
-    top: 2rem;
+  .hero {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
-  .hero__text {
-    top: 20rem;
+  .hero__bottom {
+    margin-bottom: 2rem;
   }
 }
-
-
