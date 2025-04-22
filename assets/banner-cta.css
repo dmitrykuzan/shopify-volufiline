@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   padding-top: initial;
-  padding-left: 5rem;
+  padding-left: 3rem;
   padding-bottom: 4rem;
   padding-right: 3rem;
   justify-content: center;
@@ -38,13 +38,13 @@
   gap: 0.5rem;
 
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 900;
     line-height: 133%;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 133%;
   }
 }
@@ -67,6 +67,11 @@
     line-height: 100%;
     color: #000;
     font-weight: 700;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: #555;
   }
 }
 
@@ -93,20 +98,18 @@
   min-width: 12rem;
   min-height: 4.2rem;
   color: #fff;
-
   transition: background-color 0.3s linear;
-  margin-left: 5rem; /* Aligned with other content */
+}
 
-  &:hover {
-    background-color: #2b2b2b;
-  }
+.banner-cta__link:hover {
+  background-color: #2b2b2b;
 }
 
 @media screen and (min-width: 767px) {
   .banner-cta__wrapper {
-    max-width: 60rem;
-    margin-left: auto;
-    margin-right: auto;
+   max-width: 60rem;
+   margin-left: auto;
+   margin-right: auto;
   }
 }
 
@@ -131,11 +134,11 @@
 
   .banner-cta__mobile-text {
     h3 {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
     p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
 }
@@ -153,7 +156,6 @@
     padding-top: 3rem;
     gap: 5rem;
     align-items: center;
-    padding-left: 5rem;
   }
 
   .banner-cta__benefits {
@@ -162,6 +164,10 @@
     span {
       font-size: 9.6rem;
     }
+
+    p {
+      font-size: 1.6rem;
+    }
   }
 
   .banner-cta__link {
@@ -169,6 +175,5 @@
     font-weight: 900;
     min-width: 26rem;
     min-height: 7rem;
-    margin-left: 5rem;
   }
 }
