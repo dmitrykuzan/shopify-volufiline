@@ -48,6 +48,7 @@
   .custom-review__item-stars {
     display: flex;
     gap: 1rem;
+    height: max-content;
   }
 }
 
