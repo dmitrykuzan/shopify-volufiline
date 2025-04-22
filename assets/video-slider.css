@@ -11,6 +11,11 @@
   }
 }
 
+
+.video-slider__slide {
+  max-height: 55rem;
+}
+
 .video-slider__titles {
   display: flex;
   flex-direction: column;
@@ -142,5 +147,7 @@
 }
 
 @media screen and (min-width: 1680px) {
-  max-height: 70rem;
+  .video-slider__slide {
+    max-height: 70rem;
+  }
 }
