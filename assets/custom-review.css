@@ -58,6 +58,12 @@
   font-size: 1.4rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .custom-review__item-verified {
+     font-size: 1.6rem;
+  }
+}
+
 .custom-review__item.hidden-review {
   visibility: hidden;
   position: absolute;
