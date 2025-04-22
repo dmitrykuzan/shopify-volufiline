@@ -123,8 +123,9 @@
     max-width: 55rem;
   }
 
-  /* 🔺 10% taller gap between text blocks (from 3rem to 3.3rem) */
+  /* 🔺 Moved right by increasing left padding 130% (from 3rem → 6.9rem) */
   .banner-cta__text {
+    padding-left: 6.9rem;
     gap: 3.3rem;
   }
 
