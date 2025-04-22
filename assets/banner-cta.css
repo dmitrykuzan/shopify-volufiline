@@ -88,7 +88,7 @@
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   min-width: 12rem;
   min-height: 4.2rem;
@@ -108,57 +108,8 @@
   }
 }
 
-/* 👇 Smaller laptop breakpoint — reduce image size and tighten layout */
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-  .banner-cta {
-    margin-top: 8rem;
-  }
-
-  .banner-cta__wrapper {
-    flex-direction: row;
-    max-width: 100%;
-    gap: 2rem;
-  }
-
-  .banner-cta__image {
-    max-width: 42rem; /* ⬅️ smaller image */
-  }
-
-  .banner-cta__text {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .banner-cta__benefits span {
-    font-size: 4.8rem;
-    line-height: 1.2;
-  }
-
-  .banner-cta__mobile-text h3 {
-    font-size: 1.8rem;
-    font-weight: 800;
-  }
-
-  .banner-cta__mobile-text p {
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
-
-  .banner-cta__link {
-    font-size: 1.6rem;
-    font-weight: 800;
-    min-width: 17rem;
-    min-height: 5.4rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    border-radius: 4rem;
-  }
-}
-
-/* 👇 Main laptop range layout */
-@media screen and (min-width: 1281px) and (max-width: 1479px) {
+/* 🖥️ Laptop breakpoint only (1024px - 1479px) */
+@media screen and (min-width: 1024px) and (max-width: 1479px) {
   .banner-cta {
     margin-top: 12rem;
   }
@@ -181,23 +132,21 @@
   }
 
   .banner-cta__benefits span {
-    font-size: 5.6rem;
+    font-size: 4.8rem;
     line-height: 1.2;
   }
 
   .banner-cta__mobile-text h3 {
     font-size: 2rem;
-    font-weight: 900;
   }
 
   .banner-cta__mobile-text p {
     font-size: 1.8rem;
-    font-weight: 700;
   }
 
   .banner-cta__link {
-    font-size: 1.6rem;
-    font-weight: 800;
+    font-size: 1.4rem;
+    font-weight: 500;
     min-width: 17.4rem;
     min-height: 5.7rem;
     padding-left: 3rem;
