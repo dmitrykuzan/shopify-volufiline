@@ -76,6 +76,12 @@
   margin: initial;
 }
 
+@media screen and (min-width: 1024px) {
+  .custom-review__item-title {
+     font-size: 2rem;
+  }
+}
+
 .custom-review__item.hidden-review {
   visibility: hidden;
   position: absolute;
