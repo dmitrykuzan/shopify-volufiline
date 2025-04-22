@@ -155,6 +155,12 @@
   }
 }
 
+@media screen and (min-width: 1260px) {
+  .banner-cta__text {
+     padding-left: 14rem;
+  }
+}
+
 @media screen and (min-width: 1480px) {
   .banner-cta {
     margin-top: 12rem;
@@ -166,7 +172,6 @@
 
   .banner-cta__text {
     padding-top: 3rem;
-    padding-left: 14rem;
     gap: 5rem;
     align-items: center;
   }
