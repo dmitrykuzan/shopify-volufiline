@@ -21,6 +21,11 @@
           "label": "Enter review date"
         },
         {
+          "type": "text",
+          "id": "review_title",
+          "label": "Review title"
+        },
+        {
           "type": "range",
           "id": "review_rating",
           "label": "Rating (1-5)",
@@ -63,6 +68,10 @@
 
           <div class="custom-review__item-block-right">
             <div class="custom-review__item-text">{{ block.settings.review_text }}</div>
+
+            {% if block.settings.review_title != blank %}
+              <h3 class="custom-review__item-title">{{ block.settings.review_title }}</h3>
+            {% endif %}
 
             <div class="custom-review__item-stars">
               {% for i in (1..block.settings.review_rating) %}
