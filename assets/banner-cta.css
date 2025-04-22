@@ -39,14 +39,13 @@
 
   h3 {
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 133%;
   }
 
   p {
     font-size: 1.4rem;
     line-height: 133%;
-    font-weight: 700;
   }
 }
 
@@ -89,7 +88,7 @@
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 1.4rem;
-  font-weight: 800;
+  font-weight: 500;
   text-decoration: none;
   min-width: 12rem;
   min-height: 4.2rem;
@@ -118,7 +117,6 @@
     flex-direction: row;
     max-width: initial;
     gap: initial;
-    align-items: center; /* 👈 Vertically center all content */
   }
 
   .banner-cta__image {
@@ -126,24 +124,22 @@
   }
 
   .banner-cta__text {
-    padding-left: 6.9rem;
-    gap: 3.3rem;
-    justify-content: center; /* 👈 Vertical center text content */
+    transform: translateY(-20px); /* move the whole group up */
   }
 
   .banner-cta__benefits span {
-    font-size: 5.1rem;
-    line-height: 85%;
+    font-size: 5.6rem;
+    line-height: 118%;
   }
 
   .banner-cta__mobile-text h3 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 800;
   }
 
   .banner-cta__mobile-text p {
-    font-size: 1.44rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 600;
   }
 
   .banner-cta__link {
@@ -177,24 +173,14 @@
 
     span {
       font-size: 9.6rem;
-      line-height: 100%;
+      line-height: 106%;
     }
   }
 
   .banner-cta__link {
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 900;
     min-width: 26rem;
     min-height: 7rem;
-  }
-
-  .banner-cta__mobile-text h3 {
-    font-size: 2rem;
-    font-weight: 800;
-  }
-
-  .banner-cta__mobile-text p {
-    font-size: 1.8rem;
-    font-weight: 700;
   }
 }
