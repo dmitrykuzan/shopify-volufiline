@@ -130,7 +130,7 @@
 
   .banner-cta__benefits span {
     font-size: 5.1rem;
-    line-height: 79%; /* 👈 Slightly taller spacing (~2px more) */
+    line-height: 83%; /* 🆕 Increased a touch from 79% */
   }
 
   .banner-cta__mobile-text h3 {
