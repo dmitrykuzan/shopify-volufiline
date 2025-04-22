@@ -93,7 +93,7 @@
   color: #fff;
 
   width: 100%;
-  max-width: 20rem;
+  max-width: 19rem;
   min-height: 6rem;
   margin-left: 0;
   transition: background-color 0.3s linear;
@@ -109,6 +109,18 @@
     max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* LAPTOP SIZE TWEAK: ALIGN LEFT CONTENT TO RED LINE */
+@media screen and (min-width: 1024px) and (max-width: 1479px) {
+  .banner-cta__text {
+    padding-left: 6rem;
+    align-items: flex-start;
+  }
+
+  .banner-cta__link {
+    margin-left: 0;
   }
 }
 
@@ -155,6 +167,7 @@
     padding-top: 3rem;
     gap: 5rem;
     align-items: center;
+    padding-left: 3rem; /* Reset to center version */
   }
 
   .banner-cta__benefits {
