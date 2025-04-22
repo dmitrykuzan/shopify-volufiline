@@ -1,21 +1,5 @@
 {{ 'promotional.css' | asset_url | stylesheet_tag }}
 
-<style>
-  .promotional__text-title {
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 1.2;
-    max-width: 500px;
-    width: 100%;
-  }
-
-  @media (max-width: 767px) {
-    .promotional__text-title {
-      font-size: 36px;
-    }
-  }
-</style>
-
 <section class="promotional page-width">
   <div class="promotional__wrapper">
     <div class="promotional__text">
@@ -25,21 +9,12 @@
         need it.
       </h2>
     </div>
-
     <div class="promotional__image">
-      <p class="promotional__image-text left-text">
-        Precision-plumping<br>
-        for delicate areas
-      </p>
-
+      <p class="promotional__image-text left-text">Precision-plumping for delicate areas</p>
       <div class="promotional__image-wrapper">
         <img src="{{ 'volufiline-promo.png' | asset_url }}" width="280" height="822">
       </div>
-
-      <p class="promotional__image-text right-text">
-        Skin looks fuller,<br>
-        feels firmer
-      </p>
+      <p class="promotional__image-text right-text">Skin looks fuller, feels firmer</p>
     </div>
   </div>
 </section>
