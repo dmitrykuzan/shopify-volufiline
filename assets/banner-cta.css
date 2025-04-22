@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   padding-top: initial;
-  padding-left: 5rem;
+  padding-left: 6.5rem; /* updated for alignment */
   padding-bottom: 4rem;
   padding-right: 3rem;
   justify-content: center;
