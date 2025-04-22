@@ -65,6 +65,7 @@
           <div class="custom-review__item-block-right">
             <div class="custom-review__item-text">{{ block.settings.review_text }}</div>
 
+            <div class="custom-review__item-title">
             <div class="custom-review__item-stars">
               {% for i in (1..block.settings.review_rating) %}
                 <span class="volufiline-rating-star">
@@ -74,6 +75,7 @@
                 </span>
               {% endfor %}
             </div>
+                      </div>
           </div>
         </li>
       {% endfor %}
