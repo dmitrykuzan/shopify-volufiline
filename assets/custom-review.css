@@ -64,6 +64,12 @@
   }
 }
 
+.custom-review__item-title {
+  font-weight: 500;
+  color: #000;
+  margin: initial;
+}
+
 .custom-review__item.hidden-review {
   visibility: hidden;
   position: absolute;
