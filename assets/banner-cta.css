@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   padding-top: initial;
-  padding-left: 5rem; /* moved further right */
+  padding-left: 3rem;
   padding-bottom: 4rem;
   padding-right: 3rem;
   justify-content: center;
@@ -38,13 +38,13 @@
   gap: 0.5rem;
 
   h3 {
-    font-size: 1.4rem; /* slightly smaller */
+    font-size: 1.6rem;
     font-weight: 900;
     line-height: 133%;
   }
 
   p {
-    font-size: 1.2rem; /* slightly smaller */
+    font-size: 1.4rem;
     line-height: 133%;
   }
 }
@@ -87,17 +87,21 @@
   border-radius: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   text-decoration: none;
-  min-width: 12rem;
-  min-height: 6rem; /* increased height */
   color: #fff;
-  transition: background-color 0.3s linear;
 
-  &:hover {
-    background-color: #2b2b2b;
-  }
+  width: 100%;
+  max-width: 26rem;
+  min-height: 7rem;
+  margin-left: 0;
+  transition: background-color 0.3s linear;
+}
+
+.banner-cta__link:hover {
+  background-color: #2b2b2b;
+  color: #fff;
 }
 
 @media screen and (min-width: 767px) {
@@ -149,13 +153,12 @@
 
   .banner-cta__text {
     padding-top: 3rem;
-    padding-left: 6rem; /* shift everything in the left box further right */
     gap: 5rem;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .banner-cta__benefits {
-    align-items: flex-start;
+    align-items: center;
 
     span {
       font-size: 9.6rem;
@@ -163,9 +166,9 @@
   }
 
   .banner-cta__link {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
     min-width: 26rem;
-    min-height: 7rem; /* taller button for large screens too */
+    min-height: 7rem;
   }
 }
