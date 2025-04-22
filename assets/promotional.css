@@ -8,7 +8,7 @@
   font-weight: 500;
   text-align: center;
   margin: initial;
-  line-height: 85%;
+  line-height: 100%;
   font-family: 'Manrope', sans-serif !important;
 
   span {
@@ -37,8 +37,8 @@
 
 .promotional__image-text {
   font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 100%;
+  font-weight: 800;
+  line-height: 120%;
   color: #000;
 }
 
@@ -46,6 +46,7 @@
   margin-top: 18rem;
   margin-bottom: auto;
   max-width: 11rem;
+  line-height: 120%;
 }
 
 .right-text {
@@ -53,6 +54,7 @@
   margin-bottom: 4rem;
   text-align: right;
   max-width: 9rem;
+  line-height: 120%;
 }
 
 @media screen and (min-width: 370px) {
@@ -93,7 +95,8 @@
   }
 
   .promotional__image-wrapper {
-    max-width: 15rem;
+    max-width: 16.5rem;
+    transform: translateY(-4rem);
   }
 
   .promotional__image {
@@ -108,24 +111,26 @@
 
   .promotional__image-text {
     font-size: 1.8rem;
-    line-height: 100%;
+    line-height: 120%;
   }
 
   .left-text {
     max-width: 14rem;
     margin-top: 16rem;
+    line-height: 120%;
   }
 
   .right-text {
     max-width: 11rem;
     margin-bottom: 8rem;
+    line-height: 120%;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .promotional__text-title {
     font-size: 16rem;
-    line-height: 85%;
+    line-height: 90%;
   }
 
   .promotional__image-wrapper {
