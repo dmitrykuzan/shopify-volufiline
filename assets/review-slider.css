@@ -1,4 +1,3 @@
-
 .review-slider__titles {
   margin-bottom: 3rem;
 
@@ -27,7 +26,7 @@
 .review-slider__top-text {
   p {
     margin: initial;
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Updated font size for mobile */
     line-height: 133%;
     color: #000;
   }
@@ -89,7 +88,6 @@
   padding-bottom: 2rem;
 }
 
-
 .review-slider__swiper {
   width: calc(100% + 3rem);
   margin-left: -1.5rem;
@@ -144,7 +142,6 @@
 
   .review-slider__titles {
     margin-bottom: 5rem;
-   
 
     h2 {
       font-size: 6.4rem;
@@ -192,4 +189,3 @@
     }
   }
 }
-
