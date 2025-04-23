@@ -46,7 +46,7 @@
   margin-top: 18rem;
   margin-bottom: auto;
   max-width: 11rem;
-  line-height: 120%;
+  line-height: 133%;
 }
 
 .right-text {
@@ -54,7 +54,7 @@
   margin-bottom: 4rem;
   text-align: right;
   max-width: 9rem;
-  line-height: 120%;
+  line-height: 133%;
 }
 
 @media screen and (min-width: 370px) {
