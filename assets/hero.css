@@ -217,9 +217,9 @@
 
 
 @media screen and (min-width: 1200px) {
-  .hero__product {
+  /* .hero__product {
     max-width: 33rem;
-   }
+   } */
 }
 
 @media screen and (min-width: 1480px) {
