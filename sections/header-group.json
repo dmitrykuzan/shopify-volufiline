@@ -13,6 +13,18 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "blocks": {
+        "announcement_LKexWU": {
+          "type": "announcement",
+          "settings": {
+            "text": "25% discount - hurry up!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_LKexWU"
+      ],
       "settings": {
         "auto_rotate": false,
         "change_slides_speed": 5,
