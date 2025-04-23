@@ -50,11 +50,17 @@
   }
 }
 
-/* @media screen and (min-width: 1480px) {
+@media screen and (min-width: 1480px) {
   .banner-cta__mobile-text {
-    display: none;
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
   }
-} */
+}
 
 .banner-cta__benefits {
   display: flex;
