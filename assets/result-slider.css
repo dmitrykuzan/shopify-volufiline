@@ -20,7 +20,7 @@
   .swiper-slide:nth-child(2) {
     .result-slider__slide {
       .result-slider__slide-increase-text::before {
-        width: 35%
+        width: 22%
       }
     }
   }
