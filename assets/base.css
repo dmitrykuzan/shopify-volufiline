@@ -2253,6 +2253,7 @@ input[type='checkbox'] {
 /* utility-bar */
 .utility-bar {
   height: 100%;
+  background-color: #000;
 }
 
 .utility-bar--bottom-border {
