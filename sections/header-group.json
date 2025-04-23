@@ -20,10 +20,18 @@
             "text": "25% discount - hurry up!",
             "link": ""
           }
+        },
+        "announcement_DBA8wY": {
+          "type": "announcement",
+          "settings": {
+            "text": "Summer Sale: up to 50% off - Shop Now!",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement_LKexWU"
+        "announcement_LKexWU",
+        "announcement_DBA8wY"
       ],
       "settings": {
         "auto_rotate": true,
