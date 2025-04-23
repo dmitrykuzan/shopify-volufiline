@@ -34,7 +34,7 @@
 
   span {
     display: flex;
-    align-content: center;
+    align-items: center;
     font-size: 1.4rem;
     line-height: 133%;
     color: rgba(0, 0, 0, 0.5);
