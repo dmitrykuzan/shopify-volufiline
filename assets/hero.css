@@ -199,6 +199,10 @@
     margin-top: -8rem;
   }
 
+  .hero__text {
+    top: 7rem;
+  }
+
   .hero__review  {
     p {
       font-size: 4rem;
@@ -210,10 +214,7 @@
   }
 }
 
-@media screen and (min-width: 1080px) {
 
- 
-}
 
 @media screen and (min-width: 1200px) {
   .hero__product {
