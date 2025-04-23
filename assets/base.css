@@ -2269,7 +2269,6 @@ input[type='checkbox'] {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: 'announcements';
-  background-color: #000;
 }
 
 .utility-bar__grid .list-social {
