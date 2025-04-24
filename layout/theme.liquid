@@ -380,7 +380,7 @@
     {%- endif -%}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer="defer"></script>
 
-<a href="https://volufiline.net/products/volufiline" class="sticky-discount-button" onclick="this.style.display='none'">30% OFF</a>
+<a href="https://volufiline.net/products/volufiline" class="sticky-discount-button" onclick="handleClick()">30% OFF</a>
 
 <style>
   .sticky-discount-button {
@@ -422,6 +422,21 @@
     }
   }
 </style>
+
+<script>
+  // Check if the button has already been clicked by checking localStorage
+  if(localStorage.getItem('discountButtonClicked') === 'true') {
+    document.querySelector('.sticky-discount-button').style.display = 'none';
+  }
+
+  function handleClick() {
+    // Hide the button on click
+    document.querySelector('.sticky-discount-button').style.display = 'none';
+    
+    // Save the state to localStorage so it stays hidden
+    localStorage.setItem('discountButtonClicked', 'true');
+  }
+</script>
 
 
   </body>
