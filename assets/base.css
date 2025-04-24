@@ -3808,3 +3808,16 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+/* Make header and announcement bar sticky */
+.section-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.announcement-bar-section {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
