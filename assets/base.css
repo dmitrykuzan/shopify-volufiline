@@ -3820,4 +3820,14 @@ details-disclosure > details {
   top: 0;
   z-index: 1000;
 }
+.announcement-bar-section {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.section-header.shopify-section-group-header-group {
+  position: sticky;
+  top: 3.8rem; /* Adjust to match height of announcement bar */
+  z-index: 9998;
+}
 
