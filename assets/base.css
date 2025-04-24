@@ -3830,4 +3830,14 @@ details-disclosure > details {
   top: 3.8rem; /* Adjust to match height of announcement bar */
   z-index: 9998;
 }
+.header-wrapper.scroll-active {
+  background-color: rgba(0, 0, 0, 0.7); /* translucent black */
+  backdrop-filter: blur(4px); /* nice subtle blur effect */
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.announcement-bar-section {
+  background-color: #000 !important; /* stays solid black */
+  z-index: 999;
+}
 
