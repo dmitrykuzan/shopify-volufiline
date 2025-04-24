@@ -229,6 +229,11 @@
     top: 2rem;
   }
 
+
+  .hero__image {
+    max-width: 130rem;
+  }
+
   .hero__text {
     top: 10rem;
   }
