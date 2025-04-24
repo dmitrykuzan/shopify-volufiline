@@ -225,26 +225,3 @@ transparent;
     margin-top: 15rem;
   }
  }
-.banner-with-title__text h2 {
-  font-size: clamp(2rem, 5vw, 3rem); /* Max size capped at 3rem */
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.banner-with-title__text p {
-  font-size: clamp(1rem, 2.5vw, 1.25rem); /* Max size capped at 1.25rem */
-  color: #4a4a4a;
-  line-height: 1.6;
-}
-
-.banner-with-title__link {
-  font-size: clamp(1rem, 2vw, 1.125rem); /* Button text */
-  padding: 1rem 2.5rem;
-  border-radius: 9999px;
-  background-color: #000;
-  color: #fff;
-  font-weight: 600;
-  display: inline-block;
-  text-decoration: none;
-  margin-top: 2rem;
-}
