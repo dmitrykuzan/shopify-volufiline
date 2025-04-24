@@ -81,6 +81,11 @@
 
 {%- style -%}
   .header {
+    position: fixed;
+    min-height: 9rem;
+    left: 0;
+    top: 0;
+    width: 100%;
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 0rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 0rem;
   }
 
