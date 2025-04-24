@@ -195,7 +195,7 @@
 
    .hero__bottom {
     position: relative;
-    top: -8rem;
+    margin-top: -8rem;
   }
 
   .hero__image {
