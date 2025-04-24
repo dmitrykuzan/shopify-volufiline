@@ -29,7 +29,7 @@
 .hero__text {
   display: none;
   position: absolute;
-  top: 11rem;
+  top: 14rem;
   z-index: -1;
   width: 100%;
   margin: 0;
@@ -198,9 +198,7 @@
   }
 
   .hero__text {
-    top: 8rem;
-    max-width: 93rem;
-    left: 10rem;
+    top: 4rem;
   }
 
   .hero__review {
@@ -228,8 +226,6 @@
 
   .hero__text {
     top: 10rem;
-    max-width: 100rem;
-    left: 10rem;
   }
 
   .hero__title {
