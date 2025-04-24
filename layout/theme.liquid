@@ -380,12 +380,12 @@
     {%- endif -%}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer="defer"></script>
 
-    <a href="https://volufiline.net/products/volufiline" class="sticky-discount-button">30% OFF</a>
+<a href="https://volufiline.net/products/volufiline" class="sticky-discount-button">30% OFF</a>
 
 <style>
   .sticky-discount-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 60px; /* ⬅️ Moved up from 20px to 60px */
     right: 20px;
     background-color: #000000;
     color: #ffffff;
@@ -408,7 +408,7 @@
     .sticky-discount-button {
       font-size: 14px;
       padding: 10px 18px;
-      bottom: 15px;
+      bottom: 55px; /* ⬅️ Also moved up on tablet */
       right: 15px;
     }
   }
@@ -417,11 +417,12 @@
     .sticky-discount-button {
       font-size: 13px;
       padding: 9px 16px;
-      bottom: 10px;
+      bottom: 50px; /* ⬅️ And on mobile */
       right: 10px;
     }
   }
 </style>
+
 
   </body>
 </html>
