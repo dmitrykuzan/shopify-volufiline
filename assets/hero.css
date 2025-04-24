@@ -226,6 +226,9 @@
 
   .hero__text {
     top: 10rem;
+    max-width: 100rem;
+    left: 50%;
+    transform: translateX(-50%, -50%);
   }
 
   .hero__title {
