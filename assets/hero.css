@@ -137,8 +137,6 @@
   }
 
   .hero__bottom {
-    position: relative;
-    top: -8rem;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -195,8 +193,9 @@
     max-width: 25rem;
   }
 
-  .hero__title {
-    /* margin-top: -11rem; */
+   .hero__bottom {
+    position: relative;
+    top: -8rem;
   }
 
   .hero__image {
