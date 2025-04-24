@@ -29,7 +29,7 @@
 .hero__text {
   display: none;
   position: absolute;
-  top: 14rem;
+  top: 11rem;
   z-index: -1;
   width: 100%;
   margin: 0;
