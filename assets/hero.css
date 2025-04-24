@@ -265,3 +265,9 @@
     margin-top: -7rem;
   }
 }
+
+@media screen and (min-width: 1720px) {
+  .hero__bottom {
+    margin-top: -2rem;
+  }
+}
