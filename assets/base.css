@@ -3840,4 +3840,15 @@ details-disclosure > details {
   background-color: #000 !important; /* stays solid black */
   z-index: 999;
 }
+/* Cap large headings on big screens */
+h1, .h1, .headline-lg, .section-heading, .hero__title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem); /* Adjust max to your preferred size */
+  line-height: 1.1;
+}
+
+/* Optional: limit other big text sizes */
+h2, .h2, .headline-md {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
 
