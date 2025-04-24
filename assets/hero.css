@@ -194,7 +194,7 @@
     max-width: 25rem;
   }
 
-   .hero__bottom {
+  .hero__bottom {
     position: relative;
     margin-top: -8rem;
   }
@@ -232,6 +232,12 @@
 
   .hero__image {
     max-width: 95rem;
+  }
+}
+
+@media screen and (min-width: 1519px) {
+  .hero__bottom {
+    margin-top: -7rem;
   }
 }
 
