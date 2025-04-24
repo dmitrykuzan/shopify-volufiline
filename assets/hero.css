@@ -199,6 +199,9 @@
 
   .hero__text {
     top: 4rem;
+    max-width: 93rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .hero__review {
@@ -227,8 +230,7 @@
   .hero__text {
     top: 10rem;
     max-width: 100rem;
-    left: 50%;
-    transform: translateX(-50%);
+ 
   }
 
   .hero__title {
