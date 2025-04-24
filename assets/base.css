@@ -3840,4 +3840,24 @@ details-disclosure > details {
   background-color: #000 !important; /* stays solid black */
   z-index: 999;
 }
+/* Force stacking order */
+.announcement-bar-section {
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+  background-color: #000 !important;
+}
+
+.header-wrapper {
+  position: sticky;
+  top: var(--announcement-bar-height, 3.8rem); /* or however tall your bar is */
+  z-index: 1000;
+  background-color: rgb(var(--color-background)); /* fallback */
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.header-wrapper.scroll-active {
+  background-color: rgba(0, 0, 0, 0.7); /* translucent black */
+  backdrop-filter: blur(6px);
+}
 
