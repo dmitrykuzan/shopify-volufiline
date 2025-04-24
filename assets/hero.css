@@ -235,11 +235,7 @@
   }
 }
 
-@media screen and (min-width: 1519px) {
-  .hero__bottom {
-    margin-top: -7rem;
-  }
-}
+
 
 @media screen and (min-width: 1480px) {
   .hero__product {
@@ -261,5 +257,11 @@
 
   .hero__title {
     /* margin-top: -11rem; */
+  }
+}
+
+@media screen and (min-width: 1519px) {
+  .hero__bottom {
+    margin-top: -7rem;
   }
 }
