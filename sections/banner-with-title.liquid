@@ -10,11 +10,10 @@
       <span class="banner-with-title__title-top banner-with-title__title-top-2">Volume you deserve</span>
     </div>
   </div>
-
   <div class="page-width">
-    <div class="banner-with-title__wrapper banner-with-title__wrapper--responsive">
-      <div class="banner-with-title__product">
-        {% render 'product-card', product: product %}
+    <div class="banner-with-title__wrapper">
+      <div class="banner-with-title__image">
+        <img src="{{ 'banner-with-title.jpg' | asset_url }}" width="720" height="720">
       </div>
 
       <div class="banner-with-title__content">
@@ -26,40 +25,11 @@
           </p>
         </div>
 
-        <a class="banner-with-title__link" href="{{ product.url }}">Shop now</a>
+        <a class="banner-with-title__link" href="{{ product.url }}"> Shop now</a>
       </div>
     </div>
   </div>
 </section>
-
-<style>
-  .banner-with-title__wrapper--responsive {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .banner-with-title__product {
-    max-width: 100%;
-  }
-
-  @media screen and (min-width: 750px) {
-    .banner-with-title__wrapper--responsive {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .banner-with-title__product {
-      flex: 1;
-      max-width: 50%;
-    }
-
-    .banner-with-title__content {
-      flex: 1;
-    }
-  }
-</style>
 
 {% schema %}
 {
