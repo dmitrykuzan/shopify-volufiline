@@ -214,7 +214,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero__title {
-    margin-top: -9rem;
+    /* margin-top: -9rem; */
   }
 }
 
@@ -229,6 +229,6 @@
   }
 
   .hero__title {
-    margin-top: -11rem;
+    /* margin-top: -11rem; */
   }
 }
