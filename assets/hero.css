@@ -137,6 +137,8 @@
   }
 
   .hero__bottom {
+    position: relative;
+    top: -8rem;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -228,7 +230,6 @@
     max-width: 34rem;
     top: 2rem;
   }
-
 
   .hero__image {
     max-width: 130rem;
