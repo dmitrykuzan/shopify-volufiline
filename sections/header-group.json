@@ -17,7 +17,14 @@
         "announcement_LKexWU": {
           "type": "announcement",
           "settings": {
-            "text": "Spring Sale: 15% off Today!",
+            "text": "Spring Sale: 30% off Today!",
+            "link": ""
+          }
+        },
+        "announcement_7XmUFm": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
             "link": ""
           }
         },
@@ -31,6 +38,7 @@
       },
       "block_order": [
         "announcement_LKexWU",
+        "announcement_7XmUFm",
         "announcement_DBA8wY"
       ],
       "settings": {
