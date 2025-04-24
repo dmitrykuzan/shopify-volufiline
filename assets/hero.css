@@ -33,6 +33,7 @@
   z-index: -1;
   width: 100%;
   margin: 0;
+  transition: translate 0.3s linear;
 
   svg {
     width: 100%;
