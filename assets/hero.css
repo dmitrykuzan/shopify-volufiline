@@ -138,7 +138,7 @@
 
   .hero__bottom {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     gap: 1.5rem;
   }
