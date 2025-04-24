@@ -235,8 +235,6 @@
   }
 }
 
-
-
 @media screen and (min-width: 1480px) {
   .hero__product {
     max-width: 34rem;
@@ -269,5 +267,9 @@
 @media screen and (min-width: 1720px) {
   .hero__bottom {
     margin-top: -2rem;
+  }
+
+  .hero__text {
+    top: 14rem;
   }
 }
