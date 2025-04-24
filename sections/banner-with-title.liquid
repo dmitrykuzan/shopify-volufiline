@@ -10,26 +10,13 @@
       <span class="banner-with-title__title-top banner-with-title__title-top-2">Volume you deserve</span>
     </div>
   </div>
-
   <div class="page-width">
-    <div class="banner-with-title__wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem;">
-      <!-- Product Embed -->
-      <div style="flex: 1 1 100%; max-width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center;" class="product-embed">
-        <a href="{{ product.url }}">
-          <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}" style="width: 100%; max-width: 400px; border-radius: 1rem;" />
-        </a>
-        <h3 style="margin: 1.5rem 0 0.5rem;">{{ product.title }}</h3>
-        <p style="font-size: 1.6rem; font-weight: bold; margin-bottom: 1.5rem;">
-          {{ product.price | money }}
-        </p>
-        <form method="post" action="/cart/add">
-          <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-          <button type="submit" class="button" style="min-width: 12rem;">Add to Cart</button>
-        </form>
+    <div class="banner-with-title__wrapper">
+      <div class="banner-with-title__image">
+        <img src="{{ 'banner-with-title.jpg' | asset_url }}" width="720" height="720">
       </div>
 
-      <!-- Text Content -->
-      <div class="banner-with-title__content" style="flex: 1 1 100%; max-width: 100%; text-align: center;">
+      <div class="banner-with-title__content">
         <div class="banner-with-title__text">
           <h2>Looking for real volume?</h2>
           <p>
@@ -38,30 +25,11 @@
           </p>
         </div>
 
-        <a class="banner-with-title__link" href="{{ product.url }}">Shop now</a>
+        <a class="banner-with-title__link" href="{{ product.url }}"> Shop now</a>
       </div>
     </div>
   </div>
 </section>
-
-<style>
-@media screen and (min-width: 750px) {
-  .banner-with-title__wrapper {
-    flex-wrap: nowrap !important;
-    text-align: left !important;
-  }
-
-  .product-embed {
-    align-items: flex-start !important;
-    text-align: left !important;
-    max-width: 50% !important;
-  }
-
-  .banner-with-title__content {
-    max-width: 50% !important;
-  }
-}
-</style>
 
 {% schema %}
 {
