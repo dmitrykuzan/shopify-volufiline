@@ -230,6 +230,10 @@
     top: 2rem;
   }
 
+  .hero__bottom {
+    margin-top: -4rem;
+  }
+
   .hero__image {
     max-width: 130rem;
   }
