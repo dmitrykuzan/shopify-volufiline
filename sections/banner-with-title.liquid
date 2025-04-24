@@ -10,26 +10,97 @@
       <span class="banner-with-title__title-top banner-with-title__title-top-2">Volume you deserve</span>
     </div>
   </div>
+
   <div class="page-width">
-    <div class="banner-with-title__wrapper">
-      <div class="banner-with-title__image">
-        <img src="{{ 'banner-with-title.jpg' | asset_url }}" width="720" height="720">
+    <div class="volufiline-product-banner">
+      <!-- Product Embed -->
+      <div class="volufiline-product-card">
+        <a href="{{ product.url }}">
+          <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}" class="product-image" />
+        </a>
+        <h3>{{ product.title }}</h3>
+        <p class="product-price">{{ product.price | money }}</p>
+        <form method="post" action="/cart/add">
+          <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+          <button type="submit" class="button">Add to Cart</button>
+        </form>
       </div>
 
-      <div class="banner-with-title__content">
-        <div class="banner-with-title__text">
-          <h2>Looking for real volume?</h2>
-          <p>
-            Our 100% pure Volufiline visibly plumps and restores fullness by stimulating fat cell volume—naturally
-            lifting areas like undereyes, cheeks, and smile lines.
-          </p>
-        </div>
+      <!-- Divider -->
+      <div class="volufiline-divider"></div>
 
-        <a class="banner-with-title__link" href="{{ product.url }}"> Shop now</a>
+      <!-- Text Content -->
+      <div class="volufiline-product-text">
+        <h2>Looking for real volume?</h2>
+        <p>
+          Our 100% pure Volufiline visibly plumps and restores fullness by stimulating fat cell volume—naturally
+          lifting areas like undereyes, cheeks, and smile lines.
+        </p>
+        <a class="banner-with-title__link" href="{{ product.url }}">Shop now</a>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+.volufiline-product-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.volufiline-product-card,
+.volufiline-product-text {
+  flex: 1;
+  padding: 2rem;
+}
+
+.volufiline-product-card {
+  text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.product-price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 1rem 0 2rem;
+}
+
+.volufiline-divider {
+  display: none;
+  background-color: white;
+  width: 1px;
+  height: auto;
+}
+
+@media screen and (min-width: 990px) {
+  .volufiline-product-banner {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .volufiline-divider {
+    display: block;
+  }
+
+  .volufiline-product-card,
+  .volufiline-product-text {
+    padding: 4rem;
+  }
+
+  .volufiline-product-card {
+    max-width: 50%;
+  }
+
+  .volufiline-product-text {
+    max-width: 50%;
+  }
+}
+</style>
 
 {% schema %}
 {
