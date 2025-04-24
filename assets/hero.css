@@ -197,6 +197,11 @@
     /* margin-top: -11rem; */
   }
 
+  .hero__image {
+    max-width: 86rem;
+    margin: 0 auto;
+  }
+
   .hero__text {
     top: 4rem;
   }
