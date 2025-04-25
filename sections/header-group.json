@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_CTaD9U": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free shipping on U.S orders",
+            "link": ""
+          }
+        },
         "announcement_LKexWU": {
           "type": "announcement",
           "settings": {
@@ -30,6 +37,7 @@
         }
       },
       "block_order": [
+        "announcement_CTaD9U",
         "announcement_LKexWU",
         "announcement_DBA8wY"
       ],
