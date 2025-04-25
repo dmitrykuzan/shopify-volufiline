@@ -41,10 +41,10 @@
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(0)
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-100%)
   }
 }
 
@@ -104,12 +104,6 @@
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
-
-  /* 👇 Updated for left-aligned and re-centered */
-  margin: 0 auto;
-  max-width: 140rem;
-  width: calc(100% + 4rem);
-  margin-left: -2rem;
 }
 
 .banner-with-title__link {
