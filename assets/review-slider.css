@@ -47,8 +47,8 @@
 .review-slider__product-name {
   p {
     margin: initial;
-    font-size: 1.4rem; /* ✅ match bulk text size */
-    line-height: 150%; /* ✅ match bulk text line height */
+    font-size: 1.4rem;
+    line-height: 150%;
     color: #000;
   }
 }
@@ -95,7 +95,7 @@
   display: flex;
   gap: 1rem;
   border-radius: 1rem;
-  padding: 0.6rem;
+  padding: 0.6rem 1rem; /* tighter top/bottom padding */
   background-color: #ebebeb;
   align-items: center;
 }
@@ -165,8 +165,8 @@
 
   .review-slider__product-name {
     p {
-      font-size: 1.4rem; /* ✅ fixed */
-      line-height: 150%; /* ✅ fixed */
+      font-size: 1.4rem;
+      line-height: 150%;
     }
   }
 
@@ -177,7 +177,7 @@
 
   .review-slider__product {
     gap: 2rem;
-    padding: 1.2rem;
+    padding: 0.8rem 1.6rem; /* tighter padding on large screens */
   }
 
   .review-slider__product-text {
