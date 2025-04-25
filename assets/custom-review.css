@@ -74,7 +74,7 @@
 }
 
 .custom-review__item-title {
-  font-weight: 500;
+  font-weight: 700; /* BOLDER TITLE */
   color: #000;
   margin: initial;
 }
@@ -82,6 +82,7 @@
 @media screen and (min-width: 1024px) {
   .custom-review__item-title {
     font-size: 2rem;
+    font-weight: 700; /* BOLDER TITLE FOR DESKTOP */
   }
 }
 
@@ -95,14 +96,14 @@
 /* .custom-review__item::before {
   counter-increment: num;
   content: counter(num, decimal-leading-zero);
-	display: inline-block;
-	position: absolute;
-	top: 2.2rem;
-	left: 1rem;
-	color: #000;
+  display: inline-block;
+  position: absolute;
+  top: 2.2rem;
+  left: 1rem;
+  color: #000;
   line-height: 120%;
   font-size: 1.4rem;
-	font-weight: bold;
+  font-weight: bold;
 } */
 
 @media screen and (min-width: 1024px) {
