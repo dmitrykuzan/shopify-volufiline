@@ -41,10 +41,10 @@
 
 @keyframes marquee {
   0% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%)
+    transform: translateX(-100%);
   }
 }
 
@@ -172,6 +172,12 @@
     max-width: 28rem;
     min-height: 6rem;
     font-size: 2rem;
+  }
+
+  /* 👇 New addition: wider gray box */
+  .banner-with-title__wrapper {
+    max-width: 140rem;
+    margin: 0 auto;
   }
 }
 
