@@ -47,8 +47,8 @@
 .review-slider__product-name {
   p {
     margin: initial;
-    font-size: 1.6rem;
-    line-height: 120%;
+    font-size: 1.4rem; /* ✅ match bulk text size */
+    line-height: 150%; /* ✅ match bulk text line height */
     color: #000;
   }
 }
@@ -97,7 +97,7 @@
   border-radius: 1rem;
   padding: 0.6rem;
   background-color: #ebebeb;
-  align-items: center; /* ✅ vertically center the text */
+  align-items: center;
 }
 
 .review-slider__product-img {
@@ -165,8 +165,8 @@
 
   .review-slider__product-name {
     p {
-      font-size: 1.6rem;
-      line-height: 120%;
+      font-size: 1.4rem; /* ✅ fixed */
+      line-height: 150%; /* ✅ fixed */
     }
   }
 
