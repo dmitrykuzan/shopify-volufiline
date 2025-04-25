@@ -96,6 +96,18 @@
     },
     "video_slider_nxQkmR": {
       "type": "video-slider",
+      "blocks": {
+        "video_slide_AaEyeD": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/084ca36c25ae47c38e819a5abed91124.mp4",
+            "poster_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_slide_AaEyeD"
+      ],
       "settings": {}
     },
     "volufiline_purchase_ykQfwT": {
