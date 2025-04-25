@@ -103,10 +103,18 @@
             "video_url": "https://cdn.shopify.com/videos/c/o/v/084ca36c25ae47c38e819a5abed91124.mp4",
             "poster_url": ""
           }
+        },
+        "video_slide_cHLqeR": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/695d5d4722364a6da9bcf67eb88d1b78.mp4",
+            "poster_url": ""
+          }
         }
       },
       "block_order": [
-        "video_slide_AaEyeD"
+        "video_slide_AaEyeD",
+        "video_slide_cHLqeR"
       ],
       "settings": {}
     },
