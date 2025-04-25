@@ -108,7 +108,7 @@
   transition: opacity 0.3s linear;
 }
 
-.video-slider__slide-button.play {
+.video-slider__slide-button.playing {
   opacity: 0.3;
 }
 
