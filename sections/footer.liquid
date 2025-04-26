@@ -648,7 +648,7 @@
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       {%- if section.settings.logo_position != 'middle-center' -%}
         {%- if request.page_type == 'index' -%}
-          <h1 class="header__heading">
+          <h2 class="header__heading">
         {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {%- if settings.logo != blank -%}
@@ -675,7 +675,7 @@
           {%- endif -%}
         </a>
         {%- if request.page_type == 'index' -%}
-          </h1>
+          </h2>
         {%- endif -%}
       {%- endif -%}
 
