@@ -22,6 +22,18 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
+    <!-- ✅ OG + Twitter Tags -->
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_description }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:image" content="{{ settings.social_image | img_url: '1200x630' }}">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_description }}">
+<meta name="twitter:image" content="{{ settings.social_image | img_url: '1200x630' }}">
+
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
