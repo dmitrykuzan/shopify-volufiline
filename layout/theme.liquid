@@ -61,7 +61,7 @@
     </title>
     <!-- ✅ Meta Tags for SEO + Social Sharing -->
     {% if template contains 'product' and product %}
-      {% assign meta_title = product.title | escape %}
+    {% assign meta_title = product.metafields.global.title_tag | default: product.title | escape %}
       {% assign meta_description = product.metafields.global.description_tag
         | default: product.description
         | strip_html
