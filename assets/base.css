@@ -3850,5 +3850,21 @@ h1, .h1, .headline-lg, .section-heading, .hero__title {
 h2, .h2, .headline-md {
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
+.badge--sale::before {
+  content: "20% Off" !important;
+}
+
+.badge--sale {
+  text-indent: -9999px;
+  position: relative;
+}
+
+.badge--sale::before {
+  text-indent: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
 
 
