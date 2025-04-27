@@ -30,6 +30,7 @@
   </title>
 
  {% if template.name == 'product' %}
+  {% assign meta_description = product.description | strip_html | truncate: 160 %}
   {% assign meta_image = product.featured_image | img_url: '800x800' %}
   {% assign meta_title = product.title %}
   {% assign meta_url = shop.url | append: product.url %}
