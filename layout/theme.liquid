@@ -31,8 +31,7 @@
 
 <!-- ✅ Meta Tags for SEO + Social Sharing -->
 {% if template contains 'product' and product %}
-  {% assign meta_description = product.description | strip_html | truncate: 160 %}
-  {% assign meta_image = product.featured_image | img_url: '800x800' %}
+{% assign meta_description = product.metafields.global.description_tag | default: product.description | strip_html | truncate: 160 %}  {% assign meta_image = product.featured_image | img_url: '800x800' %}
   {% assign meta_title = product.title | escape %}
   {% assign meta_url = shop.url | append: product.url %}
   {% assign meta_type = "product" %}
