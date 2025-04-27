@@ -29,36 +29,6 @@
     {% endif %}
   </title>
 
- {% if template.name == 'product' %}
-  {% assign meta_description = product.description | strip_html | truncate: 160 %}
-  {% assign meta_image = product.featured_image | img_url: '800x800' %}
-  {% assign meta_title = product.title %}
-  {% assign meta_url = shop.url | append: product.url %}
-  {% assign meta_type = "product" %}
-{% else %}
-  {% assign meta_description = page_description | default: "Experience the official 100% Volufiline Face Serum—clinically backed to plump under eyes, cheeks, jawline, and smile lines with visible volume and lift." %}
-  {% assign meta_image = settings.social_image | img_url: '1200x630' %}
-  {% assign meta_title = page_title %}
-  {% assign meta_url = canonical_url %}
-  {% assign meta_type = "website" %}
-{% endif %}
-
-<!-- ✅ Primary Meta Description -->
-<meta name="description" content="{{ meta_description | escape }}">
-
-<!-- ✅ Open Graph Tags -->
-<meta property="og:title" content="{{ meta_title | escape }}">
-<meta property="og:description" content="{{ meta_description | escape }}">
-<meta property="og:url" content="{{ meta_url }}">
-<meta property="og:image" content="{{ meta_image }}">
-<meta property="og:type" content="{{ meta_type }}">
-
-<!-- ✅ Twitter Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ meta_title | escape }}">
-<meta name="twitter:description" content="{{ meta_description | escape }}">
-<meta name="twitter:image" content="{{ meta_image }}">
-
   {% render 'meta-tags' %}
 
   <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
