@@ -15,21 +15,60 @@
 <link rel="manifest" href="https://cdn.shopify.com/s/files/1/0938/6865/4873/files/site.manifest?v=1745711977">
 <meta name="theme-color" content="#000000">
 <meta name="apple-mobile-web-app-capable" content="yes">
-
 <!-- Android Icons -->
 <link rel="icon" type="image/png" sizes="192x192" href="https://cdn.shopify.com/s/files/1/0938/6865/4873/files/android-chrome-192x192.png?v=1745457733">
 <link rel="icon" type="image/png" sizes="512x512" href="https://cdn.shopify.com/s/files/1/0938/6865/4873/files/android-chrome-512x512.png?v=1745711836">
-  <title>
-    {% if template == 'index' %}
-    100% Volufiline Face Serum | Restore Full Face Volume
-    {% elsif template contains 'product' and product %}
-      {{ product.title }} | 100% Volufiline Serum for Volume & Firmness
-    {% else %}
-      {{ page_title }}{% if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
-    {% endif %}
-  </title>
 
-  {% render 'meta-tags' %}
+<!-- ✅ Title -->
+<title>
+  {% if template == 'index' %}
+    100% Volufiline Face Serum | Restore Full Face Volume
+  {% elsif template contains 'product' and product %}
+    {{ product.title | escape }} | 100% Volufiline Serum for Volume & Firmness
+  {% else %}
+    {{ page_title }}{% if current_tags %} – tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} – Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} – {{ shop.name }}{% endunless %}
+  {% endif %}
+</title>
+
+<!-- ✅ Meta Tags for SEO + Social Sharing -->
+{% if template contains 'product' and product %}
+  {% assign meta_description = product.description | strip_html | truncate: 160 %}
+  {% assign meta_image = product.featured_image | img_url: '800x800' %}
+  {% assign meta_title = product.title | escape %}
+  {% assign meta_url = shop.url | append: product.url %}
+  {% assign meta_type = "product" %}
+{% elsif template == 'index' %}
+  {% assign meta_description = "Experience the official 100% Volufiline Face Serum—clinically backed to plump under eyes, cheeks, jawline, and smile lines with visible volume and lift." %}
+  {% assign meta_image = "https://cdn.shopify.com/s/files/1/0938/6865/4873/files/productphoto1_52e60290-9489-405f-b2c7-d8522702623d.png?v=1745714253" %}
+  {% assign meta_title = "100% Volufiline Face Serum | Restore Full Face Volume" %}
+  {% assign meta_url = "https://volufiline.net/" %}
+  {% assign meta_type = "website" %}
+{% else %}
+  {% assign meta_description = page_description | default: page_title %}
+  {% assign meta_image = settings.social_image | img_url: '1200x630' %}
+  {% assign meta_title = page_title %}
+  {% assign meta_url = canonical_url %}
+  {% assign meta_type = "website" %}
+{% endif %}
+
+<meta name="description" content="{{ meta_description | escape }}">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Volufiline">
+<meta property="og:title" content="{{ meta_title }}">
+<meta property="og:description" content="{{ meta_description }}">
+<meta property="og:url" content="{{ meta_url }}">
+<meta property="og:image" content="{{ meta_image }}">
+<meta property="og:type" content="{{ meta_type }}">
+<meta property="og:image:width" content="2639">
+<meta property="og:image:height" content="2640">
+<meta property="og:image:secure_url" content="{{ meta_image }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ meta_title }}">
+<meta name="twitter:description" content="{{ meta_description }}">
+<meta name="twitter:image" content="{{ meta_image }}">
 
   <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
