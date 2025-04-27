@@ -45,6 +45,21 @@
   <meta name="twitter:description" content="{{ meta_description }}">
   <meta name="twitter:image" content="{{ settings.social_image | img_url: '1200x630' }}">
 
+  {% if template.name == 'product' %}
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="{{ product.title }}">
+  <meta property="og:description" content="{{ product.description | strip_html | truncate: 160 }}">
+  <meta property="og:url" content="{{ shop.url }}{{ product.url }}">
+  <meta property="og:image" content="{{ product.featured_image | image_url: width: 1200 }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ product.title }}">
+  <meta name="twitter:description" content="{{ product.description | strip_html | truncate: 160 }}">
+  <meta name="twitter:image" content="{{ product.featured_image | image_url: width: 1200 }}">
+{% endif %}
+
   {% render 'meta-tags' %}
 
   <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
