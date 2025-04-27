@@ -31,32 +31,33 @@
 
   {% assign meta_description = page_description | default: "Experience the official 100% Volufiline Face Serum—clinically backed to plump under eyes, cheeks, jawline, and smile lines with visible volume and lift.%}
   <meta name="description" content="{{ meta_description | escape }}">
+{% if template.name == 'product' %}
+  <!-- ✅ Open Graph Tags for Product -->
+  <meta property="og:title" content="{{ product.title | escape }}">
+  <meta property="og:description" content="{{ product.description | strip_html | truncate: 160 | escape }}">
+  <meta property="og:url" content="{{ shop.url }}{{ product.url }}">
+  <meta property="og:image" content="{{ product.featured_image | img_url: '800x800' }}">
+  <meta property="og:type" content="product">
 
-  <!-- ✅ Open Graph Tags -->
+  <!-- ✅ Twitter Tags for Product -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ product.title | escape }}">
+  <meta name="twitter:description" content="{{ product.description | strip_html | truncate: 160 | escape }}">
+  <meta name="twitter:image" content="{{ product.featured_image | img_url: '800x800' }}">
+{% else %}
+  <!-- ✅ Default Open Graph Tags -->
   <meta property="og:title" content="{{ page_title }}">
   <meta property="og:description" content="{{ meta_description }}">
   <meta property="og:url" content="{{ canonical_url }}">
-  <meta property="og:image" content="{{ settings.social_image | img_url: '2639x2640' }}">
+  <meta property="og:image" content="{{ settings.social_image | img_url: '1200x630' }}">
   <meta property="og:type" content="website">
 
-  <!-- ✅ Twitter Tags -->
+  <!-- ✅ Default Twitter Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page_title }}">
   <meta name="twitter:description" content="{{ meta_description }}">
   <meta name="twitter:image" content="{{ settings.social_image | img_url: '1200x630' }}">
-
-  {% if template.name == 'product' %}
-  <meta property="og:title" content="{{ product.title | escape }}" />
-  <meta property="og:description" content="{{ product.description | strip_html | truncate: 160 | escape }}" />
-  <meta property="og:type" content="product" />
-  <meta property="og:url" content="{{ shop.url }}{{ product.url }}" />
-  <meta property="og:image" content="{{ product.featured_image | img_url: '800x800' }}" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{ product.title | escape }}" />
-  <meta name="twitter:description" content="{{ product.description | strip_html | truncate: 160 | escape }}" />
-  <meta name="twitter:image" content="{{ product.featured_image | img_url: '800x800' }}" />
 {% endif %}
-
   {% render 'meta-tags' %}
 
   <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
