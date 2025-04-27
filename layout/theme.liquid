@@ -32,9 +32,6 @@
   {% assign meta_description = page_description | default: "Experience the official 100% Volufiline Face Serum—clinically backed to plump under eyes, cheeks, jawline, and smile lines with visible volume and lift.%}
   <meta name="description" content="{{ meta_description | escape }}">
 {% if template.name == 'product' %}
-  <!-- ✅ SEO & Social Meta Tags for Product Page Only -->
-  <meta name="description" content="{{ product.description | strip_html | truncate: 160 | escape }}">
-
   <!-- Open Graph Tags -->
   <meta property="og:title" content="{{ product.title | escape }}">
   <meta property="og:description" content="{{ product.description | strip_html | truncate: 160 | escape }}">
