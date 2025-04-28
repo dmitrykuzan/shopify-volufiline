@@ -478,53 +478,7 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer="defer"></script>
-
-    <a href="https://volufiline.net/products/volufiline" class="sticky-discount-button" onclick="handleClick()"
-      >20% OFF</a
-    >
-
-    <style>
-      .sticky-discount-button {
-        position: fixed;
-        bottom: 60px;
-        right: 20px;
-        background-color: #000000;
-        color: #ffffff;
-        padding: 12px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-        border-radius: 50px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-        z-index: 1000;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
-
-      .sticky-discount-button:hover {
-        background-color: #222222;
-        transform: scale(1.05);
-      }
-
-      @media (max-width: 768px) {
-        .sticky-discount-button {
-          font-size: 14px;
-          padding: 10px 18px;
-          bottom: 55px;
-          right: 15px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .sticky-discount-button {
-          font-size: 13px;
-          padding: 9px 16px;
-          bottom: 50px;
-          right: 10px;
-        }
-      }
-    </style>
-
-    <script>
+    
       // Check if the button has already been clicked by checking localStorage
       if(localStorage.getItem('discountButtonClicked') === 'true') {
         document.querySelector('.sticky-discount-button').style.display = 'none';
