@@ -1,23 +1,23 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
-    <!-- Start NB Pixel Snippet -->
-<script>
-!(function (e, n, t, i, p, a, s) {
-  e[i] ||
-    (((p = e[i] =
-      function () {
-        p.process ? p.process.apply(p, arguments) : p.queue.push(arguments);
-      }).queue = []),
-    (p.t = +new Date()),
-    ((a = n.createElement(t)).async = 1),
-    (a.src = 'https://static.newsbreak.com/business/tracking/nbpixel.js?t=' + 864e5 * Math.ceil(new Date() / 864e5)),
-    (s = n.getElementsByTagName(t)[0]).parentNode.insertBefore(a, s));
-})(window, document, 'script', 'nbpix'),
-  nbpix('init', 'ID-1916539152439017474'),
-  nbpix('event', 'pageload');
-</script>
-<!-- End NB Pixel Snippet -->
+    <!-- ✅ Start NB Pixel Snippet -->
+    <script>
+    !(function (e, n, t, i, p, a, s) {
+      e[i] ||
+        (((p = e[i] =
+          function () {
+            p.process ? p.process.apply(p, arguments) : p.queue.push(arguments);
+          }).queue = []),
+        (p.t = +new Date()),
+        ((a = n.createElement(t)).async = 1),
+        (a.src = 'https://static.newsbreak.com/business/tracking/nbpixel.js?t=' + 864e5 * Math.ceil(new Date() / 864e5)),
+        (s = n.getElementsByTagName(t)[0]).parentNode.insertBefore(a, s));
+    })(window, document, 'script', 'nbpix'),
+      nbpix('init', 'ID-1916539152439017474'),
+      nbpix('event', 'pageload');
+    </script>
+    <!-- ✅ End NB Pixel Snippet -->
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -478,7 +478,51 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer="defer"></script>
-    
+
+   
+
+    <style>
+      .sticky-discount-button {
+        position: fixed;
+        bottom: 60px;
+        right: 20px;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        z-index: 1000;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .sticky-discount-button:hover {
+        background-color: #222222;
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 768px) {
+        .sticky-discount-button {
+          font-size: 14px;
+          padding: 10px 18px;
+          bottom: 55px;
+          right: 15px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .sticky-discount-button {
+          font-size: 13px;
+          padding: 9px 16px;
+          bottom: 50px;
+          right: 10px;
+        }
+      }
+    </style>
+
+    <script>
       // Check if the button has already been clicked by checking localStorage
       if(localStorage.getItem('discountButtonClicked') === 'true') {
         document.querySelector('.sticky-discount-button').style.display = 'none';
