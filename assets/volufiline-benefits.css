@@ -6,6 +6,10 @@
   background-color: rgb(245 245 245);
 }
 
+.volufiline-benefits__swiper {
+  position: relative;
+}
+
 .volufiline-benefits__slide-logo {
   display: flex;
   max-width: 15rem;
