@@ -7,7 +7,7 @@
 .volufiline-benefits__slide {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .volufiline-benefits__slider {
