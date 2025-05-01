@@ -44,13 +44,6 @@
   margin-left: -1.5rem;
 }
 
-@media screen and (min-width: 550px) {
-  .volufiline-product-slider__big {
-    width: 100%;
-    margin-left: initial;
-  }
-}
-
 .volufiline-product-slider__thumbs {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -63,6 +56,19 @@
     .swiper-slide:last-child {
       margin-right: 3rem !important;
     }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .volufiline-product-slider__big {
+    width: 100%;
+    margin-left: initial;
+
+     .swiper-wrapper {
+    .swiper-slide:last-child {
+      margin-right: initial !important;
+    }
+  }
   }
 }
 
