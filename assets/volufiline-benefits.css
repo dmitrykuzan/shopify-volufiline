@@ -12,9 +12,9 @@
   background-color: rgb(245 245 245);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-top: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 6rem;
   max-width: 100rem;
 }
 
@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 1280px) {
   .volufiline-benefits__slider {
-    margin-top: 4rem;
+    margin-top: 10rem;
   }
 }
 
@@ -37,7 +37,7 @@
 .volufiline-benefits__slide-logo {
   display: flex;
   max-width: 15rem;
-  margin-left: auto;
+   margin-left: auto;
   margin-right: auto;
 
   svg {
@@ -62,8 +62,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  .volufiline-benefits__button-next,
-  .volufiline-benefits__button-prev {
+  .volufiline-benefits__button-next, .volufiline-benefits__button-prev {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     .swiper-pagination-bullet {
       width: 0.8rem;
       height: 0.8rem;
@@ -100,40 +99,44 @@
 
 .volufiline-benefits__list {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  padding: 0;
-  margin: 0 auto 2rem auto;
-  max-width: 100%;
-  flex-wrap: wrap;
+  padding: initial;
+  max-width: 33rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .volufiline-benefits__list {
+    display: flex;
+    max-width: initial;
+    margin-left: initial;
+    margin-right: initial;
+    gap: 2rem;
+  }
 }
 
 .volufiline-benefits__item {
   max-width: 8rem;
   margin-left: auto;
   margin-right: auto;
-  opacity: 1;
-  filter: grayscale(0%) contrast(100%);
 
-  svg,
-  img {
+  svg {
     width: 100%;
-    height: auto;
-    filter: brightness(0) saturate(100%);
-    opacity: 1;
+    height: 100%;
   }
 }
 
 @media screen and (min-width: 767px) {
   .volufiline-benefits__item {
-    max-width: 6rem;
+    max-width: 12rem;
   }
 }
 
 @media screen and (min-width: 1180px) {
   .volufiline-benefits__item {
-    max-width: 6rem;
+    max-width: 20rem;
   }
 }
