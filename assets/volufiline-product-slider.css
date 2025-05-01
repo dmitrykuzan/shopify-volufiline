@@ -52,10 +52,11 @@
 }
 
 .volufiline-product-slider__thumbs {
-  width: 100%;
+  /* width: 100%; */
+  width: calc(100% + 3rem);
+  margin-left: -1.5rem;
   flex-shrink: 0;
   padding-bottom: 0.2rem;
-  /* display: none; */
 }
 
 @media screen and (min-width: 992px) {
