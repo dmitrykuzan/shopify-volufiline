@@ -29,6 +29,11 @@
   }
 }
 
+.volufiline-benefits__slide-text {
+  text-align: center;
+  line-height: 166%;
+}
+
 .volufiline-benefits__navigation-btns {
   display: flex;
   align-items: center;
