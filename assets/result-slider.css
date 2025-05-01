@@ -68,7 +68,7 @@
 .result-slider__slide {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 7rem;
 }
 
 @media screen and (min-width: 767px) {
