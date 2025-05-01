@@ -306,6 +306,11 @@ a.product__text {
     font-size: 3.2rem;
     font-weight: 500;
   }
+
+  .custom__product-title-text {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 767px) {
