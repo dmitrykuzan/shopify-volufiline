@@ -44,6 +44,9 @@
   }
 
   .volufiline-benefits__pagination {
+    display: flex;
+    align-items: center;
+    
     .swiper-pagination-bullet {
       width: 0.8rem;
       height: 0.8rem;
