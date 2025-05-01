@@ -214,6 +214,7 @@
   padding-right: 1rem;
   border: 0.1rem solid #000;
   width: 100%;
+  max-width: 42rem;
 
   p {
     margin: initial;
