@@ -66,6 +66,13 @@
   }
 }
 
+@media screen and (min-width: 550px) {
+  .volufiline-product-slider__thumbs {
+    width: 100%;
+    margin-left: initial;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .volufiline-product-slider__thumbs {
     display: block;
