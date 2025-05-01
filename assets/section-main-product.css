@@ -397,6 +397,12 @@ a.product__text {
   }
 }
 
+@media screen and (min-width: 1024px) {
+   .product__info-container .price--on-sale .price-item--regular {
+    font-size: 3.8rem;
+  }
+}
+
 .product__description-title {
   font-weight: 600;
 }
