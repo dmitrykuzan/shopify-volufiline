@@ -77,7 +77,7 @@
 }
 
 .video-slider__slide {
-  aspect-ratio: 9 / 16;
+  /* aspect-ratio: 9 / 16; */
   position: relative;
   display: flex;
   border-radius: 2rem;
