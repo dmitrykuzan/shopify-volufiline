@@ -24,6 +24,11 @@
   }
 }
 
+.volufiline-benefits__navigation-btns {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (min-width: 1280px) {
   .volufiline-benefits {
     margin-top: 10rem;
