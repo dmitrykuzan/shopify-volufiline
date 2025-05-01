@@ -63,12 +63,6 @@
   .volufiline-product-slider__big {
     width: 100%;
     margin-left: initial;
-
-     .swiper-wrapper {
-    .swiper-slide:last-child {
-      margin-right: initial !important;
-    }
-  }
   }
 }
 
@@ -84,7 +78,12 @@
     display: block;
     flex-shrink: 0;
     padding-bottom: 0.2rem;
-    /* width: initial; */
+
+    .swiper-wrapper {
+      .swiper-slide:last-child {
+        margin-right: initial !important;
+      }
+    }
   }
 }
 
@@ -97,13 +96,13 @@
 .volufiline-product-slider__image-thumbs {
   img {
     border-radius: 0rem;
-  }  
+  }
 }
 
 @media screen and (min-width: 550px) {
   .volufiline-product-slider__image-big {
     img {
-       border-radius: 1rem;
+      border-radius: 1rem;
     }
   }
 }
