@@ -68,13 +68,15 @@
 
     var swiper2 = new Swiper('.volufiline-product-slider__big', {
       spaceBetween: 5,
-
-       1024: {
-          spaceBetween: 10,
-        },
       
       thumbs: {
         swiper: swiper,
+      },
+
+       breakpoints: {
+        1024: {
+          spaceBetween: 10,
+        },
       },
     });
   });
