@@ -27,6 +27,13 @@
 .volufiline-benefits__navigation-btns {
   display: flex;
   align-items: center;
+
+  .volufiline-benefits__button-next, .volufiline-benefits__button-prev {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    border: 0.1rem solid #dbdbdb;
+  }
 }
 
 @media screen and (min-width: 1280px) {
