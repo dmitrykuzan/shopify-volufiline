@@ -6,6 +6,10 @@
   background-color: rgb(245 245 245);
 }
 
+.volufiline-benefits__slide-logo {
+  max-width: 15rem;
+}
+
 @media screen and (min-width: 1280px) {
   .volufiline-benefits {
     margin-top: 10rem;
