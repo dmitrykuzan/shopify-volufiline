@@ -11,9 +11,7 @@
   }
 }
 
-.video-slider__slide {
-  max-height: 55rem;
-}
+
 
 .video-slider__titles {
   display: flex;
