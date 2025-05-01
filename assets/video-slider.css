@@ -81,7 +81,7 @@
   display: flex;
   border-radius: 2rem;
   overflow: hidden;
-  max-height: 40rem;
+  max-height: 42rem;
 }
 
 .video-slider__video {
