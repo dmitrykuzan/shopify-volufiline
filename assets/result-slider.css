@@ -350,7 +350,7 @@
     height: 1rem;
     background-color: #fff;
     border: 0.1rem solid #000;
-    border-radius: initial;
+    border-radius: 50%;
     opacity: initial;
     transition: background-color 0.3s linear;
   }
