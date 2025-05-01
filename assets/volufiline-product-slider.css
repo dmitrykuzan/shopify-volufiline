@@ -131,18 +131,18 @@
   }
 }
 
-.volufiline-product-slider__image-big {
+.volufiline-product-slider__image-thumbs {
   img {
-    border-radius: 1rem;
-  }
+    border-radius: 0rem;
+  }  
 }
 
-.volufiline-product-slider__image-thumbs {
+.volufiline-product-slider__image-thumbs,
+.volufiline-product-slider__image-big {
   img {
     height: auto;
     max-width: 100%;
     object-fit: cover;
-    border-radius: 1rem;
   }
 }
 
