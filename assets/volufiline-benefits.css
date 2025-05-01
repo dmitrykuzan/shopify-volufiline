@@ -2,6 +2,10 @@
   margin-top: 5rem;
 }
 
+.volufiline-benefits__slider {
+  background-color: 255 255 255;
+}
+
 @media screen and (min-width: 1280px) {
   .volufiline-benefits {
     margin-top: 10rem;
