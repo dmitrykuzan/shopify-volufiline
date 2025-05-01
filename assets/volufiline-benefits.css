@@ -42,6 +42,14 @@
       width: 2rem;
     }
   }
+
+  .volufiline-benefits__pagination {
+    .swiper-pagination-bullet {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: rgb(171 171 171);
+    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
