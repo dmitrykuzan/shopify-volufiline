@@ -61,7 +61,7 @@
 
   .swiper-wrapper {
     .swiper-slide:last-child {
-      margin-right: 1rem;
+      padding-right: 1rem;
     }
   }
 }
