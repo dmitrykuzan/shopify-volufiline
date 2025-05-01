@@ -149,15 +149,12 @@
         "disabled": false,
         "settings": {}
       },
-      "14978928648839252053": {
-        "type": "shopify://apps/panda-bundle/blocks/app-embed/bd043a67-3fa0-49af-8092-717265d15649",
-        "disabled": true,
-        "settings": {}
-      },
-      "6770548097779500122": {
-        "type": "shopify://apps/koala-upsells-gifts/blocks/gifts-embed/baf92dc5-8ffa-40c0-967e-57b74cddc9e3",
+      "10605408327587305396": {
+        "type": "shopify://apps/eg-auto-add-to-cart/blocks/app-embed/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
         "disabled": false,
-        "settings": {}
+        "settings": {
+          "version": "v3"
+        }
       }
     },
     "color_schemes": {
