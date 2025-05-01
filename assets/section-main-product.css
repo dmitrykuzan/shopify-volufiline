@@ -323,8 +323,7 @@ a.product__text {
 
 @media screen and (min-width: 767px) {
   .product__title {
-    flex-direction: row;
-
+    
     h1 {
       font-size: 4.4rem;
       font-weight: 500;
