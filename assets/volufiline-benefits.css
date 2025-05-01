@@ -29,6 +29,9 @@
   align-items: center;
 
   .volufiline-benefits__button-next, .volufiline-benefits__button-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 4.8rem;
     height: 4.8rem;
     border-radius: 50%;
