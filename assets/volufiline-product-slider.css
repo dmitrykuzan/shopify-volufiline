@@ -70,6 +70,8 @@
   .volufiline-product-slider__thumbs {
     width: 100%;
     margin-left: initial;
+    padding-left: initial;
+    padding-right: initial;
   }
 }
 
