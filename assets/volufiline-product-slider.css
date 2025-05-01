@@ -40,7 +40,10 @@
 
 .volufiline-product-slider__big {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
+  width: calc(100% + 3rem);
+  margin-left: -1.5rem;
+  
 
   /* .volufiline-swiper-button-next, .volufiline-swiper-button-prev {
     display: flex;
