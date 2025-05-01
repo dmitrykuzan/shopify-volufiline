@@ -50,7 +50,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.volufiline-product-slider__thumbs', {
-      spaceBetween: 12,
+      spaceBetween: 5,
       slidesPerView: 5,
       {% comment %} direction: 'vertical', {% endcomment %}
       watchSlidesProgress: true,
@@ -58,12 +58,13 @@
       breakpoints: {
         1480: {
           direction: 'vertical',
+          spaceBetween: 12,
         },
       },
     });
 
     var swiper2 = new Swiper('.volufiline-product-slider__big', {
-      spaceBetween: 5,
+      spaceBetween: 10,
       // navigation: {
       //   nextEl: '.volufiline-swiper-button-next',
       //   prevEl: '.volufiline-swiper-button-prev',
@@ -72,11 +73,6 @@
       //   el: ".volufiline-product-pagination",
       //   clickable: true,
       // },
-       breakpoints: {
-        1480: {
-          spaceBetween: 10,
-        },
-      },
       thumbs: {
         swiper: swiper,
       },
