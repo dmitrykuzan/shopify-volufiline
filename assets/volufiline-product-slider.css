@@ -95,11 +95,10 @@
 }
 
 @media screen and (min-width: 550px) {
-  .volufiline-product-slider__image-thumbs {
+  .volufiline-product-slider__image-big {
     img {
        border-radius: 1rem;
     }
- 
   }
 }
 
