@@ -131,8 +131,13 @@
   }
 }
 
-.volufiline-product-slider__image-thumbs,
 .volufiline-product-slider__image-big {
+  img {
+    border-radius: 1rem;
+  }
+}
+
+.volufiline-product-slider__image-thumbs {
   img {
     height: auto;
     max-width: 100%;
