@@ -308,7 +308,7 @@ a.product__text {
   }
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 767px) {
   .product__title {
     flex-direction: row;
 
