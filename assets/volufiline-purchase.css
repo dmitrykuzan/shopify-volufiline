@@ -66,11 +66,13 @@
   gap: 2rem;
 
   h2 {
-    font-size: 3.2rem;
-    font-weight: 500;
-    line-height: 110%;
-    margin: initial;
-  }
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 120%;
+  margin: initial;
+  letter-spacing: -0.03em;
+}
+
 }
 
 @media screen and (min-width: 992px) {
