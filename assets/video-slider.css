@@ -156,6 +156,10 @@
     }
   }
 
+  .video-slider__subtitle {
+    font-size: 3.2rem;
+  }
+
   .video-slider__wrapper {
     max-width: 110rem;
   }
