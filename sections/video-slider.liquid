@@ -3,6 +3,7 @@
 <section class="video-slider page-width" id="VideoSlider{{ section.id }}">
   <div class="video-slider__titles">
     <h2>Unveil your glow with Volufiline</h2>
+    <p class="video-slider__subtitle">We’ve helped 50,000+ customers achieve their skin goals.</p>
     <div class="video-slider__titles-stars">
       <p>Rated 4.6 out 5 stars</p>
       <div class="video-slider__text-star">
@@ -18,14 +19,13 @@
         <span class="video-slider__counter">1,489</span>
       </div>
     </div>
-    <p class="video-slider__subtitle">We’ve helped 50,000+ customers achieve their skin goals.</p>
   </div>
 
   <div class="video-slider__wrapper">
     <div class="swiper video-slider__swiper">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
-          <div class="swiper-slide"> 
+          <div class="swiper-slide">
             <div class="video-slider__slide">
               <video
                 id="custom-video"
@@ -37,7 +37,12 @@
                 <source src="{{ block.settings.video_url  }}" type="video/mp4">
               </video>
               <button class="video-slider__slide-button" aria-label="Play video">
-                <img src="{{ 'play-button.png' | asset_url }}" width="80" height="80" alt="Play Volufiline Product Video">
+                <img
+                  src="{{ 'play-button.png' | asset_url }}"
+                  width="80"
+                  height="80"
+                  alt="Play Volufiline Product Video"
+                >
               </button>
             </div>
           </div>
