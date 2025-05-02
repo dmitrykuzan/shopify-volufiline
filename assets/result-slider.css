@@ -1,7 +1,8 @@
 .result-slider {
   margin-top: 5rem;
 
-  .volufiline-swiper-button-prev, .volufiline-swiper-button-next {
+  .volufiline-swiper-button-prev,
+  .volufiline-swiper-button-next {
     width: 5rem;
     height: 5rem;
     display: flex;
@@ -20,7 +21,7 @@
   .swiper-slide:nth-child(2) {
     .result-slider__slide {
       .result-slider__slide-increase-text::before {
-        width: 14%
+        width: 14%;
       }
     }
   }
@@ -28,7 +29,7 @@
   .swiper-slide:nth-child(3) {
     .result-slider__slide {
       .result-slider__slide-increase-text::before {
-        width: 40%
+        width: 40%;
       }
     }
   }
@@ -36,7 +37,7 @@
 
 @media screen and (min-width: 1280px) {
   .result-slider {
-   margin-top: 15rem;
+    margin-top: 15rem;
   }
 }
 
@@ -55,7 +56,25 @@
   }
 }
 
+@media screen and (min-width: 1023px) {
+  .result-slider__titles {
+    margin-bottom: 5rem;
+
+    h2 {
+      font-size: 3.4rem;
+    }
+  }
+}
+
 @media screen and (min-width: 1280px) {
+  .result-slider__titles {
+    h2 {
+      font-size: 6.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1680px) {
   .result-slider__titles {
     margin-bottom: 7rem;
 
@@ -80,7 +99,7 @@
 
 @media screen and (min-width: 1280px) {
   .result-slider__slide {
-   gap: 5rem;
+    gap: 5rem;
   }
 }
 
@@ -125,13 +144,13 @@
 
 @media screen and (min-width: 992px) {
   .result-slider__slide-image {
-   max-width: 40rem;
+    max-width: 40rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .result-slider__slide-image {
-   max-width: 55rem;
+    max-width: 55rem;
   }
 }
 
@@ -159,9 +178,9 @@
 
 @media screen and (min-width: 1280px) {
   .result-slider__slide-name {
-   p {
-    font-size: 3.2rem;
-   }
+    p {
+      font-size: 3.2rem;
+    }
   }
 }
 
@@ -182,9 +201,9 @@
 
 @media screen and (min-width: 1280px) {
   .result-slider__slide-verified {
-   p {
-    font-size: 1.8rem;
-   }
+    p {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -202,7 +221,7 @@
 
 @media screen and (min-width: 1280px) {
   .result-slider__slide-percent {
-   font-size: 3.2rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -232,16 +251,15 @@
   }
 }
 
-
 .result-slider__slide-increase-text::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 20%;
   height: 100%;
   left: 0;
   top: 0;
   z-index: -1;
-  background-color: #E3EEF0;
+  background-color: #e3eef0;
 }
 
 .result-slider__slide-title {
@@ -254,7 +272,7 @@
 
 @media screen and (min-width: 1280px) {
   .result-slider__slide-title {
-   font-size: 2.4rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -286,13 +304,11 @@
 
 @media screen and (min-width: 1280px) {
   .result-slider__slide-list-item {
-
     p {
       font-size: 2rem;
     }
   }
 }
-
 
 .result-slider__slide-description {
   p {
@@ -313,7 +329,6 @@
     }
   }
 }
-
 
 .result-slider__navigation-btns {
   position: absolute;
