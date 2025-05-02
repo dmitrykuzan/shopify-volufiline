@@ -20,11 +20,10 @@
   text-align: center;
 
   h2 {
-    font-size: 5.2rem; /* mobile-first size */
-    line-height: 110%;
+    font-size: 3.2rem;
+    line-height: 120%;
     font-weight: 500;
     color: #000;
-    margin: 0;
   }
 }
 
@@ -41,7 +40,7 @@
   p {
     font-size: 1.4rem;
     color: #000;
-    line-height: 133%;
+    line-height: 120%;
     margin: initial;
   }
 }
@@ -55,7 +54,7 @@
 .video-slider__subtitle {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.4rem;
-  line-height: 133%;
+  line-height: 120%;
 }
 
 .video-slider__text-star {
@@ -66,7 +65,7 @@
 
 .video-slider__counter {
   font-size: 1.4rem;
-  line-height: 133%;
+  line-height: 120%;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -121,22 +120,21 @@
   }
 
   .video-slider__titles {
-    gap: 2.5rem;
+    grid-gap: 2.5rem;
 
     h2 {
-      font-size: 5.6rem;
-      line-height: 110%;
+      font-size: 3.8rem;
     }
   }
 
   .video-slider__titles-stars {
     p {
-      font-size: 2.4rem;
+      font-size: 2rem;
     }
   }
 
   .video-slider__subtitle {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   .video-slider__wrapper {
@@ -154,13 +152,18 @@
 
   .video-slider__titles {
     h2 {
-      font-size: 6.0rem; /* was 6.8rem before */
-      line-height: 110%;
+      font-size: 6.0rem;
     }
   }
 
   .video-slider__subtitle {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
+  }
+
+  .video-slider__titles-stars {
+    p {
+      font-size: 2.4rem;
+    }
   }
 
   .video-slider__wrapper {
