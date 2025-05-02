@@ -1,5 +1,9 @@
 .volufiline-benefits {
   margin-top: 5rem;
+
+  .partners__logo {
+    max-width: 8rem;
+  }
 }
 
 .volufiline-benefits__slide {
