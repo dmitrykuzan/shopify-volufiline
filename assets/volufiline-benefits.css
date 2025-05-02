@@ -103,15 +103,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1.5rem;
   padding: 0;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 1rem auto;
   max-width: 100%;
   flex-wrap: wrap;
 }
 
 .volufiline-benefits__item {
-  max-width: 8rem;
+  max-width: 5rem;
   margin-left: auto;
   margin-right: auto;
   opacity: 1;
@@ -128,12 +128,12 @@
 
 @media screen and (min-width: 767px) {
   .volufiline-benefits__item {
-    max-width: 6rem;
+    max-width: 4.5rem;
   }
 }
 
 @media screen and (min-width: 1180px) {
   .volufiline-benefits__item {
-    max-width: 6rem;
+    max-width: 4.5rem;
   }
 }
