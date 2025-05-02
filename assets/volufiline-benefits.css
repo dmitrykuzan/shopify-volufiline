@@ -37,7 +37,7 @@
 .volufiline-benefits__slide-logo {
   display: flex;
   max-width: 15rem;
-  margin-left: auto;
+   margin-left: auto;
   margin-right: auto;
 
   svg {
@@ -82,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     .swiper-pagination-bullet {
       width: 0.8rem;
       height: 0.8rem;
@@ -106,8 +106,6 @@
   max-width: 33rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -2rem; /* move logos down closer to next section */
-  transform: translateY(2rem); /* fine-tune closer to red line */
 }
 
 @media screen and (min-width: 1024px) {
@@ -117,8 +115,6 @@
     margin-left: initial;
     margin-right: initial;
     gap: 2rem;
-    margin-bottom: -3rem; /* adjust for larger screen */
-    transform: translateY(3rem);
   }
 }
 
