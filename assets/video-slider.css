@@ -21,9 +21,10 @@
 
   h2 {
     font-size: 3.2rem;
-    line-height: 133%;
+    line-height: 120%;
     font-weight: 500;
     color: #000;
+    margin: initial;
   }
 }
 
@@ -76,7 +77,6 @@
 }
 
 .video-slider__slide {
-  /* aspect-ratio: 9 / 16; */
   position: relative;
   display: flex;
   border-radius: 2rem;
@@ -121,7 +121,8 @@
   }
 
   .video-slider__titles {
-    grid-gap: 2.5rem;
+    gap: 2.5rem;
+
     h2 {
       font-size: 3.6rem;
     }
@@ -152,12 +153,18 @@
 
   .video-slider__titles {
     h2 {
-      font-size: 6.4rem;
+      font-size: 6rem;
     }
   }
 
   .video-slider__subtitle {
     font-size: 3.2rem;
+  }
+
+  .video-slider__titles-stars {
+    p {
+      font-size: 3.2rem;
+    }
   }
 
   .video-slider__wrapper {
