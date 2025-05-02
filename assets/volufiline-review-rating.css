@@ -53,12 +53,18 @@
 
 @media screen and (min-width: 1024px) {
   .volufiline-review-rating__title {
-    font-size: 4.4rem;
+    font-size: 3.4rem;
     margin-bottom: 6rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .volufiline-review-rating__title {
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (min-width: 1680px) {
   .volufiline-review-rating__title {
     font-size: 6.4rem;
     margin-bottom: 10rem;
