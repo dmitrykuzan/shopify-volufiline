@@ -36,6 +36,12 @@
   }
 }
 
+@media screen and (min-width: 1680px) {
+  .volufiline-benefits__slider {
+    margin-top: 5rem;
+  }
+}
+
 .volufiline-benefits__swiper {
   position: relative;
 }
