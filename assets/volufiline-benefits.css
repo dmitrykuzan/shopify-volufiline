@@ -1,4 +1,3 @@
-
 .volufiline-benefits {
   margin-top: 5rem;
 }
@@ -10,9 +9,12 @@
 }
 
 .volufiline-benefits__slider {
-  background-color: rgb(245, 245, 245);
-  padding: 3rem 1.5rem;
-  margin-top: 4rem;
+  background-color: rgb(245 245 245);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 6rem;
   max-width: 100rem;
 }
 
@@ -24,7 +26,7 @@
 
 @media screen and (min-width: 1280px) {
   .volufiline-benefits__slider {
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
 }
 
@@ -35,7 +37,8 @@
 .volufiline-benefits__slide-logo {
   display: flex;
   max-width: 15rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   svg {
     width: 100%;
@@ -55,10 +58,11 @@
   display: flex;
   align-items: center;
   max-width: 18rem;
-  margin: 2.5rem auto 0 auto;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
 
-  .volufiline-benefits__button-next,
-  .volufiline-benefits__button-prev {
+  .volufiline-benefits__button-next, .volufiline-benefits__button-prev {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,16 +103,23 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 0;
-  margin: 8rem auto 4rem auto; /* pushed logos down further */
-  max-width: 100%;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 6rem auto 2rem auto; /* Push logos lower */
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  .volufiline-benefits__list {
+    margin: 8rem auto 3rem auto; /* More space on wide screens */
 }
 
 .volufiline-benefits__item {
   max-width: 8rem;
   opacity: 1;
   filter: grayscale(0%) contrast(100%);
+  display: flex;
+  justify-content: center;
 
   svg,
   img {
