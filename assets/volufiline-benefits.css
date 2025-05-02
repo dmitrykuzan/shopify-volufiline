@@ -99,45 +99,48 @@
 
 .volufiline-benefits__list {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 6rem auto 2rem auto; /* Push logos lower */
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: initial;
+  max-width: 33rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -2rem; /* move logos down closer to next section */
+  transform: translateY(2rem); /* fine-tune closer to red line */
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .volufiline-benefits__list {
-    margin: 8rem auto 3rem auto; /* More space on wide screens */
+    display: flex;
+    max-width: initial;
+    margin-left: initial;
+    margin-right: initial;
+    gap: 2rem;
+    margin-bottom: -3rem; /* adjust for larger screen */
+    transform: translateY(3rem);
+  }
 }
 
 .volufiline-benefits__item {
   max-width: 8rem;
-  opacity: 1;
-  filter: grayscale(0%) contrast(100%);
-  display: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
-  svg,
-  img {
+  svg {
     width: 100%;
-    height: auto;
-    filter: brightness(0) saturate(100%);
-    opacity: 1;
+    height: 100%;
   }
 }
 
 @media screen and (min-width: 767px) {
   .volufiline-benefits__item {
-    max-width: 6rem;
+    max-width: 12rem;
   }
 }
 
 @media screen and (min-width: 1180px) {
   .volufiline-benefits__item {
-    max-width: 6rem;
+    max-width: 20rem;
   }
 }
