@@ -9,9 +9,12 @@
 }
 
 .volufiline-benefits__slider {
-  background-color: rgb(245, 245, 245);
-  padding: 3rem 1.5rem;
-  margin-top: 4rem;
+  background-color: rgb(245 245 245);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
   max-width: 100rem;
 }
 
@@ -23,7 +26,7 @@
 
 @media screen and (min-width: 1280px) {
   .volufiline-benefits__slider {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 }
 
@@ -34,7 +37,8 @@
 .volufiline-benefits__slide-logo {
   display: flex;
   max-width: 15rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   svg {
     width: 100%;
@@ -54,7 +58,9 @@
   display: flex;
   align-items: center;
   max-width: 18rem;
-  margin: 2.5rem auto 0 auto;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
 
   .volufiline-benefits__button-next,
   .volufiline-benefits__button-prev {
@@ -99,13 +105,15 @@
   align-items: center;
   gap: 3rem;
   padding: 0;
-  margin: 0 auto 4rem auto; /* increased margin-bottom to push logos down */
+  margin: 0 auto 2rem auto;
   max-width: 100%;
   flex-wrap: wrap;
 }
 
 .volufiline-benefits__item {
   max-width: 8rem;
+  margin-left: auto;
+  margin-right: auto;
   opacity: 1;
   filter: grayscale(0%) contrast(100%);
 
