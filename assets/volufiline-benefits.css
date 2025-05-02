@@ -9,9 +9,12 @@
 }
 
 .volufiline-benefits__slider {
-  background-color: rgb(245, 245, 245);
-  padding: 3rem 1.5rem;
-  margin-top: 4rem;
+  background-color: rgb(245 245 245);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 6rem;
   max-width: 100rem;
 }
 
@@ -23,7 +26,7 @@
 
 @media screen and (min-width: 1280px) {
   .volufiline-benefits__slider {
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
 }
 
@@ -34,7 +37,8 @@
 .volufiline-benefits__slide-logo {
   display: flex;
   max-width: 15rem;
-  margin: 0 auto;
+   margin-left: auto;
+  margin-right: auto;
 
   svg {
     width: 100%;
@@ -54,10 +58,11 @@
   display: flex;
   align-items: center;
   max-width: 18rem;
-  margin: 2.5rem auto 0 auto;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
 
-  .volufiline-benefits__button-next,
-  .volufiline-benefits__button-prev {
+  .volufiline-benefits__button-next, .volufiline-benefits__button-prev {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     .swiper-pagination-bullet {
       width: 0.8rem;
       height: 0.8rem;
@@ -94,38 +99,44 @@
 
 .volufiline-benefits__list {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  padding: 0;
-  margin: 0 auto 4rem auto; /* moved logo block slightly lower */
-  max-width: 100%;
-  flex-wrap: wrap;
+  padding: initial;
+  max-width: 33rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .volufiline-benefits__list {
+    display: flex;
+    max-width: initial;
+    margin-left: initial;
+    margin-right: initial;
+    gap: 2rem;
+  }
 }
 
 .volufiline-benefits__item {
   max-width: 8rem;
-  opacity: 1;
-  filter: grayscale(0%) contrast(100%);
+  margin-left: auto;
+  margin-right: auto;
 
-  svg,
-  img {
+  svg {
     width: 100%;
-    height: auto;
-    filter: brightness(0) saturate(100%);
-    opacity: 1;
+    height: 100%;
   }
 }
 
 @media screen and (min-width: 767px) {
   .volufiline-benefits__item {
-    max-width: 6rem;
+    max-width: 12rem;
   }
 }
 
 @media screen and (min-width: 1180px) {
   .volufiline-benefits__item {
-    max-width: 6rem;
+    max-width: 20rem;
   }
 }
