@@ -14,7 +14,7 @@
   padding-right: 1.5rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  margin-top: 6rem;
+  margin-top: 1rem;
   max-width: 100rem;
 }
 
@@ -24,11 +24,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .volufiline-benefits__slider {
-    margin-top: 10rem;
-  }
-}
+
 
 .volufiline-benefits__swiper {
   position: relative;
