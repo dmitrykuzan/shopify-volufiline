@@ -20,7 +20,7 @@
   text-align: center;
 
   h2 {
-    font-size: 5.6rem; /* tighter, more elegant */
+    font-size: 5.2rem; /* mobile-first size */
     line-height: 110%;
     font-weight: 500;
     color: #000;
@@ -124,7 +124,7 @@
     gap: 2.5rem;
 
     h2 {
-      font-size: 6.4rem;
+      font-size: 5.6rem;
       line-height: 110%;
     }
   }
@@ -154,7 +154,7 @@
 
   .video-slider__titles {
     h2 {
-      font-size: 6.8rem;
+      font-size: 6.0rem; /* was 6.8rem before */
       line-height: 110%;
     }
   }
