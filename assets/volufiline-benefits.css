@@ -1,17 +1,5 @@
 .volufiline-benefits {
   margin-top: 5rem;
-
-  .partners__logo {
-    max-width: 10rem;
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .volufiline-benefits {
-    .partners__logo {
-      max-width: 12rem;
-    }
-  }
 }
 
 .volufiline-benefits__slide {
@@ -26,7 +14,7 @@
   padding-right: 1.5rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  margin-top: 1rem;
+  margin-top: 6rem;
   max-width: 100rem;
 }
 
@@ -36,9 +24,9 @@
   }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1280px) {
   .volufiline-benefits__slider {
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
 }
 
@@ -74,8 +62,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  .volufiline-benefits__button-next,
-  .volufiline-benefits__button-prev {
+  .volufiline-benefits__button-next, .volufiline-benefits__button-prev {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     .swiper-pagination-bullet {
       width: 0.8rem;
       height: 0.8rem;
@@ -153,13 +140,3 @@
     max-width: 20rem;
   }
 }
-.volufiline-benefits__slide-logo {
-  margin-bottom: 0rem !important;
-}
-
-.volufiline-benefits__slide-text {
-  margin-top: -0.5rem !important;
-  margin-bottom: 1rem !important;
-}
-
-
