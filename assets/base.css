@@ -3851,3 +3851,19 @@ h2, .h2, .headline-md {
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
+
+@media screen and (min-width: 1024px) {
+  .shopify-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section,
+  .page-width,
+  .index-section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
