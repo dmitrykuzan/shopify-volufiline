@@ -17,7 +17,7 @@
 .volufiline-benefits__slide {
   display: flex;
   flex-direction: column;
-  gap: 4rem; /* Increased spacing between logo and quote */
+  gap: 2.5rem; /* Slightly reduced spacing between logo and quote */
 }
 
 .volufiline-benefits__slider {
