@@ -1,5 +1,17 @@
 .volufiline-benefits {
   margin-top: 5rem;
+
+  .partners__logo {
+    max-width: 10rem;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .volufiline-benefits {
+    .partners__logo {
+      max-width: 12rem;
+    }
+  }
 }
 
 .volufiline-benefits__slide {
@@ -14,7 +26,7 @@
   padding-right: 1.5rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  margin-top: 6rem;
+  margin-top: 1rem;
   max-width: 100rem;
 }
 
@@ -24,9 +36,9 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1680px) {
   .volufiline-benefits__slider {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 }
 
@@ -39,6 +51,7 @@
   max-width: 15rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0rem !important; /* Tighter spacing */
 
   svg {
     width: 100%;
@@ -52,6 +65,8 @@
   max-width: 41rem;
   margin: 0 auto;
   color: #000;
+  margin-top: -0.5rem !important; /* Tighter spacing */
+  margin-bottom: 1rem !important; /* Tighter spacing */
 }
 
 .volufiline-benefits__navigation-btns {
@@ -62,7 +77,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  .volufiline-benefits__button-next, .volufiline-benefits__button-prev {
+  .volufiline-benefits__button-next,
+  .volufiline-benefits__button-prev {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +98,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     .swiper-pagination-bullet {
       width: 0.8rem;
       height: 0.8rem;
