@@ -662,12 +662,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const swiperResult = new Swiper('.volufiline-benefits__swiper', {
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false
-    },
-
+    const swiperResult = new Swiper('.volufiline-benefits__swiper', { autoplay: { delay: 5000, disableOnInteraction: false },
       spaceBetween: 20,
       slidesPerView: 1,
 
@@ -694,42 +689,3 @@
   ]
 }
 {% endschema %}
-
-<script>
-  let swiperInitiated = false;
-  let firstTransition = true;
-
-  const initVolufilineBenefitsSlider = () => {
-    if (swiperInitiated) return;
-
-    const swiper = new Swiper('.volufiline-benefits__swiper', {
-      loop: true,
-      speed: 700,
-      autoplay: {
-        delay: 2000, // First autoplay quicker
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: '.volufiline-benefits__button-next',
-        prevEl: '.volufiline-benefits__button-prev',
-      },
-      pagination: {
-        el: '.volufiline-benefits__pagination',
-        clickable: true,
-      },
-      on: {
-        slideChangeTransitionEnd: () => {
-          if (firstTransition) {
-            swiper.params.autoplay.delay = 6000; // Slower after first
-            swiper.autoplay.start();
-            firstTransition = false;
-          }
-        }
-      }
-    });
-
-    swiperInitiated = true;
-  };
-
-  document.addEventListener("DOMContentLoaded", initVolufilineBenefitsSlider);
-</script>
