@@ -17,7 +17,7 @@
 .volufiline-benefits__slide {
   display: flex;
   flex-direction: column;
-  gap: 0; /* Removed gap between logo and text */
+  gap: 0; /* Updated to remove gap between logo and text */
 }
 
 .volufiline-benefits__slider {
@@ -63,8 +63,6 @@
   line-height: 166%;
   max-width: 41rem;
   margin: 0 auto;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
   color: #000;
 }
 
@@ -155,3 +153,5 @@
     max-width: 20rem;
   }
 }
+
+
