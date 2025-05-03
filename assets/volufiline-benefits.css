@@ -153,5 +153,13 @@
     max-width: 20rem;
   }
 }
+.volufiline-benefits__slide-logo {
+  margin-bottom: 0.5rem !important;
+}
+
+.volufiline-benefits__slide-text {
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem !important;
+}
 
 
