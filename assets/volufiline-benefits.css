@@ -17,7 +17,7 @@
 .volufiline-benefits__slide {
   display: flex;
   flex-direction: column;
-  gap: 0; /* Updated to remove gap between logo and text */
+  gap: 4rem; /* Increased spacing between logo and quote */
 }
 
 .volufiline-benefits__slider {
@@ -51,7 +51,6 @@
   max-width: 15rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0rem !important; /* Tighter spacing */
 
   svg {
     width: 100%;
@@ -65,8 +64,6 @@
   max-width: 41rem;
   margin: 0 auto;
   color: #000;
-  margin-top: -0.5rem !important; /* Tighter spacing */
-  margin-bottom: 1rem !important; /* Tighter spacing */
 }
 
 .volufiline-benefits__navigation-btns {
