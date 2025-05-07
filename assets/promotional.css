@@ -23,6 +23,7 @@
 .promotional__image-wrapper img {
   width: 100%;
   height: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Added soft drop shadow */
 }
 
 .promotional__image {
@@ -33,6 +34,7 @@
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
+  overflow: visible; /* Ensure shadow is not clipped */
 }
 
 .promotional__image-text {
@@ -165,7 +167,7 @@
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 1rem; /* moved bottle down by 4px */
+    margin-top: 1rem;
   }
 
   .left-text,
