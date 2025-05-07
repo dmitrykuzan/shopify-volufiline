@@ -164,7 +164,7 @@
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 0.5rem; /* ↓ moves bottle down by 5px */
+    margin-top: 1rem; /* ↓ moved bottle down 10px total */
   }
 
   .left-text {
