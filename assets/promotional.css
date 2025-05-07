@@ -169,17 +169,17 @@
 
   .left-text,
   .right-text {
-    font-size: 1.3rem;     /* slightly smaller */
-    font-weight: 700;      /* more bold */
-    line-height: 105%;     /* tighter lines */
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 105%;
   }
 
   .left-text {
-    margin-top: 14.5rem;
+    margin-top: 16.5rem; /* moved down 30px */
   }
 
   .right-text {
-    margin-bottom: 0.5rem;
+    margin-bottom: 3.5rem; /* moved up 30px */
   }
 }
 
