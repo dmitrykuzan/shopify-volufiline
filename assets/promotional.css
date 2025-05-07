@@ -100,7 +100,6 @@
 
   .promotional__image-wrapper {
     max-width: 18rem;
-    margin-top: 0.4rem; /* newly added for desktop bottle shift */
   }
 
   .promotional__image {
@@ -160,7 +159,7 @@
 }
 
 @media screen and (max-width: 766px) {
-  .promotional__image {
+  .promotional__image {a
     margin-top: -7.5rem;
   }
 
