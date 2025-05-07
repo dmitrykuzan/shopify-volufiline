@@ -88,7 +88,7 @@
 .banner-with-title__text h2 {
   font-size: 2.6rem;
   line-height: 124%;
-  font-weight: 600;
+  font-weight: 700; /* was 600 */
   color: #000;
 }
 
@@ -144,6 +144,7 @@
 
   .banner-with-title__text h2 {
     font-size: 3rem;
+    font-weight: 700; /* was 600 */
   }
 
   .banner-with-title__text p {
@@ -162,6 +163,7 @@
 
   .banner-with-title__text h2 {
     font-size: 4.2rem;
+    font-weight: 700; /* was 600 */
   }
 
   .banner-with-title__text p {
@@ -190,6 +192,7 @@
 
   .banner-with-title__text h2 {
     font-size: 4.4rem;
+    font-weight: 700; /* was 600 */
   }
 
   .banner-with-title__text p {
@@ -208,6 +211,7 @@
 
   .banner-with-title__text h2 {
     font-size: 4.8rem;
+    font-weight: 700; /* was 600 */
   }
 
   .banner-with-title__text p {
