@@ -8,7 +8,7 @@
   font-weight: 700;
   text-align: center;
   margin: initial;
-  line-height: 90%; /* reduced 10% from 100% */
+  line-height: 90%;
   font-family: 'Manrope', sans-serif !important;
 }
 
@@ -65,7 +65,7 @@
   .promotional__text-title {
     font-size: 5rem;
     font-weight: 700;
-    line-height: 90%; /* reduced from 100% */
+    line-height: 90%;
   }
 }
 
@@ -81,7 +81,7 @@
   .promotional__text-title {
     font-size: 5rem;
     font-weight: 500;
-    line-height: 90%; /* reduced from 100% */
+    line-height: 90%;
   }
 
   .left-text {
@@ -109,7 +109,7 @@
 
   .promotional__text-title {
     font-size: 10rem;
-    line-height: 76.5%; /* reduced from 85% */
+    line-height: 76.5%;
     font-weight: 700;
   }
 
@@ -134,7 +134,7 @@
 @media screen and (min-width: 1600px) {
   .promotional__text-title {
     font-size: 16rem;
-    line-height: 81%; /* reduced from 90% */
+    line-height: 81%;
     font-weight: 700;
   }
 
@@ -155,5 +155,22 @@
   .right-text {
     max-width: 16rem;
     margin-bottom: 20rem;
+  }
+}
+
+/* ✅ Mobile-only adjustments */
+@media screen and (max-width: 766px) {
+  .promotional__image-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2.5rem; /* move bottle up */
+  }
+
+  .left-text {
+    margin-top: 15.5rem; /* move up */
+  }
+
+  .right-text {
+    margin-bottom: 1.5rem; /* move up */
   }
 }
