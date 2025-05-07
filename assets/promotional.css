@@ -8,7 +8,7 @@
   font-weight: 700;
   text-align: center;
   margin: initial;
-  line-height: 95%; /* reduced */
+  line-height: 90%; /* reduced 10% from 100% */
   font-family: 'Manrope', sans-serif !important;
 }
 
@@ -65,7 +65,7 @@
   .promotional__text-title {
     font-size: 5rem;
     font-weight: 700;
-    line-height: 95%; /* reduced */
+    line-height: 90%; /* reduced from 100% */
   }
 }
 
@@ -81,7 +81,7 @@
   .promotional__text-title {
     font-size: 5rem;
     font-weight: 500;
-    line-height: 95%; /* reduced */
+    line-height: 90%; /* reduced from 100% */
   }
 
   .left-text {
@@ -109,7 +109,7 @@
 
   .promotional__text-title {
     font-size: 10rem;
-    line-height: 80%; /* reduced */
+    line-height: 76.5%; /* reduced from 85% */
     font-weight: 700;
   }
 
@@ -134,7 +134,7 @@
 @media screen and (min-width: 1600px) {
   .promotional__text-title {
     font-size: 16rem;
-    line-height: 85%; /* reduced */
+    line-height: 81%; /* reduced from 90% */
     font-weight: 700;
   }
 
