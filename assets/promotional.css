@@ -8,7 +8,7 @@
   font-weight: 700;
   text-align: center;
   margin: initial;
-  line-height: 90%;
+  line-height: 90%; /* reduced 10% from 100% */
   font-family: 'Manrope', sans-serif !important;
 }
 
@@ -65,7 +65,7 @@
   .promotional__text-title {
     font-size: 5rem;
     font-weight: 700;
-    line-height: 90%;
+    line-height: 90%; /* reduced from 100% */
   }
 }
 
@@ -81,7 +81,7 @@
   .promotional__text-title {
     font-size: 5rem;
     font-weight: 500;
-    line-height: 90%;
+    line-height: 90%; /* reduced from 100% */
   }
 
   .left-text {
@@ -109,7 +109,7 @@
 
   .promotional__text-title {
     font-size: 10rem;
-    line-height: 76.5%;
+    line-height: 76.5%; /* reduced from 85% */
     font-weight: 700;
   }
 
@@ -134,7 +134,7 @@
 @media screen and (min-width: 1600px) {
   .promotional__text-title {
     font-size: 16rem;
-    line-height: 81%;
+    line-height: 81%; /* reduced from 90% */
     font-weight: 700;
   }
 
@@ -157,18 +157,20 @@
     margin-bottom: 20rem;
   }
 }
-
-/* ✅ Clean mobile-only fix: move bottle 5px left, everything 5px up */
 @media screen and (max-width: 766px) {
-  .promotional__image-wrapper {
-    position: relative;
-    left: -5px; /* move bottle left */
-    top: -5px;  /* move bottle up */
+  .promotional__image {
+    margin-top: -4.5rem; /* up by 0.5rem (8px), more than -4rem) */
   }
 
-  .left-text,
+  .promotional__image-wrapper {
+    transform: translateX(-5px); /* move bottle 5px left */
+  }
+
+  .left-text {
+    margin-top: 17.5rem; /* up 0.5rem (8px) from 18rem */
+  }
+
   .right-text {
-    position: relative;
-    top: -5px; /* move texts up */
+    margin-bottom: 3.5rem; /* up 0.5rem (8px) from 4rem */
   }
 }
