@@ -1,5 +1,10 @@
 .promotional {
   margin-top: 8rem;
+  width: 100%;
+  max-width: 1200px; /* Maximum size */
+  min-width: 280px; /* Minimum size */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .promotional__text-title {
@@ -100,7 +105,6 @@
 
   .promotional__image-wrapper {
     max-width: 18rem;
-    transform: translate(-10px, -50px); /* 10px left + 50px up */
   }
 
   .promotional__image {
@@ -141,7 +145,6 @@
 
   .promotional__image-wrapper {
     max-width: 20rem;
-    transform: translate(-10px, -50px); /* also apply 10px left */
   }
 
   .promotional__image {
@@ -167,8 +170,7 @@
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 1rem; /* mobile-specific positioning */
-    transform: none;
+    margin-top: 1rem;
   }
 
   .left-text,
