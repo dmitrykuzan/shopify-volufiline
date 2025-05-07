@@ -158,19 +158,23 @@
   }
 }
 
-/* ✅ Mobile-only adjustments */
+/* ✅ Mobile-only working fix */
 @media screen and (max-width: 766px) {
+  .promotional__image {
+    display: block;
+    margin-top: -6.5rem;
+  }
+
   .promotional__image-wrapper {
     margin-left: auto;
     margin-right: auto;
-    margin-top: -2.5rem; /* move bottle up */
   }
 
   .left-text {
-    margin-top: 15.5rem; /* move up */
+    margin-top: 15.5rem;
   }
 
   .right-text {
-    margin-bottom: 1.5rem; /* move up */
+    margin-bottom: 1.5rem;
   }
 }
