@@ -85,7 +85,7 @@
   }
 
   .promotional__image-wrapper {
-    transform: translateY(-50px); /* move bottle up on tablet+ */
+    transform: translateY(10px);
   }
 
   .left-text {
@@ -104,6 +104,7 @@
 
   .promotional__image-wrapper {
     max-width: 18rem;
+    transform: translateY(4px);
   }
 
   .promotional__image {
@@ -169,8 +170,8 @@
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 1rem; /* mobile: moved bottle down by 4px */
-    transform: none !important; /* override any desktop translate */
+    margin-top: 1rem;
+    transform: none !important;
   }
 
   .left-text,
