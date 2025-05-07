@@ -164,15 +164,17 @@
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 0.75rem; /* adjusted to 7.5px down */
+    margin-top: 0.75rem; /* bottle down 7.5px */
   }
 
   .left-text {
     margin-top: 14.5rem;
+    line-height: 110%; /* tightened */
   }
 
   .right-text {
     margin-bottom: 0.5rem;
+    line-height: 110%; /* tightened */
   }
 }
 
