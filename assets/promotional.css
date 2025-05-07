@@ -159,18 +159,18 @@
 }
 @media screen and (max-width: 766px) {
   .promotional__image {
-    margin-top: -4.5rem; /* originally -4rem → 5px higher */
+    margin-top: -6.5rem; /* originally -4rem, now 25px higher */
   }
 
   .promotional__image-wrapper {
-    margin-left: -0.5rem; /* nudge bottle 5px left */
+    margin-left: -1.5rem; /* nudge bottle left toward center */
   }
 
   .left-text {
-    margin-top: 17.5rem; /* originally 18rem → 5px higher */
+    margin-top: 15.5rem; /* originally 18rem */
   }
 
   .right-text {
-    margin-bottom: 3.5rem; /* originally 4rem → 5px higher */
+    margin-bottom: 1.5rem; /* originally 4rem */
   }
 }
