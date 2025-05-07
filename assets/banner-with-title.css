@@ -118,10 +118,8 @@
   background-color: #000;
   color: #fff;
   font-size: 1.3rem;
-  padding-top: 1.6rem;     /* final */
-  padding-bottom: 1.6rem;  /* final */
-  padding-left: 5rem;      /* final */
-  padding-right: 5rem;     /* final */
+  padding-left: 3rem;
+  padding-right: 3rem;
   font-weight: 900;
   transition: background-color 0.3s linear;
 }
@@ -174,10 +172,6 @@
     max-width: 28rem;
     min-height: 6rem;
     font-size: 2rem;
-    padding-top: initial;
-    padding-bottom: initial;
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 }
 
