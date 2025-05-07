@@ -100,6 +100,7 @@
 
   .promotional__image-wrapper {
     max-width: 18rem;
+    transform: translateY(-50px); /* moved bottle UP by 50px */
   }
 
   .promotional__image {
@@ -159,13 +160,13 @@
 }
 
 @media screen and (max-width: 766px) {
-  .promotional__image {a
+  .promotional__image {
     margin-top: -7.5rem;
   }
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 1rem; /* moved bottle down by 4px */
+    margin-top: 1rem;
   }
 
   .left-text,
