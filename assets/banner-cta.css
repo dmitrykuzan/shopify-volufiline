@@ -96,10 +96,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 4rem;
-  padding-top: 1.4rem;      /* updated */
-  padding-bottom: 1.4rem;   /* updated */
-  padding-left: 4rem;       /* updated */
-  padding-right: 4rem;      /* updated */
+  padding-top: 1.8rem;     /* updated */
+  padding-bottom: 1.8rem;  /* updated */
+  padding-left: 4rem;
+  padding-right: 4rem;
   font-size: 1.4rem;
   font-weight: 800;
   text-decoration: none;
