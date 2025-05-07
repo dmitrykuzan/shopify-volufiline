@@ -159,19 +159,20 @@
 }
 @media screen and (max-width: 766px) {
   .promotional__image {
-    margin-top: -7.5rem; /* lifted higher */
+    margin-top: -7.5rem;
   }
 
   .promotional__image-wrapper {
-    margin-left: -2.2rem; /* pushed bottle more to the left */
+    margin-left: -2.2rem;
+    margin-top: 0.5rem; /* ↓ moves bottle down by 5px */
   }
 
   .left-text {
-    margin-top: 14.5rem; /* up from 15.5rem */
+    margin-top: 14.5rem;
   }
 
   .right-text {
-    margin-bottom: 0.5rem; /* up from 1.5rem */
+    margin-bottom: 0.5rem;
   }
 }
 
