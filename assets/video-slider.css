@@ -165,3 +165,12 @@
     max-width: 110rem;
   }
 }
+.mobile-break {
+  display: none;
+}
+
+@media screen and (max-width: 766px) {
+  .mobile-break {
+    display: inline;
+  }
+}
