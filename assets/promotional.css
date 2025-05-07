@@ -175,11 +175,11 @@
   }
 
   .left-text {
-    margin-top: 16.5rem; /* moved down 30px */
+    margin-top: 18.5rem; /* 60px lower total */
   }
 
   .right-text {
-    margin-bottom: 3.5rem; /* moved up 30px */
+    margin-bottom: 6.5rem; /* 60px higher total */
   }
 }
 
