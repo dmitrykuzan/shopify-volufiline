@@ -3,7 +3,7 @@
 }
 
 .promotional__text-title {
-  font-size: 4.4rem; /* increased by 10% for mobile */
+  font-size: 4rem;
   color: #000;
   font-weight: 800; /* Changed to semibold */
   text-align: center;
