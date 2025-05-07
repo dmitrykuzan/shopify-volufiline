@@ -85,7 +85,7 @@
   }
 
   .promotional__image-wrapper {
-    transform: translateY(-50px); /* move bottle up on tablet+ */
+    margin-top: 1rem; /* +10px on tablet */
   }
 
   .left-text {
@@ -104,6 +104,7 @@
 
   .promotional__image-wrapper {
     max-width: 18rem;
+    margin-top: 1rem; /* +10px on desktop */
   }
 
   .promotional__image {
@@ -169,8 +170,7 @@
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 1rem; /* mobile: moved bottle down by 4px */
-    transform: none !important; /* override any desktop translate */
+    margin-top: 1rem; /* correct mobile bottle position, untouched */
   }
 
   .left-text,
