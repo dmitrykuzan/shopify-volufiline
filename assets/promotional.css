@@ -106,7 +106,6 @@
   .promotional__image {
     max-width: 56rem;
     margin-top: -7rem;
-    margin-left: -2rem; /* shifted left */
   }
 
   .promotional__text-title {
@@ -147,7 +146,6 @@
   .promotional__image {
     margin-top: -10rem;
     max-width: 63rem;
-    margin-left: -2rem; /* shifted left */
   }
 
   .left-text {
@@ -168,7 +166,7 @@
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 1rem; /* moved bottle down slightly */
+    margin-top: 1rem;
   }
 
   .left-text,
