@@ -100,7 +100,7 @@
 
   .promotional__image-wrapper {
     max-width: 18rem;
-    transform: translate(-3px, 5px); /* moved bottle 3px left, 5px down */
+    transform: translate(-10px, -50px); /* 10px left + 50px up */
   }
 
   .promotional__image {
@@ -141,7 +141,7 @@
 
   .promotional__image-wrapper {
     max-width: 20rem;
-    transform: translate(-3px, 5px); /* also apply 3px left, 5px down */
+    transform: translate(-10px, -50px); /* also apply 10px left */
   }
 
   .promotional__image {
