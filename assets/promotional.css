@@ -1,5 +1,9 @@
 .promotional {
   margin-top: 8rem;
+  width: 100%; /* Allows the section to resize based on the container width */
+  max-width: 1200px; /* Maximum width for the section */
+  margin-left: auto;
+  margin-right: auto; /* Center the section */
 }
 
 .promotional__text-title {
@@ -96,11 +100,12 @@
 @media screen and (min-width: 1024px) {
   .promotional {
     margin-top: 14rem;
+    max-width: 100%; /* Ensures responsiveness */
   }
 
   .promotional__image-wrapper {
     max-width: 18rem;
-    transform: translate(-10px, -50px); /* 10px left + 50px up */
+    transform: translate(10px, 5px); /* moved bottle 10px to the right and 5px down */
   }
 
   .promotional__image {
@@ -141,7 +146,7 @@
 
   .promotional__image-wrapper {
     max-width: 20rem;
-    transform: translate(-10px, -50px); /* also apply 10px left */
+    transform: translate(10px, 5px); /* moved bottle 10px to the right and 5px down */
   }
 
   .promotional__image {
@@ -167,8 +172,7 @@
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 1rem; /* mobile-specific positioning */
-    transform: none;
+    margin-top: 1rem;
   }
 
   .left-text,
