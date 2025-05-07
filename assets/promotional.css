@@ -183,8 +183,3 @@
     margin-bottom: 6.5rem;
   }
 }
-.promotional__image-wrapper img {
-  box-shadow: 0 0 50px 10px rgba(255, 0, 0, 0.5) !important;
-  position: relative;
-  z-index: 9999;
-}
