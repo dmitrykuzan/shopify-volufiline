@@ -127,7 +127,7 @@
 
   .right-text {
     max-width: 16rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6.5rem; /* Moved right text up */
     line-height: 120%;
   }
 }
@@ -156,7 +156,7 @@
 
   .right-text {
     max-width: 16rem;
-    margin-bottom: 20rem;
+    margin-bottom: 18rem; /* Moved right text up */
   }
 }
 
@@ -167,8 +167,7 @@
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 1rem; /* mobile-specific positioning */
-    transform: none;
+    margin-top: 1rem;
   }
 
   .left-text,
