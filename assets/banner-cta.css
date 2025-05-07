@@ -39,14 +39,14 @@
 
   h3 {
     font-size: 1.6rem;
-    font-weight: 800; /* More bold */
+    font-weight: 800;
     line-height: 133%;
   }
 
   p {
     font-size: 1.4rem;
     line-height: 133%;
-    font-weight: 700; /* More bold */
+    font-weight: 700;
   }
 }
 
@@ -73,7 +73,7 @@
     font-size: 3.6rem;
     line-height: 100%;
     color: #000;
-    font-weight: 700;
+    font-weight: 400; /* Changed from 700 to 400 */
   }
 }
 
@@ -95,7 +95,7 @@
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 1.4rem;
-  font-weight: 800; /* Extra bold */
+  font-weight: 800;
   text-decoration: none;
   min-width: 12rem;
   min-height: 4.2rem;
@@ -138,16 +138,17 @@
   .banner-cta__benefits span {
     font-size: 5.1rem;
     line-height: 85%;
+    font-weight: 400; /* Changed from 700 to 400 */
   }
 
   .banner-cta__mobile-text h3 {
     font-size: 1.6rem;
-    font-weight: 800; /* More bold */
+    font-weight: 800;
   }
 
   .banner-cta__mobile-text p {
     font-size: 1.44rem;
-    font-weight: 700; /* More bold */
+    font-weight: 700;
   }
 
   .banner-cta__link {
@@ -189,6 +190,7 @@
     span {
       font-size: 9.6rem;
       line-height: 100%;
+      font-weight: 400; /* Changed from 700 to 400 */
     }
   }
 
