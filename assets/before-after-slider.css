@@ -60,6 +60,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  transition: transform 0.3s ease-in-out; /* added for autoplay smoothness */
 }
 
 .before-after-slider__slide-part {
@@ -150,3 +151,10 @@
     font-weight: 500;
   }
 }
+
+/* Note: Enable Swiper autoplay in your JS for this to take effect:
+autoplay: {
+  delay: 5000,
+  disableOnInteraction: false,
+}
+*/
