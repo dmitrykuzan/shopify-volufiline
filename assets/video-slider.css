@@ -53,7 +53,7 @@
 
 .video-slider__subtitle {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 1.4rem;
+  font-size: 1.61rem; /* increased by 15% */
   line-height: 133%;
 }
 
@@ -135,7 +135,7 @@
   }
 
   .video-slider__subtitle {
-    font-size: 2rem;
+    font-size: 2.3rem; /* increased by 15% */
   }
 
   .video-slider__wrapper {
@@ -158,7 +158,7 @@
   }
 
   .video-slider__subtitle {
-    font-size: 2.4rem;
+    font-size: 2.76rem; /* increased by 15% */
   }
 
   .video-slider__wrapper {
