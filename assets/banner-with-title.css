@@ -111,9 +111,9 @@
   justify-content: center;
   text-decoration: none;
   align-items: center;
-  min-height: 5rem; /* was 4.2rem */
+  min-height: 5rem;
   border-radius: 4rem;
-  max-width: 16rem; /* was 13rem */
+  max-width: 14.5rem; /* reduced from 16rem */
   text-align: center;
   background-color: #000;
   color: #fff;
@@ -171,8 +171,8 @@
   }
 
   .banner-with-title__link {
-    max-width: 30rem; /* was 28rem */
-    min-height: 6.5rem; /* was 6rem */
+    max-width: 26rem; /* reduced from 30rem */
+    min-height: 6.5rem;
     font-size: 2rem;
   }
 }
