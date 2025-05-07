@@ -46,8 +46,8 @@
   p {
     font-size: 1.4rem;
     line-height: 133%;
-    font-weight: 400; /* changed from 700 */
-    color: #000;       /* added to ensure it's black */
+    font-weight: 500; /* updated */
+    color: #000;       /* added */
   }
 }
 
@@ -60,7 +60,7 @@
     p {
       text-align: center;
       font-size: 1.8rem;
-      font-weight: 400; /* changed from 700 */
+      font-weight: 500; /* updated */
       color: #000;
     }
   }
@@ -151,7 +151,7 @@
 
   .banner-cta__mobile-text p {
     font-size: 1.44rem;
-    font-weight: 400; /* changed from 700 */
+    font-weight: 500; /* updated */
     color: #000;
   }
 
@@ -211,7 +211,7 @@
 
   .banner-cta__mobile-text p {
     font-size: 1.8rem;
-    font-weight: 400; /* changed from 700 */
+    font-weight: 500; /* updated */
     color: #000;
   }
 }
