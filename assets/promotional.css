@@ -84,10 +84,6 @@
     line-height: 85%;
   }
 
-  .promotional__image-wrapper {
-    margin-top: 1rem; /* +10px on tablet */
-  }
-
   .left-text {
     max-width: 13rem;
   }
@@ -104,7 +100,7 @@
 
   .promotional__image-wrapper {
     max-width: 18rem;
-    margin-top: 1rem; /* +10px on desktop */
+    transform: translateY(-50px); /* moved bottle UP by 50px */
   }
 
   .promotional__image {
@@ -170,7 +166,7 @@
 
   .promotional__image-wrapper {
     margin-left: -2.2rem;
-    margin-top: 1rem; /* correct mobile bottle position, untouched */
+    margin-top: 1rem;
   }
 
   .left-text,
