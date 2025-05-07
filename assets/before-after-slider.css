@@ -34,13 +34,13 @@
     font-size: 3.2rem;
     line-height: 133%;
     color: #000;
-    font-weight: 600; /* was 500 */
+    font-weight: 600; /* bolder */
   }
 
   p {
     color: rgba(0, 0, 0, 0.5);
     line-height: 130%;
-    font-weight: 600; /* was 500 (now bolded as well) */
+    font-weight: 500; /* reverted */
   }
 
   >* {
@@ -136,12 +136,12 @@
 
     h2 {
       font-size: 6.4rem;
-      font-weight: 600; /* bolder */
+      font-weight: 600; /* still bolder */
     }
 
     p {
       font-size: 3rem;
-      font-weight: 600; /* bolder */
+      font-weight: 500; /* reverted */
     }
   }
 
