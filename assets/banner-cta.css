@@ -39,14 +39,15 @@
 
   h3 {
     font-size: 1.6rem;
-    font-weight: 800; /* More bold */
+    font-weight: 800;
     line-height: 133%;
   }
 
   p {
     font-size: 1.4rem;
     line-height: 133%;
-    font-weight: 700; /* More bold */
+    font-weight: 400; /* changed from 700 */
+    color: #000;       /* added to ensure it's black */
   }
 }
 
@@ -58,6 +59,9 @@
 
     p {
       text-align: center;
+      font-size: 1.8rem;
+      font-weight: 400; /* changed from 700 */
+      color: #000;
     }
   }
 }
@@ -95,7 +99,7 @@
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 1.4rem;
-  font-weight: 800; /* Extra bold */
+  font-weight: 800;
   text-decoration: none;
   min-width: 12rem;
   min-height: 4.2rem;
@@ -142,12 +146,13 @@
 
   .banner-cta__mobile-text h3 {
     font-size: 1.6rem;
-    font-weight: 800; /* More bold */
+    font-weight: 800;
   }
 
   .banner-cta__mobile-text p {
     font-size: 1.44rem;
-    font-weight: 700; /* More bold */
+    font-weight: 400; /* changed from 700 */
+    color: #000;
   }
 
   .banner-cta__link {
@@ -163,7 +168,7 @@
 
 @media screen and (min-width: 1260px) {
   .banner-cta__text {
-     padding-left: 10rem;
+    padding-left: 10rem;
   }
 }
 
@@ -206,6 +211,7 @@
 
   .banner-cta__mobile-text p {
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 400; /* changed from 700 */
+    color: #000;
   }
 }
