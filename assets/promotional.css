@@ -51,7 +51,7 @@
 
 .right-text {
   margin-top: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 0;  /* Removed margin-bottom to move text up */
   text-align: right;
   max-width: 9rem;
   line-height: 133%;
@@ -127,7 +127,7 @@
 
   .right-text {
     max-width: 16rem;
-    margin-bottom: 8rem;
+    margin-bottom: -4rem; /* Moved right text up by reducing margin-bottom */
     line-height: 120%;
   }
 }
@@ -156,7 +156,7 @@
 
   .right-text {
     max-width: 16rem;
-    margin-bottom: 20rem;
+    margin-bottom: -10rem; /* Moved right text up further */
   }
 }
 
