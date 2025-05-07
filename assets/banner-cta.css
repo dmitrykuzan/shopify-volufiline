@@ -46,8 +46,8 @@
   p {
     font-size: 1.4rem;
     line-height: 133%;
-    font-weight: 500; /* updated */
-    color: #000;       /* added */
+    font-weight: 500;
+    color: #000;
   }
 }
 
@@ -60,7 +60,7 @@
     p {
       text-align: center;
       font-size: 1.8rem;
-      font-weight: 500; /* updated */
+      font-weight: 500;
       color: #000;
     }
   }
@@ -96,8 +96,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: 1.4rem;      /* updated */
+  padding-bottom: 1.4rem;   /* updated */
+  padding-left: 4rem;       /* updated */
+  padding-right: 4rem;      /* updated */
   font-size: 1.4rem;
   font-weight: 800;
   text-decoration: none;
@@ -151,7 +153,7 @@
 
   .banner-cta__mobile-text p {
     font-size: 1.44rem;
-    font-weight: 500; /* updated */
+    font-weight: 500;
     color: #000;
   }
 
@@ -162,6 +164,8 @@
     min-height: 5.7rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    padding-top: initial;
+    padding-bottom: initial;
     border-radius: 4rem;
   }
 }
@@ -202,6 +206,10 @@
     font-weight: 800;
     min-width: 26rem;
     min-height: 7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: initial;
+    padding-bottom: initial;
   }
 
   .banner-cta__mobile-text h3 {
@@ -211,7 +219,7 @@
 
   .banner-cta__mobile-text p {
     font-size: 1.8rem;
-    font-weight: 500; /* updated */
+    font-weight: 500;
     color: #000;
   }
 }
