@@ -59,6 +59,8 @@
 
 .promotional__link {
   max-width: 31rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 370px) {
