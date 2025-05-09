@@ -35,6 +35,10 @@
   }
 }
 
+.result-slider__purchase {
+  max-width: 42rem;
+}
+
 @media screen and (min-width: 1280px) {
   .result-slider {
     margin-top: 15rem;
