@@ -61,6 +61,7 @@
   max-width: 31rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 370px) {
