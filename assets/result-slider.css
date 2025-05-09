@@ -37,6 +37,9 @@
 
 .result-slider__purchase {
   max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 1280px) {
