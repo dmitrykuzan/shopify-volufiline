@@ -46,6 +46,10 @@
   .result-slider {
     margin-top: 15rem;
   }
+
+  .result-slider__purchase {
+    margin-top: 5rem;
+  }
 }
 
 .result-slider__wrapper {
