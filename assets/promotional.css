@@ -57,6 +57,10 @@
   line-height: 133%;
 }
 
+.promotional__link {
+  max-width: 31rem;
+}
+
 @media screen and (min-width: 370px) {
   .promotional__image-text {
     font-size: 1.5rem;
