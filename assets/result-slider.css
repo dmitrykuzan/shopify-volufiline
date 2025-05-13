@@ -129,14 +129,13 @@
 
 @media screen and (min-width: 1024px) {
   .result-slider__slide-content {
-    gap: 5rem;
+    gap: 3rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .result-slider__slide-content {
     justify-content: space-between;
-    gap: 7rem;
   }
 }
 
