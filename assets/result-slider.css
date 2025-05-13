@@ -395,15 +395,7 @@
   }
 }
 
-@media screen and (min-width: 1680px) {
-  .result-slider__navigation-btns {
-    margin-top: 5rem;
-  }
 
-    /* .result-slider__wrapper {
-        max-width: 130rem;
-    } */
-}
 
 .result-slider__pagination {
   width: max-content !important;
