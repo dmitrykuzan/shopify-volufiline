@@ -106,7 +106,7 @@
   gap: 1rem;
 
   p {
-    margin:  initial;
+    margin: initial;
     font-size: 1.8rem;
     font-weight: 500;
     color: #000;
@@ -169,10 +169,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  .result-slider__slide-image {
-    max-width: 30rem;
-  }
-
   .result-slider__wrapper {
     max-width: 85rem;
     position: relative;
@@ -285,8 +281,6 @@
   .result-slider__wrapper {
     max-width: 90rem;
   }
-
- 
 }
 
 .result-slider__slide-increase-text::before {
@@ -325,7 +319,7 @@
 
 @media screen and (min-width: 1280px) {
   .result-slider__slide-list {
-   gap: 2rem;
+    gap: 2rem;
   }
 }
 
@@ -394,8 +388,6 @@
     gap: 2rem;
   }
 }
-
-
 
 .result-slider__pagination {
   width: max-content !important;
