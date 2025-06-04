@@ -20,10 +20,6 @@
           "type": "price",
           "settings": {}
         },
-        "judge_me_reviews_preview_badge_gqHfzL": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -50,7 +46,6 @@
       "block_order": [
         "title",
         "price",
-        "judge_me_reviews_preview_badge_gqHfzL",
         "variant_picker",
         "description",
         "quantity_selector",
@@ -797,21 +792,6 @@
         "list_item_ijewhh"
       ],
       "settings": {}
-    },
-    "17490366221c07f601": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_RDU7DM": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_RDU7DM"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -823,7 +803,6 @@
     "volufiline_purchase_ykQfwT",
     "collapsible_content_bBUtmC",
     "volufiline_review_rating_cRaKrF",
-    "custom_review_7z7dGf",
-    "17490366221c07f601"
+    "custom_review_7z7dGf"
   ]
 }
