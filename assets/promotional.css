@@ -54,7 +54,7 @@
   }
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 410px) {
   .promotional__image-mobile {
     left: 12rem;
   }
