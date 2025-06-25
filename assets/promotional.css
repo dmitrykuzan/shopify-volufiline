@@ -63,6 +63,12 @@
   }
 }
 
+@media screen and (min-width: 1023px) {
+  .promotional__image-mobile {
+    display: none;
+  }
+}
+
 
 .promotional__image {
   display: flex;
