@@ -53,6 +53,10 @@
   margin-top: -7.5rem;
 }
 
+.promotional__text {
+  z-index: -2;
+}
+
 .promotional__image-text {
   font-size: 1.4rem;
   font-weight: 500;
