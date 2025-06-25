@@ -45,6 +45,12 @@
   }
 }
 
+@media screen and (min-width: 370px) {
+  .promotional__image-mobile {
+    left: 10rem;
+  }
+}
+
 @media screen and (min-width: 385px) {
   .promotional__image-mobile {
     left: 11rem;
