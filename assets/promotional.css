@@ -67,6 +67,10 @@
   .promotional__image-mobile {
     display: none;
   }
+
+  .promotional__image-desktop {
+    display: block;
+  }
 }
 
 
