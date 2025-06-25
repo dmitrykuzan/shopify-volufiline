@@ -1,4 +1,5 @@
 .promotional {
+  overflow: hidden;
   margin-top: 8rem;
 }
 
@@ -29,6 +30,16 @@
   display: none;
 }
 
+.promotional__image-mobile {
+  top: 4rem;
+  left: 9rem;
+  height: 71rem;
+  width: 41rem;
+  position: absolute;
+  z-index: -1;
+}
+
+
 .promotional__image {
   display: flex;
   justify-content: space-between;
@@ -37,6 +48,9 @@
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
+
+  height: 45rem;
+  margin-top: -7.5rem;
 }
 
 .promotional__image-text {
