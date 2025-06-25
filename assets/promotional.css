@@ -45,6 +45,12 @@
   }
 }
 
+@media screen and (min-width: 410px) {
+  .promotional__image-mobile {
+    left: 13rem;
+  }
+}
+
 
 .promotional__image {
   display: flex;
