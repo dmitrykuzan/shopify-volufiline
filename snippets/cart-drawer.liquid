@@ -454,6 +454,182 @@
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
       </cart-drawer-items>
+
+
+
+      {%- if cart != empty -%}
+
+        
+ {% assign found = false %}
+{% for item in cart.items %}
+  {% if item.variant_id == 50392266572070 %}
+    {% assign found = true %}
+  {% endif %}
+{% endfor %}
+
+{% if found %}
+ 
+{% else %}
+   <!--  -->
+<div class="mini-cart__membership_v2">
+  <div class="loading-overlay__spinner">
+  <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+  </svg>
+</div>
+
+  <div class="mini-cart__membership_v2__header">
+    <div class="mini-cart__membership_v2__header-title">{{ settings.heading }}<div class="flashing_arrow"><img src="https://cdn.shopify.com/s/files/1/0591/5289/2100/files/cfvfg.png?v=1747074559"></div></div>
+    <div>
+{%  assign selling_plan = '' %}
+{%  assign select_product = settings.susbcription_product %}
+ {% for selling_plan_group in select_product.selling_plan_groups %}
+{% for plan in selling_plan_group.selling_plans %}
+{%  assign selling_plan = plan.id %}
+{% endfor %}
+{% endfor %}
+      
+      <button class="add_membership_cart button" variant_id="{{ select_product.variants.first.id }}" selling_plan="{{ selling_plan }}">
+        <svg style="display:none;" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none">
+  <path d="M3 12H21M21 12L14 19M21 12L14 5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+        <span class="exp-cart-none">{{ settings.btn_heading }}</span>
+
+      </button>
+    </div>
+  </div>
+
+  <div class="mini-cart__membership_v2__body">
+    <div class="main_col_title">
+      <span class="column_header">{{ settings.tab_1_line_1 }}</span>
+      
+<svg class="membership-upsell-tooltip" style="display:none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14px" height="14px" style="position: relative; top: 3px;">
+        <path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 11 7 L 11 9 L 13 9 L 13 7 L 11 7 z M 11 11 L 11 17 L 13 17 L 13 11 L 11 11 z"></path>
+      </svg>
+      <div class="fake-tooltip-area">
+        <div class="wrraper_ttoltip">
+    <span class="close-fake-tooltip">
+      <svg class="icon-close close-fake-tooltip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><g stroke="currentColor" stroke-width="2" stroke-miterlimit="10"><path d="m4 4 16 16M20 4 4 20"></path></g></svg>
+    </span>
+     {{ settings.rich_text }}
+    </div>
+        
+<div class="trial_text"> 
+{{ settings.rich_text2 }}
+</div>
+        
+  </div>
+    </div>
+
+    <div class="column_header center_item top-item text-center">
+      <span class="column_header">{{ settings.tab_1_line_2 }}</span>
+    </div>
+
+    <div class="column_header text-center">
+      <span class="column_header">{{ settings.tab_1_line_3 }}</span>
+    </div>
+
+    <div class="mini-cart__membership_v2__main_item">
+      
+        <p class="text">{{ settings.tab_2_line_1 }}</p>
+      
+    </div>
+
+    <div class="mini-cart__membership_v2__secondary_item center_item">
+      <p class="discount_price">
+        <span class="money">{{ cart.total_price | times:0.80 | money }} </span>
+        
+      </p>
+    </div>
+
+    <div class="mini-cart__membership_v2__secondary_item">
+      <p>
+        <span class="money">{{ cart.total_price | money }}</span>
+      </p>
+    </div>
+
+    <div class="mini-cart__membership_v2__main_item">
+      <p class="text">{{ settings.tab_3_line_1 }}</p>
+    </div>
+
+    <div class="mini-cart__membership_v2__secondary_item center_item">
+      <p class="discount_price second-price">
+        
+        
+        
+  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" fill="none">
+    <path d="M1 5L4 8L10.5 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+
+      </p>
+    </div>
+
+    <div class="mini-cart__membership_v2__secondary_item gray">
+      <span class="text"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+    <path d="M10.6055 3.53564L3.5344 10.6067" stroke="#0C0A09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M10.6055 10.6064L3.5344 3.53538" stroke="#0C0A09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg></span>
+    </div>
+
+    <div class="mini-cart__membership_v2__main_item">
+      
+        <p>{{ settings.tab_4_line_1 }}</p>
+      
+    </div>
+
+    <div class="mini-cart__membership_v2__secondary_item center_item">
+      <span class="text" style="font-weight: 600; color: #000">{{ settings.tab_4_line_2 }}</span>
+    </div>
+
+    <div class="mini-cart__membership_v2__secondary_item gray">
+      <span class="text">{{ settings.tab_4_line_3 }}</span>
+    </div>
+
+    <div class="mini-cart__membership_v2__main_item">
+      <p>{{ settings.tab_5_line_1 }}</p>
+    </div>
+
+    <div class="mini-cart__membership_v2__secondary_item center_item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" fill="none">
+    <path d="M1 5L4 8L10.5 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+    </div>
+
+    <div class="mini-cart__membership_v2__secondary_item gray">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+    <path d="M10.6055 3.53564L3.5344 10.6067" stroke="#0C0A09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M10.6055 10.6064L3.5344 3.53538" stroke="#0C0A09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+    </div>
+
+    <div class="mini-cart__membership_v2__main_item">
+      <p>{{ settings.tab_6_line_1 }}</p>
+    </div>
+
+    <div class="mini-cart__membership_v2__secondary_item center_item last_center_item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" fill="none">
+    <path d="M1 5L4 8L10.5 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+    </div>
+
+    <div class="mini-cart__membership_v2__secondary_item gray">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+    <path d="M10.6055 3.53564L3.5344 10.6067" stroke="#0C0A09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M10.6055 10.6064L3.5344 3.53538" stroke="#0C0A09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+    </div>
+  </div><div class="rte">
+      {{ settings.bottom_text }}<div class="membership-upsell-learn-more">{{ settings.bottom_btn_text }}</div>
+    </div></div>
+
+                                 
+                                  
+<!--  -->
+{% endif %} 
+        <!--  -->
+
+{% endif %}
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">
