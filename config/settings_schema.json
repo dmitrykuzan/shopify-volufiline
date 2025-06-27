@@ -318,6 +318,61 @@
     "name": "t:settings_schema.variant_pills.name",
     "settings": [
       {
+        "type": "product",
+        "id": "susbcription_product",
+        "label": "Select Product"
+      },
+      {
+          "type": "text",
+          "id": "main_text",
+          "label":"Main Title"
+          },
+        {
+          "type": "html",
+          "id": "text_check1",
+          "label":"Text Para"
+          },
+        {
+          "type": "text",
+          "id": "boxtext",
+          "label":"Box Text"
+          },
+         {
+          "type": "html",
+          "id": "text_check",
+          "label":"Regular Text"
+          },
+      {
+          "type": "text",
+          "id": "boxtext_1",
+          "label":"Box Text"
+          },
+          {
+          "type": "html",
+          "id": "insider_text",
+          "label":"Insider Text"
+          },
+       {
+          "type": "text",
+          "id": "data_tatxtxt",
+          "label":"Single Text"
+          },
+      
+       {
+        "type": "header",
+        "content": "Pop Up"
+      },
+        {
+          "type": "text",
+          "id": "popup_btn_text",
+          "label":"Pop Up Button"
+          },
+        {
+          "type": "richtext",
+          "id": "popup_text",
+          "label":"Pop Up Text"
+          },
+      {
         "type": "paragraph",
         "content": "t:settings_schema.variant_pills.paragraph"
       },
