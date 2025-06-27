@@ -480,6 +480,695 @@
                 </div>
 
               {%- when 'buy_buttons' -%}
+              <!-- custom codee -->
+ <style>
+
+    .insider-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #fff3f4;
+      border-radius: 10px;
+      padding: 20px 15px 20px;
+      background: #fff3f4;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+            position: relative;
+    }
+
+    .checkbox-wrapper {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      margin-right: 12px;
+      margin-top: 4px;
+    }
+
+    .checkbox-wrapper input[type="checkbox"] {
+      opacity: 0;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .custom-checkbox {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      border: 1px solid #333;
+      box-sizing: border-box;
+      z-index: 1;
+      transition: background-color 0.2s ease;
+    }
+
+    .checkbox-wrapper input:checked + .custom-checkbox {
+      background-color: black;
+    }
+
+    .checkbox-wrapper input:checked + .custom-checkbox::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .insider-content {
+      width: 100%;
+      display: flex;
+    align-items: center;  
+      justify-content:space-between;
+    }
+.peri_data_final {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  margin-top: 6px;
+}
+                                          
+    .insider-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      /* height:20px; */
+    }
+
+    .insider-top strong {
+      font-size: 16px;
+      margin-right: 8px;
+    }
+
+    .extra-off {
+      background-color: #ffb4bf;
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 0px 6px;
+      border-radius: 3px;
+      margin-right: auto;
+      margin-left: 8px;
+    }
+
+    .reg-price {
+      font-size: 13px;
+      color: #666;
+          line-height: 10px;
+    }
+
+    .insider-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top:4px;
+    }
+
+    .insider-info {
+      font-size: 13px;
+      color: #333;
+    }
+
+    .insider-price {
+      font-size: 16px;
+    }
+.insider-top span.wrapper_textttt {
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: underline;
+      line-height: 16px;
+}
+  span.extra-off {
+    font-size: 9px;
+    height: 16px;
+    position: relative;
+    top: -1px;
+}
+.insider-box span.reg-price span.price_datta {
+    text-decoration: line-through;
+}
+span.insider-price .price {
+    font-size: 14px;
+}
+span.insider-price {
+    font-size: 14px;
+}
+   label.insider-box.box2 {
+    justify-content: space-between;
+    width: 100%;
+}
+    label.insider-box.box2 .insider-content {
+    width: 30%;
+}
+.textt {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+}
+            span.reg-price span.money.notranslate {
+    text-decoration: line-through;
+}
+    label.insider-box.box2 .insider-content .insider-top,
+    label.insider-box.box2 .insider-content .insider-bottom{
+    justify-content: end;
+}
+
+.hide_data_all{
+opacity:0;
+display:none;  
+  
+}     
+  .insider-box span.reg-price {
+text-align: right;
+    color: #666;
+    /* margin-bottom:5px; */
+}
+            .insider-box span.insider-price {
+    color: #000;
+    font-weight: 800;
+    text-align: right;
+}
+            .insider-box .flashing_arrow {
+    position: absolute;
+    width: 13px;
+    left: -25px;
+    height: 20px;
+}
+
+                .insider-box .flashing_arrow img {
+    width: 100%;
+    height: 100%;
+                object-fit: contain;
+
+  animation: flash 2s infinite;
+}
+
+@keyframes flash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* pop up css*/
+.slide_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity .3s ease, visibility .3s ease;
+}
+.slide_popup .popup_wrapper {
+background: #fff3f4;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 6px #0000001a;
+}
+                                          .insider-box .insider-info span {
+    background-color: #009eff;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+          .slide_popup .popup_wrapper .popup_wrapper_now .pop_up_text strong {
+    color: #ffb4bf;
+    border-bottom: 1px solid #ffb4bf;
+    border-width:2px;      
+          }
+ .slide_popup .popup_wrapper .popup_wrapper_now {
+    height: 100%;
+} 
+.pop_btn_wrapper .learn_btn {
+      display: flex
+;
+    text-decoration: underline;
+    color: #ffffff;
+    cursor: pointer;
+}
+.slide_popup .popup_wrapper .popup_wrapper_now .pop_up_text {
+        overflow: hidden;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    font-size: 18px;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide_popup .popup_wrapper .wrapper_icon {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: #000;
+    top: -13px;
+    right: -10px;
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+    display: flex
+;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.slide_popup .popup_wrapper .wrapper_icon img {
+    width: 20px;
+    height: 20px;
+}
+.product__info-container .wrapper_checkbox {
+    width: 100%;
+    max-width: 99%;
+    margin-left: auto;
+}
+
+label.insider-box.box2 .insider-content {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+  margin-top: 9px;
+}
+          .pop_btn_wrapper .learn_btn {
+    text-align: start!important;
+    justify-content: start!important;
+  color:#000000!important;
+                margin-top: 5px!important;
+                display: inline-block!important;
+}                                
+@media screen and (max-width: 768px) {
+.slide_popup .popup_wrapper {
+
+    max-width: 90%;
+}
+}
+                                          /*  */
+                        @media screen and (min-width: 750px) {
+.product__info-container .wrapper_checkbox {
+
+    max-width: 100%;
+
+}
+            .insider-box .flashing_arrow {
+  
+    width: 20px;
+    left: -25px;
+
+}
+                        }
+            @media screen and (min-width: 481px) {
+ .slide_popup .popup_wrapper .popup_wrapper_now {
+    height: 40vh;
+} 
+              .insider-box .insider-info {
+    font-size: 12px;
+
+}
+              /* .insider-top span.wrapper_textttt {
+
+    font-size: 18px;
+} */
+            .insider-box span.reg-price {
+    font-size: 14px;
+            }
+                        .insider-box span.insider-price {
+    font-size: 12px;
+                          line-height:16px;
+                          margin-top:7px;
+                        }
+            }
+@media screen and (max-width: 480px) {
+
+  .insider-box .flashing_arrow {
+    left: -16px;
+}
+
+            label.insider-box.box2 {
+ 
+    gap: 4px;
+}
+label.insider-box.box2 .textt {
+    width: 70%;
+  font-size: 14px;
+}
+.insider-content .wrapper_price_datta {
+          width: 74%;
+          gap: 2px;
+}
+span.extra-off {
+    font-size: 9px;
+    height: 17px;
+}  
+.peri_data_final {
+    width: 26%;
+      margin-top: 5px;
+
+}
+  .insider-box {
+    padding: 15px 5px;
+  }
+
+ .wrapper_price_datta {
+    display: flex;
+    flex-direction: column;
+    gap: px;
+} 
+  label.insider-box.box2 .insider-content .insider-top, label.insider-box.box2 .insider-content .insider-bottom {
+    justify-content: start;
+}
+  label.insider-box.box2 .insider-content {
+    width: 30%;
+}
+.pop_btn_wrapper .learn_btn {
+    justify-content: center;
+}
+ .insider-content .wrapper_price_datta .insider-top,
+  .insider-content .wrapper_price_datta .insider-bottom{
+    flex-wrap: nowrap;
+    justify-content: start !important;
+    gap:5px
+} 
+  .insider-top span.wrapper_textttt {
+        font-size: 13px;
+    width: 100%;
+    }
+  .insider-content .wrapper_price_datta .insider-top, .insider-content .wrapper_price_datta .insider-bottom{
+    position: relative;
+  }
+span.extra-off{
+ width: 36%;
+  text-align: center;
+  
+}
+/* .insider-content .wrapper_price_datta .insider-bottom span.insider-info{
+ width: 100%; 
+   font-size: 14px;
+} */
+  
+    .peri_data_final span {
+    font-size: 13px;
+}
+
+  .checkbox-wrapper {
+    margin-right: 9px;
+}
+  /* span.extra-off {
+    right: 54px;
+    position: absolute;
+    width: max-content;
+} */
+.insider-content .wrapper_price_datta .insider-bottom span.extra-off {
+    right: 7px;
+}
+  span.extra-off{
+    width: 45%;
+            font-size: 11px;
+        height: 19px;
+  }
+  .insider-content .wrapper_price_datta .insider-top, .insider-content .wrapper_price_datta .insider-bottom {
+        position: relative;
+        flex-wrap: wrap;
+    }
+      span.extra-off {
+        width: auto;
+        text-align: center;
+        margin: 0;
+    }
+      .insider-top span.wrapper_textttt {
+
+        width: auto;
+    }
+    .peri_data_final span {
+        font-size: 14px;
+    }
+  /* .insider-content .wrapper_price_datta .insider-bottom span.extra-off {
+ 
+    padding: 0 10px;
+} */
+      .peri_data_final span {
+        font-size: 13px;
+    }
+      .insider-top span.wrapper_textttt {
+        font-size: 12px;
+      }
+  .insider-info {
+    font-size: 12px;
+}
+      span.extra-off {
+                width: auto;
+        font-size: 10px;
+        height: 18px;
+    }
+.insider-box span.reg-price span.price_datta{
+    display: block;
+}
+  .insider-box span.reg-price span.mobile {
+    display: none;
+}
+                .peri_data_final span {
+        font-size: 11px;
+        margin-top: 2px;
+    }
+  .insider-bottom {
+    margin-top: 0px;
+}
+    }
+@media screen and (max-width: 450px) {
+  .insider-content {
+ 
+    gap: px;
+}
+.insider-content .wrapper_price_datta .insider-top, .insider-content .wrapper_price_datta .insider-bottom{
+      display: flow;
+      line-height: 20px;
+}
+  span.extra-off {
+    display: inline-block;
+}
+  .insider-content .wrapper_price_datta{
+    width: calc(100% - 50px);
+  }
+      .peri_data_final {
+        width: 135px;
+
+}
+  .insider-content .wrapper_price_datta{
+    gap:0;
+  }
+  .peri_data_final {
+    margin: 0;
+}
+  .insider-box span.insider-price {
+    position: relative;
+     bottom: -7px; 
+}
+    span.extra-off{
+ 
+        line-height: 16px;
+            font-size: 9px;
+        height: 17px;
+  }
+  .insider-top span.wrapper_textttt{
+       font-size: 12px;
+  }
+     
+  .insider-info {
+        font-size: 11px;
+    }
+
+}
+@media screen and (max-width: 440px) {
+
+    span.extra-off {
+        line-height: 16px;
+        font-size: 8px;
+        height: 17px;
+        position: relative;
+        top: -4px;
+    }
+    .insider-top span.wrapper_textttt {
+        font-size: 11px;
+    }
+    .insider-info {
+        font-size: 10px;
+        /* margin: 0; */
+        position: relative;
+        top: -4px;
+    }
+
+    .insider-box span.insider-price {
+        position: relative;
+        bottom: -1px;
+    }
+}
+                                          
+
+@media screen and (max-width: 390px) {
+    .peri_data_final {
+        width: 110px;
+    }
+    .insider-top span.wrapper_textttt {
+        font-size: 10px;
+    }
+  .peri_data_final span {
+        font-size: 11px;
+    }
+
+  .extra-off {
+
+    padding: 0px 4px;
+  }
+        .insider-info {
+        font-size: 9px;
+        /* margin: 0; */
+        position: relative;
+        top: -4px;
+    }
+    .peri_data_final span {
+        font-size: 9px;
+    }
+    span.extra-off {
+        line-height: 16px;
+        font-size: 8px;
+        height: 17px;
+        position: relative;
+        top: -4px;
+    } 
+}
+
+@media screen and (max-width: 375px) {
+                  .insider-info {
+        font-size: 9px;
+        /* margin: 0; */
+        position: relative;
+        top: -7px;
+    }
+    span.extra-off {
+        line-height: 16px;
+        font-size: 8px;
+        height: 17px;
+        position: relative;
+        top: 0;
+        margin-top: 3px;
+    }
+                  .insider-info {
+        font-size: 9px;
+        /* margin: 0; */
+        position: relative;
+        top: -3px;
+    }
+              .insider-box {
+        padding: 10px 5px;
+    }
+}
+
+  </style>
+                         
+{%  assign selling_plan = '' %}
+{%  assign select_product = settings.susbcription_product %}
+ {% for selling_plan_group in select_product.selling_plan_groups %}
+{% for plan in selling_plan_group.selling_plans %}
+{%  assign selling_plan = plan.id %}
+{% endfor %}
+{% endfor %}
+      {% comment %}Added/Modified by Limoni Apps on 19/05/25 to support Discount Ninja{% endcomment %}
+            {% comment %}
+  {% if customer.tags contains 'Active' %}
+Active
+{% endif %}
+{% endcomment %}
+    
+
+         {% unless customer.tags contains 'Active' %}   
+         
+<div 
+  
+  class="wrapper_checkbox hide_data_all" var_id="{{ select_product.variants.first.id }}" selling_id="{{ selling_plan }}" >
+
+  <label class="insider-box one">
+            <div class="flashing_arrow"><img src="https://cdn.shopify.com/s/files/1/0591/5289/2100/files/cfvfg.png?v=1747074559"></div>
+    <div class="checkbox-wrapper">
+      <input type="checkbox">
+      <span class="custom-checkbox"></span>
+    </div>
+    <div class="insider-content">
+        <div class="wrapper_price_datta">
+      <div class="insider-top">
+        <span class="wrapper_textttt">{{ settings.main_text }}</span>
+        <span class="extra-off">{{ settings.boxtext }}</span>
+      
+      </div>
+      <div class="insider-bottom">
+        <span class="insider-info">{{ settings.text_check }}</span>
+        
+      
+      </div>
+      </div>
+    
+    <div class="peri_data_final">
+              <span class="reg-price"><span class="mobile">Reg</span> <span class="price_datta">{{ product.price | money }}</span></span>
+              <span class="insider-price"><span class="mobile">New Price</span> <span data-la-dn-price 
+     data-la-dn-price-inline
+     data-la-dn-price-subscription 
+     data-la-dn-price-subscription-sellingplan-id="{{ selling_plan }}" class="price_datta">{{ product.price | times:0.70 | money }}</span></span>
+            </div>        
+    
+
+      
+    </div>
+  </label>
+ 
+<!-- label_2 -->
+
+ <label class="insider-box box2" style="display:none;">
+   <div class="textt">{{ settings.data_tatxtxt }}</div>
+    <div class="insider-content">
+      <div class="insider-top">
+      <span class="reg-price"><span class="mobile">Reg</span> <span class="price_datta">{{ product.price | money }}</span></span>
+      </div>
+      <div class="insider-bottom">
+         <span class="insider-price"><span class="mobile">New Price</span> <span class="price_datta">{{ product.price | times:0.70 | money }}</span></span>
+      </div>
+    </div>
+  </label>
+  
+  <!-- label 2 end -->
+             <!-- pop up -->
+      <div class="pop_btn_wrapper">
+        <div class="learn_btn">{{ settings.popup_btn_text }}</div>
+            
+          
+            </div>
+            <!-- pop up end -->
+</div>
+     {% endunless %}                     
+                  
+  <!--custom code end  -->
                 {%- render 'buy-buttons',
                   block: block,
                   product: product,
