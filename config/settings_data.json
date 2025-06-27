@@ -29,6 +29,14 @@
     "buttons_shadow_horizontal_offset": 0,
     "buttons_shadow_vertical_offset": 4,
     "buttons_shadow_blur": 5,
+    "susbcription_product": "vip-membership",
+    "main_text": "SIGN UP AND SAVE TODAY",
+    "boxtext": "Extra 20% OFF",
+    "text_check": "Additional 20% off all orders",
+    "boxtext_1": "",
+    "data_tatxtxt": "You're saving an extra 20% with the Insiders Club.",
+    "popup_btn_text": "Learn More",
+    "popup_text": "<p>🌐 <strong>VIP Member Portal Access</strong> – Unlock our exclusive members website<br/>💰 <strong>20% OFF All Eligible Products</strong> – VIP pricing across the store<br/>🚚 <strong>Free 2-Day Shipping</strong> – On every purchase, no minimum<br/>⚡ <strong>Free Overnight Shipping</strong> – On orders over $300<br/>🎁 <strong>Exclusive Perks & Early Access</strong> – Get VIP-only deals and promotions</p>",
     "variant_pills_border_thickness": 1,
     "variant_pills_border_opacity": 55,
     "variant_pills_radius": 40,
@@ -143,37 +151,6 @@
       }
     },
     "content_for_index": [],
-    "blocks": {
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "6810535121229352664": {
-        "type": "shopify://apps/monster-cart-upsell-free-gifts/blocks/app-embed/a1b8e58a-bf1d-4e0f-8768-a387c3f643c0",
-        "disabled": false,
-        "settings": {
-          "markets_rounding": false,
-          "send_gtag_atc": false,
-          "disable_tiktok_tracking": false,
-          "disable_klaviyo_tracking": false,
-          "stop_cart_page": false,
-          "apply_discount_before_checkout": false,
-          "bag_selector": "",
-          "hide_when_opened": "",
-          "show_item_properties": false,
-          "stop_shopify_rate": false,
-          "dev_mode": false,
-          "beta_version": false,
-          "custom_code": "<script>\n    // custom code here\n</script>"
-        }
-      },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      }
-    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
