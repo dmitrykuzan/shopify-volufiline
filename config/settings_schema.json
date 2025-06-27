@@ -1504,7 +1504,113 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      },
+       {
+        "type": "richtext",
+            "id": "heading",
+        "label": "Heading"  
+      },
+       {
+        "type": "text",
+            "id": "btn_heading",
+        "label": "Button Text"  
+      },
+      {
+        "type": "paragraph",
+        "content": "Table Text"
+      },
+        {
+        "type": "text",
+            "id": "tab_1_line_1",
+        "label": "Table Heading 1"  
+      },
+       {
+        "type": "text",
+            "id": "tab_1_line_2",
+        "label": "Table Heading 2"  
+      },
+       {
+        "type": "text",
+            "id": "tab_1_line_3",
+        "label": "Table Heading 3"  
+      },
+      {
+        "type": "text",
+            "id": "tab_2_line_1",
+        "label": "Table Heading 1"  
+      },
+       {
+        "type": "text",
+            "id": "tab_2_line_2",
+        "label": "Table Heading 2"  
+      },
+       {
+        "type": "text",
+            "id": "tab_2_line_3",
+        "label": "Table Heading 3"  
+      },
+      {
+        "type": "text",
+            "id": "tab_3_line_1",
+        "label": "Table Heading 1"  
+      },
+       {
+        "type": "text",
+            "id": "tab_3_line_2",
+        "label": "Table Heading 2"  
+      },
+       {
+        "type": "text",
+            "id": "tab_3_line_3",
+        "label": "Table Heading 3"  
+      },
+      {
+        "type": "text",
+            "id": "tab_4_line_1",
+        "label": "Table Heading 1"  
+      },
+       {
+        "type": "text",
+            "id": "tab_4_line_2",
+        "label": "Table Heading 2"  
+      },
+       {
+        "type": "text",
+            "id": "tab_4_line_3",
+        "label": "Table Heading 3"  
+      },
+      {
+        "type": "text",
+            "id": "tab_5_line_1",
+        "label": "Table Heading 1"  
+      },
+     
+      {
+        "type": "text",
+            "id": "tab_6_line_1",
+        "label": "Table Heading 1"  
+      },
+       {
+        "type": "richtext",
+            "id": "bottom_text",
+        "label": "Bottom Text"  
+      },
+       {
+        "type": "text",
+            "id": "bottom_btn_text",
+        "label": "Bottom Botton Text"  
+      },
+       {
+        "type": "richtext",
+            "id": "rich_text",
+        "label": "Pop Up Text"  
+      },
+      {
+        "type": "richtext",
+            "id": "rich_text2",
+        "label": "Free Trial Text"  
       }
+      
     ]
   }
 ]
