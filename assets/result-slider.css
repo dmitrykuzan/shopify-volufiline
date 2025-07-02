@@ -29,7 +29,7 @@
   .swiper-slide:nth-child(3) {
     .result-slider__slide {
       .result-slider__slide-increase-text::before {
-        width: 40%;
+        width: 27%;
       }
     }
   }
