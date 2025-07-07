@@ -94,7 +94,7 @@
 .result-slider__slide {
   display: flex;
   flex-direction: column;
-  gap: 7rem;
+  gap: 8.3rem;
 }
 
 @media screen and (min-width: 767px) {
@@ -390,11 +390,6 @@
   gap: 4rem;
 }
 
-
-
-@media only screen and (max-width: 767px) {
-  .result-slider__navigation-btns: margin-bottom: 10px;
-}
 
 @media screen and (min-width: 767px) {
   .result-slider__navigation-btns {
