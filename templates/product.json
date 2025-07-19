@@ -94,7 +94,6 @@
         "padding_bottom": 28
       }
     },
-    /*
     "video_slider_nxQkmR": {
       "type": "video-slider",
       "blocks": {
@@ -127,7 +126,6 @@
       ],
       "settings": {}
     },
-    */
     "volufiline_purchase_ykQfwT": {
       "type": "volufiline-purchase",
       "settings": {}
@@ -808,9 +806,7 @@
     "volufiline_benefits_3mCUgT",
     "result_slider_wkmUUh",
     "related-products",
-    /*
     "video_slider_nxQkmR",
-    */
     "volufiline_purchase_ykQfwT",
     "collapsible_content_bBUtmC",
     "volufiline_review_rating_cRaKrF",
