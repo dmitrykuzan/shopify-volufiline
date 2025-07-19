@@ -67,10 +67,12 @@
         "padding_bottom": 12
       }
     },
+    /*
     "volufiline_benefits_3mCUgT": {
       "type": "volufiline-benefits",
       "settings": {}
     },
+    */
     "result_slider_wkmUUh": {
       "type": "result-slider",
       "settings": {}
@@ -803,7 +805,9 @@
   },
   "order": [
     "main",
+    /*
     "volufiline_benefits_3mCUgT",
+    */
     "result_slider_wkmUUh",
     "related-products",
     "video_slider_nxQkmR",
