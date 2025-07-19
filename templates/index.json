@@ -13,10 +13,12 @@
       "type": "hero",
       "settings": {}
     },
+    /*
     "partners_mnWBtN": {
       "type": "partners",
       "settings": {}
     },
+    */
     "banner_cta_iVN3B9": {
       "type": "banner-cta",
       "settings": {}
@@ -74,7 +76,9 @@
   },
   "order": [
     "hero_qw4kjE",
+    /*
     "partners_mnWBtN",
+    */
     "banner_cta_iVN3B9",
     "before_after_slider_tUxVTj",
     "promotional_ktUnR9",
