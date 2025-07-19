@@ -29,6 +29,7 @@
       "type": "promotional",
       "settings": {}
     },
+    /*
     "video_slider_pY8jby": {
       "type": "video-slider",
       "blocks": {
@@ -61,6 +62,7 @@
       ],
       "settings": {}
     },
+    */
     "review_slider_tffJjE": {
       "type": "review-slider",
       "settings": {}
@@ -76,7 +78,9 @@
     "banner_cta_iVN3B9",
     "before_after_slider_tUxVTj",
     "promotional_ktUnR9",
+    /*
     "video_slider_pY8jby",
+    */
     "review_slider_tffJjE",
     "banner_with_title_CJGtUQ"
   ]
