@@ -3,18 +3,6 @@
 
 <script src="{{ 'parallax-mouse.min.js' | asset_url }}" defer="defer"></script>
 
-<script>
-  (function() {
-    fetch('https://ipapi.co/country/')
-      .then(res => res.text())
-      .then(country => {
-        if (country.trim() === 'US' && window.location.hostname !== 'shop.volufiline.us') {
-          window.location.href = 'https://shop.volufiline.us';
-        }
-      })
-      .catch(() => {}); // Silent fail
-  })();
-</script>
 
 {% assign product = all_products.volufiline %}
 
